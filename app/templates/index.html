@@ -1,0 +1,97 @@
+{% extends 'bootstrap/base.html' %}
+{% block scripts %}
+
+    {{super()}}
+    <script src="{{url_for('static', filename='jstest.js')}}"></script>
+
+    <script>
+
+        $(function(){
+            emptyTableBody = function()
+            {
+                $("#abilityTableBody").empty();
+            }
+            });
+            $('#myModal').on('show.bs.modal', function () {
+                $(this).find('.modal-body').css({
+                width:'auto', //probably not needed
+                height:'auto', //probably not needed
+                'max-height':'100%'
+            });
+        });
+
+
+
+    </script>
+{% endblock %}
+
+{% block styles %}
+{{super()}}
+<link rel="stylesheet"
+      href="{{url_for('.static', filename='css/main.css')}}">
+{% endblock %}
+
+{% block content %}
+    <div class="col-sm-4">
+    <table id="statTable" class="table table-striped table-bordered table-hover" style="width: 100">
+        <thead>
+            <th>Stat:</th>
+            <th>Points:</th>
+            <th>Increment?</th>
+            <th>Decrement?</th>
+        </thead>
+        <tbody>
+        <tr><th>BOD:</th><td id="bod">1</td><td><button id="bodplus" onclick="plusAbility('bod', this)">+</button></td><td><button id="bodminus" onclick="minusAbility('bod',this)">-</button></td></tr>
+        <tr><th>AGI:</th><td id="agi">1</td><td><button id="agiplus" onclick="plusAbility('agi', this)">+</button></td><td><button id="agiminus" onclick="minusAbility('agi',this)">-</button></td></tr>
+        <tr><th>REA:</th><td id="rea">1</td><td><button id="reaplus" onclick="plusAbility('rea', this)">+</button></td><td><button id="reaminus" onclick="minusAbility('rea',this)">-</button></td></tr>
+        <tr><th>STR:</th><td id="str">1</td><td><button id="strplus" onclick="plusAbility('str', this)">+</button></td><td><button id="strminus" onclick="minusAbility('str',this)">-</button></td></tr>
+        <tr><th>WIL:</th><td id="wil">1</td><td><button id="wilplus" onclick="plusAbility('wil', this)">+</button></td><td><button id="wilminus" onclick="minusAbility('wil',this)">-</button></td></tr>
+        <tr><th>INT:</th><td id="int">1</td><td><button id="intplus" onclick="plusAbility('int', this)">+</button></td><td><button id="intminus" onclick="minusAbility('int',this)">-</button></td></tr>
+        <tr><th>LOG:</th><td id="log">1</td><td><button id="logplus" onclick="plusAbility('log', this)">+</button></td><td><button id="logminus" onclick="minusAbility('log',this)">-</button></td></tr>
+        <tr><th>CHA:</th><td id="cha">1</td><td><button id="chaplus" onclick="plusAbility('cha', this)">+</button></td><td><button id="chaminus" onclick="minusAbility('cha',this)">-</button></td></tr>
+        <tr><th>LUK:</th><td id="luk">1</td><td><button id="lukplus" onclick="plusAbility('luk', this)">+</button></td><td><button id="lukminus" onclick="minusAbility('luk',this)">-</button></td></tr>
+        </tbody>
+    </table>
+    </div>
+    <h3 id="characterpoints">Character points:</h3>
+    <a data-toggle="modal" href="#myModal" class="btn btn-primary" onclick="init({{ sr }})">Add Ability</a>
+    <br>
+    <p id="prompt">Welcome to Shimmering Reach! </p>
+    <table id="abilityTable" class="table table-striped table-bordered table-hover">
+    <thead>
+        <th>Ability Name:</th>
+        <th>Category:</th>
+        <th>Ability Description:</th>
+        <th>Rules Text:</th>
+        <th>CP Cost:</th>
+        <th>Affinity:</th>
+        <th>Enduring Presence:</th>
+    </thead>
+        <tbody id="abilityTableSelectedBody">
+
+        </tbody>
+    </table>
+
+<div class="modal fade" id="myModal">
+<div class="modal-dialog modal-xxl modal-dialog-centered modal-dialog-scrollable" style="width: 1600px;">
+  <div class="modal-content">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+      <h4 class="modal-title">Modal title</h4>
+    </div>
+    <div class="modal-body">
+      <table class="table table-hover table-bordered">
+          <thead>
+          </thead>
+          <tbody class="table" id="abilityTableBody">
+          </tbody>
+      </table>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+    </div>
+  </div><!-- /.modal-content -->
+</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+{% endblock %}

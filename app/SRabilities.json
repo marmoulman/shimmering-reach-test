@@ -1,0 +1,3938 @@
+{
+  "Drinker of Souls": {
+    "AbilityNames": "Drinker of Souls",
+    "Category": "Aura",
+    "Ability Description": "Automatically absorb energy from dying / recently slain foes",
+    "Rules Text": " A dying creature rolls BOD vs. WIL to resist failure or tie results in its death. This maneuver automatically succeeds against a target that has been dead for up to 5 rounds on 6+ rounds no effect. Heal 1 stamina if at full stamina heal 1 health if at full health and stamina gain 1 temporary HP. ",
+    "CP cost": "10",
+    "Affinity": "7B(9)"
+  },
+  "Enduring Presence": {
+    "AbilityNames": "Enduring Presence",
+    "Category": "Aura",
+    "Ability Description": "Damage dampening discharge to mitigate one hit",
+    "Rules Text": "Subjects gain 1 damage dampening. Discharge: one subject of the aura gets 1+(quantity of subjects) damage dampening against one attack. ",
+    "CP cost": "30",
+    "Affinity": "12W(15)"
+  },
+  "Fear Aura": {
+    "AbilityNames": "Fear Aura",
+    "Category": "Aura",
+    "Ability Description": "This fear aura triggers on any aggressive action. ",
+    "Rules Text": "You may attempt a free intimidation check against all enemies within (CHA) squares once per round as part of an attack. The effects of the intimidation check apply after the attack is resolved.",
+    "CP cost": "15",
+    "Affinity": "4R5(W|B|R)(12)"
+  },
+  "Feedback Aura": {
+    "AbilityNames": "Feedback Aura",
+    "Category": "Aura",
+    "Ability Description": "Nearby enemies subject to damage when you are wounded",
+    "Rules Text": "Enemies within (CHA*2.5 ft) resist (damage you took) as psychic damage with mental soak.",
+    "CP cost": "10",
+    "Affinity": "4(W|B)4(W|U|B)15"
+  },
+  "For the Greater Good": {
+    "AbilityNames": "For the Greater Good",
+    "Category": "Aura",
+    "Ability Description": "Willing allies may take damage to heal the aura user",
+    "Rules Text": "During your turn as a nonaction target willing ally within CHA*5 loses 1 HP or 2 Stam and you gain 1HP or 2 Stam.",
+    "CP cost": "10",
+    "Affinity": "4B(9)"
+  },
+  "Glare of the noonday sun": {
+    "AbilityNames": "Glare of the noonday sun",
+    "Category": "Aura",
+    "Ability Description": "nonlethal damage vs. everything at start of your turn",
+    "Rules Text": "All creatures within (CHA/2 + RANK) ft (including you) must soak (BOD/2 + RANK) fire damage at the start of your turn. This damage is always nonlethal.",
+    "CP cost": "30/40/50",
+    "Affinity": "14(W|R|G)(18)16(W|R|G)(21)19(W|R|G)(24)"
+  },
+  "Mana Leech": {
+    "AbilityNames": "Mana Leech",
+    "Category": "Aura",
+    "Ability Description": "Name a color. All drain using abilities except for the named color are subject to 1 higher drain. Whenever such an ability is used roll 1 die and heal HITS drain. ",
+    "Rules Text": "Name a color. All abilities with drain used within the aura except for the named color may take +RANK drain. If they don't roll 1 die and heal HITS drain and deal HITS drain to the ability user.",
+    "CP cost": "20",
+    "Affinity": "7U7B(18)"
+  },
+  "Menacing Presence": {
+    "AbilityNames": "Menacing Presence",
+    "Category": "Aura",
+    "Ability Description": "Penalty to enemies trying to attack allies other than you",
+    "Rules Text": "Enemies within (CHA*5 feet) take (CHA) penalty to their attack pools if targeting anything but you. If enemies are not aware of you this aura does not affect them.",
+    "CP cost": "10",
+    "Affinity": "4W5(W|B|G)(12)"
+  },
+  "Natural Shielding": {
+    "AbilityNames": "Natural Shielding",
+    "Category": "Aura",
+    "Ability Description": "Aura allies gain resistances",
+    "Rules Text": "All allies within the aura gain +RANK/2 +1 armor and RANK+2 dice on rolls to resist effects originating from other recipients of this aura.",
+    "CP cost": "15/30/45",
+    "Affinity": "4G(10 per)"
+  },
+  "Never surrender": {
+    "AbilityNames": "Never surrender",
+    "Category": "Aura",
+    "Ability Description": "grants diehard to allies",
+    "Rules Text": "Allies do not fall unconscious when a damage track is filled. They still die from overflow.",
+    "CP cost": "10",
+    "Affinity": "6W6R(15)"
+  },
+  "No Retreat!": {
+    "AbilityNames": "No Retreat!",
+    "Category": "Aura",
+    "Ability Description": "Your inspiration prevents enemies from being able to withdraw safely",
+    "Rules Text": "Enemies within your zone of control provoke attacks of opportunity from you when using any form of movement even if they would not normally provoke.  At rank 2 all enemies within CHA*5 always provoke attacks of opportunity (from threatening allies) when moving through an allies zone of control. All forms of movement including instant teleportation provoke. Allies must also be within this aura to gain these benefits.",
+    "CP cost": "10",
+    "Affinity": "4W5(W|B)(12)7W9(W|B)(21)"
+  },
+  "Ralling Spirit": {
+    "AbilityNames": "Ralling Spirit",
+    "Category": "Aura",
+    "Ability Description": "Your combat prowess brings inspiration to your allies their morale confers healing",
+    "Rules Text": "When you make a successful melee attack you may heal an ally within CHA*5 ft RANK*2 meat or RANK*4 stam health. (This healing is subject to normal healing rules.)",
+    "CP cost": "10",
+    "Affinity": "6W(12)9W(18)12W(24)18W(30)"
+  },
+  "Rally Morale": {
+    "AbilityNames": "Rally Morale",
+    "Category": "Aura",
+    "Ability Description": "Your allies may use your willpower in place of their own or their willpower + RANK (whichever is higher) when resisting most effects. This does not apply to drain checks.",
+    "Rules Text": "Your allies may use your willpower in place of their own or their willpower + RANK (whichever is higher) when resisting most effects. This does not apply to drain checks.",
+    "CP cost": "10",
+    "Affinity": "6W6(W|U|G)(15)"
+  },
+  "Rallying Aura": {
+    "AbilityNames": "Rallying Aura",
+    "Category": "Aura",
+    "Ability Description": "bonus vs. fear and charm bonus on combat",
+    "Rules Text": "Resist fear resist charm combat; +1 die per rank",
+    "CP cost": "153045",
+    "Affinity": "3W4(W|R)(9)7W7(W|R)(18)10W11(W|R)(27)"
+  },
+  "Skill Teamwork": {
+    "AbilityNames": "Skill Teamwork",
+    "Category": "Aura",
+    "Ability Description": "Boost allies' skills for skills you have high ranks in",
+    "Rules Text": "Rank 1: up to 2Rank 2: up to 4Rank 3: up to 6Rank 4: up to 8",
+    "CP cost": "10 per",
+    "Affinity": "1W1G1(W|G)(6) per"
+  },
+  "Slow Aura": {
+    "AbilityNames": "Slow Aura",
+    "Category": "Aura",
+    "Ability Description": "increase initiative cost of enemy actions",
+    "Rules Text": "Enemy's actions cost 1+(RANK) more initiative so long as they are within (5*CHA feet) of you. If another effect would inflict a penalty on the initiative cost of actions only the highest penalty applies.",
+    "CP cost": "101520",
+    "Affinity": "3U4(W|U)(9)7U7(W|U)(18)10U11(W|U)(27)"
+  },
+  "Warleader": {
+    "AbilityNames": "Warleader",
+    "Category": "Aura",
+    "Ability Description": "Allies can attack right after you with a bonus.",
+    "Rules Text": "The first time you attack each turn all allies within range may take their turn immediately after yours. An ally who chooses to do so may only move or make attacks during that turn. Allies who make use of this ability gain a stacking refreshing +1 dice to all attack block parry rolls until the end of their next turn. The maximum benefit of this bonus is your CHA.",
+    "CP cost": "50",
+    "Affinity": "9W9R(24)"
+  },
+  "All outta Bubblegum": {
+    "AbilityNames": "All outta Bubblegum",
+    "Category": "Buff",
+    "Ability Description": "various grapple melee roughness bonuses",
+    "Rules Text": "Body BuffRANK-1 damage dampeningignore RANK points of wound penalty+RANK vs. knockdown disarm trip resisting grappleMelee attacks trigger knockdownEnemies that fail to escape your grapples take damage as if you made the grapple attack action against themIgnore half an enemy's armor with your grapple attacks",
+    "CP cost": "20/30/40",
+    "Affinity": "6/12/18(RG)"
+  },
+  "Arcane Conduit": {
+    "AbilityNames": "Arcane Conduit",
+    "Category": "Buff",
+    "Ability Description": "Casting spells ",
+    "Rules Text": "Body BuffCasting a spell generates a mana charge.Charges may be expended as follows2-Spent in place of init costs on a spell modifier (per 5)2-Spent in place of init costs on counterspelling/redirecting (per 5)2-Spent to mitigate a counterspell/redirect attempt against one of your spells (-3 dice to opposed attempt per)Max charges = 2*RANK These charges decay after one minute of not generating nor using charges. If you would overflow your limit on charges take drain equal to the overflow amount. You shed sparking magical light (as a torch) while you have at least 2 charges.At Rank 2: Centering generates 1 charge every point of drain you take from spellcasting generates 1 charge.At Rank 3: All charge generation is increased by +1",
+    "CP cost": "30/40/80",
+    "Affinity": "12/16/20(U/R)"
+  },
+  "Avatar of Malice": {
+    "AbilityNames": "Avatar of Malice",
+    "Category": "Buff",
+    "Ability Description": "Empower attacks lifesteal ignore full defense",
+    "Rules Text": "Body buff. All damage you deal is applied as Dark damage post mitigation. You ignore enemies\u00e2\u20ac\u2122 full defense. Whenever your melee attack deals damage to one or more targets heal 1. This healing is exempt from healing drain.Weakness 3 to radiant. You treat all incoming dark damage and dark damage you suffer as normal damage. After damage is calculated against you you may move up to 2 points of it to the delayed track. At the end of the round you suffer all the delayed damage as physical damage. ",
+    "CP cost": "100",
+    "Affinity": "24B(30)"
+  },
+  "Bastion": {
+    "AbilityNames": "Bastion",
+    "Category": "Buff",
+    "Ability Description": "Defensive bonuses reduced offensive power",
+    "Rules Text": "Simple Action. Increase damage dampening by RANK. Reduce the starting power of your attacks by RANK.",
+    "CP cost": "15/20/25",
+    "Affinity": "6W12W18W"
+  },
+  "Blessed Light of Dawn": {
+    "AbilityNames": "Blessed Light of Dawn",
+    "Category": "Buff",
+    "Ability Description": "Let there be heals",
+    "Rules Text": "Body BuffAll your healing effects heal for 1 additional pointYou may spend 1L in place of any drain you suffer as part of casting a healing effect this also mitigates all drain for recipients of this healing effect. you may take 3 on all healing rollsExcess points of healing generate Reserve dice at a 1:1 ratio for the recipient of your healing effects that last for one minute or until used on any roll. If Reserve dice would be received while there are already existing dice the new quantity overwrites if it is higher otherwise it just refreshes the one minute timer. Resist 3 acid resist 3 fire resist 3 lightning.Gain +6 dice to see through magical effectsTreat all light conditions as optimal for your vision.You may trigger healing effects as an interrupt at (5)",
+    "CP cost": "60",
+    "Affinity": "20W"
+  },
+  "Brambleward": {
+    "AbilityNames": "Brambleward",
+    "Category": "Buff",
+    "Ability Description": "Ward against targeted magical effects discharge for a burst of strength",
+    "Rules Text": "Simple action. Gain +3*RANK against targeted magical effects until the end of this round. You may discharge this effect to get +2 STR *RANK on one attempted action.",
+    "CP cost": "102030",
+    "Affinity": "4G(9)9G(18)13G(27)"
+  },
+  "Charge Weapon": {
+    "AbilityNames": "Charge Weapon",
+    "Category": "Buff",
+    "Ability Description": "Hold a spell in a weapon to be discharged upon striking",
+    "Rules Text": "You can cast spells into your weapon(s). The spells are discharged upon striking an opponent one at a time in the order they were cast in. -Spells that normally target dodge automatically hit with 0 net hits. In the case of AoE effects produced off this (RULING NEEDED)-Spells that target mental or physical resolve as normal.Casting a spell into a weapon is a simple action. For every simple action spent since the start of your last turn casting spells into your weapon(s) you may cast an additional spell as part of the simple action. You may store up to (cast stat) spells at one time and you can only store spells of up to 1+(cast stat / 2) force.If the weapon leaves your possession for a minute all charges dissipate. Stored charges dissipate an hour after the last charge was added.",
+    "CP cost": "20",
+    "Affinity": "3U3R(12)"
+  },
+  "Conjure weapon / armor": {
+    "AbilityNames": "Conjure weapon / armor",
+    "Category": "Buff",
+    "Ability Description": "Summon personalized weapon / armor functions while in your keeping but phases out for others",
+    "Rules Text": "Binding weapons and/or armor is accomplished during one hour of downtime. You may summon any or all of the bound weapons/armor as a free action or dismiss them as a free action. When an item is dismissed it exists in a pocket dimension and access can be prevented by effects that limit extradimensional travel. Dismissed items count as attended. You may summon bound equipment back to you granted it has been at most one minute since you last made contact with it. If it is attended the attender must be willing. You are aware of the general direction your bound equipment is in if you become separated from it. You may bind one set of armor and (two one handed weapons or one two handed weapon) per rank.",
+    "CP cost": "5 per",
+    "Affinity": "1W(6)"
+  },
+  "Crisp and Cauterize": {
+    "AbilityNames": "Crisp and Cauterize",
+    "Category": "Buff",
+    "Ability Description": "Dealing direct fire damage procs a healHealing procs a firebolt",
+    "Rules Text": "Body Buff.Whenever your attack or ability deals fire damage to a target you may heal an ally within 60ft for up to an equivalent amount of health.Whenever you heal an ally you may generate a single target ranged firebolt as per Elemental Blast at FORCE = (healing spell FORCE) - 2This ability cannot trigger itself",
+    "CP cost": "40",
+    "Affinity": "9W9R(24)"
+  },
+  "Displacer": {
+    "AbilityNames": "Displacer",
+    "Category": "Buff",
+    "Ability Description": "You occupy two adjacent squares appearing to flicker between them. ",
+    "Rules Text": "Body BuffGain +3 on all defensive checks (not mental or physical resist)You occupy two adjacent squares.You may act from either position that you occupy.You may pass through thin obstacles at the cost of 5ft of movement.You can pay (5) init to solidify in one spot at any time or a simple action during your turn stabilizing the effect until you spend a free action to resume it. ",
+    "CP cost": "20",
+    "Affinity": "3U4(U|G)(15)"
+  },
+  "Duty's Ward": {
+    "AbilityNames": "Duty's Ward",
+    "Category": "Buff",
+    "Ability Description": "Move to punish those who threaten your selected ally",
+    "Rules Text": "This buff links you and one ally (within 60ft on activation) and lasts 24 hours or until one recipient opts to dismiss it as a complex action. You are aware of when the linked ally is threatened or hurt. You can sense the rough direction the linked ally is in. Enemies taking actions that target the ally but not you provoke attacks of opportunity. Such a triggering action also grants 10ft of movement if that would allow you to move to threaten the triggering enemy. ",
+    "CP cost": "30",
+    "Affinity": "9W(12)"
+  },
+  "Elemental Body (Acid)": {
+    "AbilityNames": "Elemental Body (Acid)",
+    "Category": "Buff",
+    "Ability Description": "Acid: acid retal burst ",
+    "Rules Text": "Gain for the duration Resist Acid: 3*RANK Whenever you are struck by a corporeal attack that does at least 1 point of damage all adjacent creatures must soak (armor soak) acid damage equal to  (BOD/2 + 2*RANK). You may channel the acid into an area attack centered on you (you are unaffected by this attack) with (BOD/2*5 ft radius). DV = (BOD/2+2* RANK)(resolve as a spellcast or attack as desired). Doing so ends the benefits of Elemental Body. This is a body buff. Activating this buff is a simple action channeling the acid is a complex action.",
+    "CP cost": "15/25/35",
+    "Affinity": "2(B|G)(9)4(B|G)(18)6(B|G)(27)"
+  },
+  "Elemental Body (Cold)": {
+    "AbilityNames": "Elemental Body (Cold)",
+    "Category": "Buff",
+    "Ability Description": "Cold: chilling presence",
+    "Rules Text": "Gain for the durationResist Cold: 3Creatures that start their turn adjacent lose RANK initiative as if suffering damage from a cold effect. Resistance to cold mitigates this at a 1:1 ratio.You may channel the chill into an area attack centered on you (you are unaffected by this attack) with (BOD/2*5 ft radius). DV = (BOD/2+ 2*RANK)(resolve as a spellcast or attack as desired). Doing so ends the benefits of Elemental Body. This is a body buff. Activating this buff is a simple action channeling the cold is a complex action.",
+    "CP cost": "15/25/35",
+    "Affinity": "2U(9) per"
+  },
+  "Elemental Body (Dark)": {
+    "AbilityNames": "Elemental Body (Dark)",
+    "Category": "Buff",
+    "Ability Description": "Ebody dark resist dark (active)",
+    "Rules Text": "Gain for the duration Resist Dark: 3*RANK Whenever you are struck by a corporeal attack that does at least 1 point of damage you produce an obscuring miasma in your square that lasts until the end of the round. You may channel the darkness into an obscuring miasma centered on you radius = (BOD/2 -1) that lasts until the end of the next round. The miasma blocks all light for everyone except you. Doing so ends the benefits of Elemental Body. This is a body buff. Activating this buff is a simple action channeling the darkness is a complex action.",
+    "CP cost": "15/25/35",
+    "Affinity": "2(B)(9)4(B)(18)6(B)(27)"
+  },
+  "Elemental Body (Earth)": {
+    "AbilityNames": "Elemental Body (Earth)",
+    "Category": "Buff",
+    "Ability Description": "Earth: ",
+    "Rules Text": "Gain for the durationDamage Dampening: 1You may channel the strength of earth to mitigate one physical attack. Gaining an additional 2*RANK Damage Dampening. Doing so ends the benefits of Elemental Body after resolving the damage for that attack. This is a body buff. Activating this buff is a simple action channeling the earth is a nonaction.",
+    "CP cost": "15/25/35",
+    "Affinity": "2G(9) per"
+  },
+  "Elemental Body (Fire)": {
+    "AbilityNames": "Elemental Body (Fire)",
+    "Category": "Buff",
+    "Ability Description": "Fire: Burning presence fire burst",
+    "Rules Text": "Gain for the durationResist Fire: 3*RANKCreatures that start their turn adjacent must save or catch fire as if affected by a (BOD/2+RANK) fire attack. At the end of each round adjacent objects save or catch fire.You may channel the fire into an area attack centered on you (you are unaffected by this attack) with (BOD/2*5 ft radius). DV = (BOD/2+ 2*RANK)(resolve as a spellcast or attack as desired). Doing so ends the benefits of Elemental Body. This is a body buff. Activating this buff is a simple action channeling the fire is a complex action.",
+    "CP cost": "15/25/35",
+    "Affinity": "2R(9) per"
+  },
+  "Elemental Body (Lightning)": {
+    "AbilityNames": "Elemental Body (Lightning)",
+    "Category": "Buff",
+    "Ability Description": "Lightning: lightning presence lightning leap",
+    "Rules Text": "Gain for the durationResist Lightning: 3*RANKCreatures that are adjacent to you that take lightning damage take an additional point of lightning damage as if struck by a separate lightning effect. This ability cannot trigger itself.You may channel the lightning into a line attack originating from you with up to (BOD*10 ft length). DV = (BOD/2+ 2*RANK)(resolve as a spellcast or attack as desired). You may teleport to the farthest square of the target area. Using the attack function ends the benefits of Elemental Body. This is a body buff. Activating this buff is a simple action channeling the lightning is a complex action. ",
+    "CP cost": "15/25/35",
+    "Affinity": "2R(9) per"
+  },
+  "Elemental Body (Radiant)": {
+    "AbilityNames": "Elemental Body (Radiant)",
+    "Category": "Buff",
+    "Ability Description": "Ebody radiant resist radiant (active)",
+    "Rules Text": "Gain for the duration Resist Radiant: 3*RANK Whenever you are struck by a corporeal attack that does at least 1 point of damage all adjacent creatures must avoid automatic blinding (until end of round) dodge or physical res vs. (BOD/2+rank-2) automatic hits. You may channel the radiance into an area attack centered on you (you are unaffected by this attack) with ((BOD/2+1)*5 ft radius) resolve as an attack or spellcast as desired. This attack does no damage may be dodged or physically resisted and only requires 3 net hits to blind (blinding until end of next round). This a. Doing so ends the benefits of Elemental Body. This is a body buff. Activating this buff is a simple action channeling the acid is a complex action.",
+    "CP cost": "15/25/35",
+    "Affinity": "2(W)(9)4(W)(18)6(W)(27)"
+  },
+  "Envenom Weapons": {
+    "AbilityNames": "Envenom Weapons",
+    "Category": "Buff",
+    "Ability Description": "Poison weapons as weapon buff",
+    "Rules Text": "Damage adjusted by -2Victim injured by weapon rolls to physical soak venom at end of round DV = your BOD. As usual for poison effects subsequent applications of the poison during the same round raise the end of round DV by 1.",
+    "CP cost": "20",
+    "Affinity": "7(B|G)(9)"
+  },
+  "Fleetfoot Blessing": {
+    "AbilityNames": "Fleetfoot Blessing",
+    "Category": "Buff",
+    "Ability Description": "1 temp hp movespeed bonus while this temp hp lasts",
+    "Rules Text": "grant 1 temp HP increase your movement speed by 10 for 10 rounds. Simple action.",
+    "CP cost": "5",
+    "Affinity": "3W3R(12)"
+  },
+  "Imbue Weapon (Acid)": {
+    "AbilityNames": "Imbue Weapon (Acid)",
+    "Category": "Buff",
+    "Ability Description": "Complex action to apply element to attended weapons dismiss as free action.Changes weapon damage type to element.Damage adjusted by -3",
+    "Rules Text": "Simple action to apply element to attended weapons dismiss as free action.Changes weapon damage type to element.Damage adjusted by -1",
+    "CP cost": "10",
+    "Affinity": "4(B|G)(9)"
+  },
+  "Imbue Weapon (Cold)": {
+    "AbilityNames": "Imbue Weapon (Cold)",
+    "Category": "Buff",
+    "Ability Description": "Complex action to apply element to attended weapons dismiss as free action.Changes weapon damage type to element.Damage adjusted by -3",
+    "Rules Text": "Simple action to apply element to attended weapons dismiss as free action.Changes weapon damage type to element.Damage adjusted by -1",
+    "CP cost": "10",
+    "Affinity": "4U(9)"
+  },
+  "Imbue Weapon (Dark)": {
+    "AbilityNames": "Imbue Weapon (Dark)",
+    "Category": "Buff",
+    "Ability Description": "Complex action to apply element to attended weapons dismiss as free action.Changes weapon damage type to element.Damage adjusted by -3",
+    "Rules Text": "Simple action to apply element to attended weapons dismiss as free action.Changes weapon damage type to element.Damage adjusted by -1",
+    "CP cost": "10",
+    "Affinity": "4B(9)"
+  },
+  "Imbue Weapon (Fire)": {
+    "AbilityNames": "Imbue Weapon (Fire)",
+    "Category": "Buff",
+    "Ability Description": "Complex action to apply element to attended weapons dismiss as free action.Changes weapon damage type to element.Damage adjusted by -3",
+    "Rules Text": "Simple action to apply element to attended weapons dismiss as free action.Changes weapon damage type to element.Damage adjusted by -1",
+    "CP cost": "10",
+    "Affinity": "4R(9)"
+  },
+  "Imbue Weapon (Lightning)": {
+    "AbilityNames": "Imbue Weapon (Lightning)",
+    "Category": "Buff",
+    "Ability Description": "Complex action to apply element to attended weapons dismiss as free action.Changes weapon damage type to element.Damage adjusted by -3",
+    "Rules Text": "Simple action to apply element to attended weapons dismiss as free action.Changes weapon damage type to element.Damage adjusted by -1",
+    "CP cost": "10",
+    "Affinity": "4R(9)"
+  },
+  "Martial Spirit": {
+    "AbilityNames": "Martial Spirit",
+    "Category": "Buff",
+    "Ability Description": "No aura two stances combine maneuvers",
+    "Rules Text": "Body BuffYou may not have an aura activeYou may have two stances activeYou may combine two maneuvers as part of one action where both could apply. If they both have initiative costs you only need to pay the higher one.",
+    "CP cost": "75",
+    "Affinity": "9W9R(24)"
+  },
+  "Press your luck": {
+    "AbilityNames": "Press your luck",
+    "Category": "Buff",
+    "Ability Description": "Spend (2?3?) points of luck for the rest of the round all your dice explode",
+    "Rules Text": "Nonaction. Spend 2 luck For the rest of the round all your dice explode.",
+    "CP cost": "10",
+    "Affinity": "9R(18)"
+  },
+  "Purging Bubble": {
+    "AbilityNames": "Purging Bubble",
+    "Category": "Buff",
+    "Ability Description": "1 temp hp 1 purge roll on apply",
+    "Rules Text": "Simple action.  Target ally may immediately (re)roll against a temporary negative condition. There is no penalty for failing this roll. Target gains 1 temp hp ",
+    "CP cost": "5",
+    "Affinity": "7W(9)"
+  },
+  "Shadow Partner": {
+    "AbilityNames": "Shadow Partner",
+    "Category": "Buff",
+    "Ability Description": "Create a fragile clone of yourself with half stats that mirrors your actions",
+    "Rules Text": "Free action spend 1 L. Create a shadowy clone of yourself in an adjacent square. It acts on your initiative count has half your dicepool for any roll before modifiers. The clone cannot spend initiative on any actions nor can it spend luck. The clone has its own health and cannot be healed taking all damage as lethal. The clone does not suffer wound penalties. You can perceive everything your clone perceives. Outside of these limitations your clone functions with your abilities. ",
+    "CP cost": "60",
+    "Affinity": "8U8B8(U|B)(30)"
+  },
+  "Shared fate": {
+    "AbilityNames": "Shared fate",
+    "Category": "Buff",
+    "Ability Description": "split damage with ally",
+    "Rules Text": "Complex Action. Touch range targets ally and self. For the duration all damage suffered by either recipient of this buff is split equally (primary target takes higher value in case of odd valued damage). Split damage after all resistances and rolls are concluded.",
+    "CP cost": "10",
+    "Affinity": "4W(6)"
+  },
+  "Simple action to apply element to attended weapons dismiss as free action.Changes weapon damage type to element.Damage adjusted by -3(Elemental damage ignores half the target's armor by default)": {
+    "AbilityNames": "Simple action to apply element to attended weapons dismiss as free action.Changes weapon damage type to element.Damage adjusted by -3(Elemental damage ignores half the target's armor by default)",
+    "Category": "Buff",
+    "Ability Description": "Complex action to apply element to attended weapons dismiss as free action.Changes weapon damage type to element.Damage adjusted by -3",
+    "Rules Text": "Simple action to apply element to attended weapons dismiss as free action.Changes weapon damage type to element.Damage adjusted by -3(Elemental damage ignores half the target's armor by default)",
+    "CP cost": "10",
+    "Affinity": "4W(9)"
+  },
+  "Soulward": {
+    "AbilityNames": "Soulward",
+    "Category": "Buff",
+    "Ability Description": "Spend X health get 2X temp hp",
+    "Rules Text": "Simple Action. Spend X health to gain 2X temp hp.",
+    "CP cost": "10",
+    "Affinity": "6B(12)"
+  },
+  "Swarmform": {
+    "AbilityNames": "Swarmform",
+    "Category": "Buff",
+    "Ability Description": "Shapeshift into a cohesive swarm of small creatures",
+    "Rules Text": "Gain +3 bonus (defense roll only) vs. single target attacks and effectsTake -5 penalty (defense and soak) vs. area attacks and effectsDamage taken from single target attacks cannot exceed 5You may disperse/condense into a swarm as a simple action.",
+    "CP cost": "30",
+    "Affinity": "14G(18)"
+  },
+  "The Quick and The Dead": {
+    "AbilityNames": "The Quick and The Dead",
+    "Category": "Buff",
+    "Ability Description": "boost dodge take more damage when hit",
+    "Rules Text": "Simple Action. Gain RANK free hits on all dodge rolls. Your damage dampening is reduced by (1+2*RANK).",
+    "CP cost": "30/40/50",
+    "Affinity": "14(U|B|R)(18)"
+  },
+  "Titan Armor": {
+    "AbilityNames": "Titan Armor",
+    "Category": "Buff",
+    "Ability Description": "Gain mitigation dice slow down",
+    "Rules Text": "Simple Action. Gain 3 to your soak dicepool per RANK for RANK*10 rounds. Your max speed is reduced by 10. This is a body buff.",
+    "CP cost": "5 per",
+    "Affinity": "4G(6)9G(12)14G(18)19G(24)24G(30)"
+  },
+  "Blindness": {
+    "AbilityNames": "Blindness",
+    "Category": "Flaw",
+    "Ability Description": "You are blind",
+    "Rules Text": "Blind",
+    "CP cost": "-30",
+    "Affinity": "WURBG"
+  },
+  "All in": {
+    "AbilityNames": "All in",
+    "Category": "Maneuver",
+    "Ability Description": "Burn initiative for a powerful strike",
+    "Rules Text": "Spend the rest of your initiative as part of an attack. Gain +1 free hit for every (10) spent in this way rounding up.",
+    "CP cost": "5",
+    "Affinity": "9R(12)"
+  },
+  "Assassinate": {
+    "AbilityNames": "Assassinate",
+    "Category": "Maneuver",
+    "Ability Description": "Combat bonus vs. unaware targets",
+    "Rules Text": "Enemies treat your initative as 10 higher for purposes of awareness during surprise rounds. Attacks against unaware enemies gain one automatic hit.",
+    "CP cost": "15",
+    "Affinity": "7B(15)"
+  },
+  "Assisted Escape": {
+    "AbilityNames": "Assisted Escape",
+    "Category": "Maneuver",
+    "Ability Description": "Target an ally they may move up to their movement speed.  After moving apply temp hp.",
+    "Rules Text": "Target ally may move up to their walking speed after moving they gain 1 temp hp",
+    "CP cost": "5",
+    "Affinity": "2W(3)"
+  },
+  "Avalanche of Blades": {
+    "AbilityNames": "Avalanche of Blades",
+    "Category": "Maneuver",
+    "Ability Description": "Flurry of attacks until missing",
+    "Rules Text": "(10) Make a melee attack if this attack doesn't miss make another attack at a -4 penalty to all rolls against the same target repeat until missing.",
+    "CP cost": "25",
+    "Affinity": "16(W|R)(21)"
+  },
+  "Balance the Scales": {
+    "AbilityNames": "Balance the Scales",
+    "Category": "Maneuver",
+    "Ability Description": "Equalize wounds with ally",
+    "Rules Text": "(Touch) Equalize wounds with one ally. If there are an odd number of physical and/or nonlethal wounds you choose who receives the odd numbered wound. ",
+    "CP cost": "10",
+    "Affinity": "9(W|G)(18)"
+  },
+  "Blinding Bulwark": {
+    "AbilityNames": "Blinding Bulwark",
+    "Category": "Maneuver",
+    "Ability Description": "Blocking enemies has a chance to blind them",
+    "Rules Text": "Spend (5) on block to roll a CHA/2 DV attack with spellcasting or weapon skill vs. attacker's mental resist. Target soaks with mental soak and is blinded for a number of rounds equal to the damage the attack would do.",
+    "CP cost": "5",
+    "Affinity": "7W(9)"
+  },
+  "Blinding Strike": {
+    "AbilityNames": "Blinding Strike",
+    "Category": "Maneuver",
+    "Ability Description": "Attack at a penalty blinds target",
+    "Rules Text": "Make an attack net hits do not contribute to damage. Target rolls passive physical resist vs. half DV. On failure is blinded for net hits turns. ",
+    "CP cost": "5",
+    "Affinity": "4W(6)"
+  },
+  "Blink": {
+    "AbilityNames": "Blink",
+    "Category": "Maneuver",
+    "Ability Description": "Tactical Teleportation",
+    "Rules Text": "Free Action teleport up to your speed to a square within line of sight. 10 round cooldown______________________________________Free Action teleport up to your speed to a square within line of sight. 1 round cooldownSimple Action teleport up to 10x your speed to a square within line of sight. cooldown.______________________________________Free Action teleport up to your speed to a square within line of sight.Simple Action teleport up to 10x your speed to a square within line of sight. OR teleport up to 10' not limited by line of sight. 1 round cooldown.Complex Action teleport up to 100x your speed to a square within line of sight. OR teleport up to your speed not limited by line of sight. 10 round cooldown. Note: any usage puts the ABILITY on cooldown not the individual function.",
+    "CP cost": "30-45-60",
+    "Affinity": "7U(15)10U(21)13U(27)"
+  },
+  "Bloom Field": {
+    "AbilityNames": "Bloom Field",
+    "Category": "Maneuver",
+    "Ability Description": "Spawn and manipulate blooms for battlefield options",
+    "Rules Text": "Simple action: Spawn (BOD) buds on the ground within 50ft. Buds die if you go 100ft from them or one minute passes.Free action: Command one or all buds (same command)- Spawn bramble patch: Creates a 15ft x 15ft bramble patch centered on the bud. The brambles are 7ft high and cost quadruple movement for enemies. Allies move normally through the brambles and get superior cover. This causes the bud to expire.- Engulf: Bud attempts to grapple adjacent enemy using your grapple values. On success the target is grappled and the bud automatically sustains the grapple. dealing damage as normal until the target is free. When the target dies or gets free the bud expires.- Teleport: Teleport to a spot adjacent to any bud you may only do this starting from adjacent to a bud. This does not consume the bud.Simple action or (5): Create a bud on your location and teleport as above. ",
+    "CP cost": "25",
+    "Affinity": "9G(18)"
+  },
+  "Bola Arrow": {
+    "AbilityNames": "Bola Arrow",
+    "Category": "Maneuver",
+    "Ability Description": "Grapple trip disarm with arrow",
+    "Rules Text": "Grapple trip disarm with arrow as part of an attack don't gain STR on damage.(weapon skill + STR - 4 for dicepool on combat maneuvers)",
+    "CP cost": "10",
+    "Affinity": "4G(9)"
+  },
+  "Breathstealing Blow": {
+    "AbilityNames": "Breathstealing Blow",
+    "Category": "Maneuver",
+    "Ability Description": "forces save vs. silence",
+    "Rules Text": "Make a melee attack. If successful net hits do not contribute to damage. Target rolls passive physical res vs. DV. On failure is silenced for net hits turns.",
+    "CP cost": "5",
+    "Affinity": "4W(6)"
+  },
+  "Burnout": {
+    "AbilityNames": "Burnout",
+    "Category": "Maneuver",
+    "Ability Description": "Roll an init die twice lose access to that init die for the following round. 2 round cooldown.",
+    "Rules Text": "Roll an init die twice lose acces to that init die for the following round",
+    "CP cost": "20",
+    "Affinity": "7R(9)"
+  },
+  "Butterknifing": {
+    "AbilityNames": "Butterknifing",
+    "Category": "Maneuver",
+    "Ability Description": "Improved sunder",
+    "Rules Text": "(5) as an additional cost on an attack against an inanimate or attended object. Treat the object's barrier rating as 5 lower.",
+    "CP cost": "5",
+    "Affinity": "4(R|G)(9)"
+  },
+  "Clarion Call": {
+    "AbilityNames": "Clarion Call",
+    "Category": "Maneuver",
+    "Ability Description": "Grant allies option to take extra action when downing an enemy",
+    "Rules Text": "Nonaction after your attack renders an opponent unconsciousAll allies within CHA*5 ft may spend (5) and make a single attack or move up to their speed this movement does not count towards the round's max movement.",
+    "CP cost": "20",
+    "Affinity": "16W(21)"
+  },
+  "Counter Charge": {
+    "AbilityNames": "Counter Charge",
+    "Category": "Maneuver",
+    "Ability Description": "When an enemy is charging you may charge to intercept.",
+    "Rules Text": "(10) when an enemy makes a charge attack charge the enemy during their movement attack them on hit also make an opposed STR check on success the enemy stops moving and does not get to attack.",
+    "CP cost": "5",
+    "Affinity": "4W(6)"
+  },
+  "Counterspell": {
+    "AbilityNames": "Counterspell",
+    "Category": "Maneuver",
+    "Ability Description": "(10) as interrupt attempt to counter a spell",
+    "Rules Text": "(10) as interrupt attempt to counter a spell. Roll Cast stat + spellcasting skill + other bonuses vs. the spellcaster's roll in place of a normal resistance check.",
+    "CP cost": "5",
+    "Affinity": "7U(9)"
+  },
+  "Cratering Charge": {
+    "AbilityNames": "Cratering Charge",
+    "Category": "Maneuver",
+    "Ability Description": "AoE impact on a charge",
+    "Rules Text": "(5) in addition to your charge make a secondary attack at STR/2 against all adjacent targets full dice pool vs. each target.",
+    "CP cost": "10",
+    "Affinity": "7(R|G)(9)"
+  },
+  "Crushing Descent": {
+    "AbilityNames": "Crushing Descent",
+    "Category": "Maneuver",
+    "Ability Description": "Bonus for attacks made while falling",
+    "Rules Text": "Gain +1 die to an attack made while falling or diving per 10 fallen as part of the action. Capped at your BOD",
+    "CP cost": "5",
+    "Affinity": "6(W|G)(12)"
+  },
+  "Dancing Weapon": {
+    "AbilityNames": "Dancing Weapon",
+    "Category": "Maneuver",
+    "Ability Description": "enchant a weapon to float and attack enemies",
+    "Rules Text": "Simple action or (5) after attacking with a melee weapon. Release one held melee weapon and choose an enemy the weapon pursues and attacks that enemy until the end of the round. The weapon acts on your turn has a fly speed of 30' with perfect maneuverability uses your weapon skill for its attacks (benefits from tradition match but not your agility) and deals damage as if you were wielding it. At the end of the round the weapon moves 30' towards you dropping where it ends its movement if you do not have an open hand to grab it as a nonaction or if it fails to reach you. ",
+    "CP cost": "40",
+    "Affinity": "W??"
+  },
+  "Deflecting Dodge": {
+    "AbilityNames": "Deflecting Dodge",
+    "Category": "Maneuver",
+    "Ability Description": "Redirect attack that missed you to adjacent valid target.",
+    "Rules Text": "Spend (5) to redirect an attack that you succesfully dodged to an adjacent valid target.",
+    "CP cost": "5",
+    "Affinity": "4R(6)"
+  },
+  "Desert Tempest": {
+    "AbilityNames": "Desert Tempest",
+    "Category": "Maneuver",
+    "Ability Description": "Twirl around the battlefield slicing foes as you move",
+    "Rules Text": "(10) As part of this manuever move up to your speed. You may make a single melee attack against each enemy you become adjacent to; you may not attack the same foe more than once during this manuever.",
+    "CP cost": "20",
+    "Affinity": "16(W|R)(21)"
+  },
+  "Desperate Gambit": {
+    "AbilityNames": "Desperate Gambit",
+    "Category": "Maneuver",
+    "Ability Description": "take off turn action as if previously readied",
+    "Rules Text": "(20) perform an action as an interrupt as if it were readied.",
+    "CP cost": "15",
+    "Affinity": "14R(18)"
+  },
+  "Devour Essence": {
+    "AbilityNames": "Devour Essence",
+    "Category": "Maneuver",
+    "Ability Description": "Absorb some energy from a dying / recently slain foe",
+    "Rules Text": "Complex action touch targets a dead or dying creature. A dying creature rolls BOD vs. WIL to resist failure or tie results in its death. This maneuver automatically succeeds against a target that has been dead for up to 5 rounds on 6+ rounds no effect. Heal 1 stamina if at full stamina heal 1 health if at full health and stamina gain 1 temporary point of health/stam that is lost first. This point lasts for (Creature's BOD) hours. ",
+    "CP cost": "5",
+    "Affinity": "2B2G(6)"
+  },
+  "Distant Echoes": {
+    "AbilityNames": "Distant Echoes",
+    "Category": "Maneuver",
+    "Ability Description": "Launch projectile sense general surroundings near projectile",
+    "Rules Text": "Free action - you gain blindsense 10ft around the impact point of the projectile until the end of the turnSimple action - until the end of next round.",
+    "CP cost": "15",
+    "Affinity": "6(W|G)(12)"
+  },
+  "Drink Their Tears": {
+    "AbilityNames": "Drink Their Tears",
+    "Category": "Maneuver",
+    "Ability Description": "Gain bonus for enemies that have recently taken damage",
+    "Rules Text": "Simple actionGain +1 dice to attack actions for each enemy in LoS that has taken damage in the past round. This lasts until the end of the next round. ",
+    "CP cost": "5",
+    "Affinity": "2R2G(6)"
+  },
+  "Elemental Discharge": {
+    "AbilityNames": "Elemental Discharge",
+    "Category": "Maneuver",
+    "Ability Description": "Discharge weapon buff boost power of one attack",
+    "Rules Text": "Discharge a weapon buff as part of an attack action with one or more weapons. All attacks made during this attack action retain the elemental damage type of the discharged buff  have +1DV and strike adjacent targets at half DV.",
+    "CP cost": "10",
+    "Affinity": "-18"
+  },
+  "ethereal Spinerak": {
+    "AbilityNames": "ethereal Spinerak",
+    "Category": "Maneuver",
+    "Ability Description": "Simple Action. Until end of encounter an ally gains the power to fight ethereal andincoporeal creatures.  you may use this maneuver as an interrupt (5); if you do so you cannot use this ability again for 24-3*WIL hours.",
+    "Rules Text": "Simple Action. Until end of encounter an ally gains the power to fight ethereal incoporeal  creatures.  You may use this maneuver as an interrupt (5). Once you trigger this ability it cannot be used again for 24-3*WIL hours.",
+    "CP cost": "10",
+    "Affinity": "6G(12)"
+  },
+  "Feigned opening": {
+    "AbilityNames": "Feigned opening",
+    "Category": "Maneuver",
+    "Ability Description": "Fake an opening focusing your reactions upon the riposte to come",
+    "Rules Text": "As a free action you may start to feign an opening. While you are feigning you do not roll your REACTION for passive defense dodge or block. Add REACTION to all riposte rolls when feigning. ",
+    "CP cost": "30",
+    "Affinity": "9W(12)"
+  },
+  "Feint": {
+    "AbilityNames": "Feint",
+    "Category": "Maneuver",
+    "Ability Description": "(5) attack special roll w/ various other contributing skills if successful + NET HITS to next attack against target",
+    "Rules Text": "Make an attack as a simple action against a target that is perceiving you and add your sleight of hand to the dice pool. This attack does no damage if successful. Instead add your net hits to the dice pool of the next attack you make against the same target before the end of your next turn.",
+    "CP cost": "5",
+    "Affinity": "4(W|U)(6)"
+  },
+  "Fiery Rebirth": {
+    "AbilityNames": "Fiery Rebirth",
+    "Category": "Maneuver",
+    "Ability Description": "Rise empowered after dying",
+    "Rules Text": "On death spend all your LUCK. You rise on the start of the next round healing each of stam/drain/health up to 2x(spent LUCK) if they were below it. For the next 10 rounds you gain 1 temp hp at the start of each round you have a fly speed equal to your movement speed you have (CHA*5/2) radius fire damage aura that enemies must soak your (CAST STAT) in fire damage at the end  of round. You may do fire damage with your attacks rather than the normal damage type if desired. Lastly you also have weakness to cold 3 for the duration.",
+    "CP cost": "40",
+    "Affinity": "19R (24)"
+  },
+  "Fight me ": {
+    "AbilityNames": "Fight me ",
+    "Category": "Maneuver",
+    "Ability Description": "Allow your actions to provoke from target opponent they provoke if they attack you otherwise get a free intimidate vs. them",
+    "Rules Text": "Free action: Target opponent within your reach whose reach you are within. The next action you take this turn provokes an opportunity attack from the target. If they make the attack they provoke an opportunity attack from you. If they choose not to make the attack (lacking initiative or otherwise being unable to take such an action being unaware of you etc doesn't count) you make an intimidate check against them as a nonaction.",
+    "CP cost": "5",
+    "Affinity": "7G(9)"
+  },
+  "FIRE EVERYTHING": {
+    "AbilityNames": "FIRE EVERYTHING",
+    "Category": "Maneuver",
+    "Ability Description": "FIRE EVERYTHING",
+    "Rules Text": "Spend all your initiative. At the end of the round regain as much initiative as you spent on this ability. All initiative costs are reduced by (2) until the end of the round. You may activate this ability at any time as a nonaction but only once per round.  ",
+    "CP cost": "50",
+    "Affinity": "24R(30)"
+  },
+  "Foil": {
+    "AbilityNames": "Foil",
+    "Category": "Maneuver",
+    "Ability Description": "Spend (10) or 1L in melee if enemy cannot pay (10) init they lose the action they were attempting.",
+    "Rules Text": "Spend (10) or 1L in melee if enemy cannot pay (10) init they lose the action they were attempting. (needs balancing)",
+    "CP cost": "15",
+    "Affinity": "9U(12)"
+  },
+  "Folded Time": {
+    "AbilityNames": "Folded Time",
+    "Category": "Maneuver",
+    "Ability Description": "1L pull yourself from the future for 1 round next round disappear as you are pulled back for a round. ",
+    "Rules Text": "1L pull yourself from the future for 1 round next round disappear as you are pulled back for a round. ",
+    "CP cost": "100",
+    "Affinity": "24U(30)"
+  },
+  "Force an opening": {
+    "AbilityNames": "Force an opening",
+    "Category": "Maneuver",
+    "Ability Description": "pay (5) on top of your attack full defense does not apply vs. this attack enemies may spend (5) to prevent this for themselves",
+    "Rules Text": "(5) the next attack you make ignores an opponent's Full Defense. enemies may spend (5) to negate this per use.",
+    "CP cost": "5",
+    "Affinity": "14(W|R)(18)"
+  },
+  "Frenetic Boost": {
+    "AbilityNames": "Frenetic Boost",
+    "Category": "Maneuver",
+    "Ability Description": "Coinflip init boost",
+    "Rules Text": "Flip a coin before rolling initiative. If heads gain +1 init die this round. If tails -1 init die this round.",
+    "CP cost": "5",
+    "Affinity": "6U6R(15)"
+  },
+  "Gouge": {
+    "AbilityNames": "Gouge",
+    "Category": "Maneuver",
+    "Ability Description": "Attack that triggers a bleed that hurts on taking actions",
+    "Rules Text": "Make an attack net hits don't contribute to damage. This attack is soaked by physical soak. On a successful hit the target bleeds for NET HITS turns. While bleeding the target takes 1 health damage if they take a move or simple action 2 if they take a complex action. Magical healing or a medicine check vs. the remaining turns removes the bleed.",
+    "CP cost": "15",
+    "Affinity": "9B(18)"
+  },
+  "Ground shifting leap": {
+    "AbilityNames": "Ground shifting leap",
+    "Category": "Maneuver",
+    "Ability Description": "Leap to a target cratering the earth in an aoe around",
+    "Rules Text": "As a complex action make a jump this is treated as a running jump even if you started from a standstill. Upon landing make a STR*2 check against the ground. if you surpass its barrier rating you break through and create a HITS/4 *5ft radius hole centered on you otherwise nothing happens.Malleable surface: if you fail to surpass the barrier rating (possibly due to the dirt ground being arbitrarily impassable vs. basic attacks for instance) you create a HITS/2 *5ft radius dent that is treated as difficult terrain and force all creatures in the area to make acrobatics checks against half your STR check or fall prone.",
+    "CP cost": "5",
+    "Affinity": "4R(9)"
+  },
+  "Guide Fate": {
+    "AbilityNames": "Guide Fate",
+    "Category": "Maneuver",
+    "Ability Description": "Spend (5) to let an adjacent ally explode dice or reroll",
+    "Rules Text": "You have one fate reroll that you may trigger for an ally for (5) that functions the same a a reroll generated from spending luck. Whenever you would regain a point of luck this fate reroll refreshes.",
+    "CP cost": "15",
+    "Affinity": "16R(21)"
+  },
+  "Headsman": {
+    "AbilityNames": "Headsman",
+    "Category": "Maneuver",
+    "Ability Description": "Attacking technique vs. prone targets. Bonus damage",
+    "Rules Text": "(5) You may attempt to decapitate a prone target with a melee weapon. The dice rolled for this attack explode and you ignore half the target's armor. ",
+    "CP cost": "20",
+    "Affinity": "10B"
+  },
+  "Herding assault": {
+    "AbilityNames": "Herding assault",
+    "Category": "Maneuver",
+    "Ability Description": "Hit does reduced damage force move your target NET HITS",
+    "Rules Text": "Net hits do not contribute to damage. This attack is soaked with physical soak. move your target NET HITS if the attack hits.",
+    "CP cost": "5",
+    "Affinity": "4(U|G)(6)"
+  },
+  "Hit the Deck": {
+    "AbilityNames": "Hit the Deck",
+    "Category": "Maneuver",
+    "Ability Description": "Drop prone reroll defense vs indirect AoE",
+    "Rules Text": "(5)You drop prone. Reroll a defense roll you just made against an indirect area attack ",
+    "CP cost": "5",
+    "Affinity": "-6"
+  },
+  "Inspire Perserverance": {
+    "AbilityNames": "Inspire Perserverance",
+    "Category": "Maneuver",
+    "Ability Description": "Give one/some allies an extra roll to end ongoing effects",
+    "Rules Text": "1: Complex action one ally may make another roll to end an ongoing effect as if rolling against it for the first time2: As 1 except as a Simple action3: As 2 except with 3 bonus dice. Also; Complex action up to CHA allies may make another roll to end an ongoing effect as if rolling against it for the first time.",
+    "CP cost": "10 per",
+    "Affinity": "6W(12)"
+  },
+  "Leaping Flame": {
+    "AbilityNames": "Leaping Flame",
+    "Category": "Maneuver",
+    "Ability Description": "Poof gone in thin air like a magic trick",
+    "Rules Text": "Trigger: an enemy you are aware of within (twice your speed) resolves an attack against you.(5) Teleport to a location adjacent to the triggering enemy.",
+    "CP cost": "10",
+    "Affinity": "4W4R(12)"
+  },
+  "Lend a Distraction": {
+    "AbilityNames": "Lend a Distraction",
+    "Category": "Maneuver",
+    "Ability Description": "(5) ally's next action doesn't provoke",
+    "Rules Text": "(5) to assist an ally with a Con check producing a distraction for stealth purposes (hits as a penalty to opponent's dicepool) preventing distracted target from being able to take attacks of opportunity...",
+    "CP cost": "5",
+    "Affinity": "7(W|R)(9)"
+  },
+  "Lunge": {
+    "AbilityNames": "Lunge",
+    "Category": "Maneuver",
+    "Ability Description": "Attacking technique with extra range and added movement. Bonus damage cannot attempt active defense until start of next turn.",
+    "Rules Text": "At the start of a lunge you may move up to two squares in a straight line this movement does not provoke attacks of opportunity. You are treated as charging for this attack (+2 dicepool). After attempting a lunge you may not attempt any active defense until the start of your next turn.",
+    "CP cost": "5",
+    "Affinity": "4(B|R)(6)"
+  },
+  "Make Time for That": {
+    "AbilityNames": "Make Time for That",
+    "Category": "Maneuver",
+    "Ability Description": "Spend 1 luck gain 10 init spend this only on red abilities",
+    "Rules Text": "Spend 1 luck gain 10 init spend this only on red abilities. Nonaction",
+    "CP cost": "5",
+    "Affinity": "7R(9)"
+  },
+  "Mean Green Stompy Machine": {
+    "AbilityNames": "Mean Green Stompy Machine",
+    "Category": "Maneuver",
+    "Ability Description": "#NAME?",
+    "Rules Text": "Up to cha friendly targets get +6 on all dicepools involving STR or BOD +3 DV on weapon attacks that scale with STR ignore enemies' full defense. For each subject this benefit expires at the end of their turn. Free action (10)",
+    "CP cost": "40",
+    "Affinity": "24G(30)"
+  },
+  "Mirrored Edge": {
+    "AbilityNames": "Mirrored Edge",
+    "Category": "Maneuver",
+    "Ability Description": "Consecutive attacks generate additional attacks",
+    "Rules Text": "Make an attack with your weapon(s). Then make another attack for each consecutive turn beyond the first you have used this maneuver this round. (ex: third turn in a row make three attacks). ",
+    "CP cost": "40",
+    "Affinity": "15R (30)"
+  },
+  "My body as a shield": {
+    "AbilityNames": "My body as a shield",
+    "Category": "Maneuver",
+    "Ability Description": "(5) take a hit meant for an adjacent ally",
+    "Rules Text": "(5) When an adjacent ally would next be hit by an attack you are hit by that attack instead.",
+    "CP cost": "5",
+    "Affinity": "4W(6)"
+  },
+  "Necropotence": {
+    "AbilityNames": "Necropotence",
+    "Category": "Maneuver",
+    "Ability Description": "spend life boost init",
+    "Rules Text": "Spend X life and X Drain when rolling initiative you may reroll all dice of 2X or lower. Additionally you may pay 2 life and 1 Drain per (5) of the init cost of an action you otherwise do not have initiative for.",
+    "CP cost": "30",
+    "Affinity": "14B(18)"
+  },
+  "Ninjutsu Decoy": {
+    "AbilityNames": "Ninjutsu Decoy",
+    "Category": "Maneuver",
+    "Ability Description": "Set up a decoy at your position turn invisible",
+    "Rules Text": "Complex actionmake a stealth roll and leave behind a convincing decoy. Decoy fades after sustaining one hit. Enemies may see through the decoy with an (OPPOSED CHECK). (COOLDOWN)",
+    "CP cost": "15",
+    "Affinity": "9(U|B)(18)"
+  },
+  "Painful Precision": {
+    "AbilityNames": "Painful Precision",
+    "Category": "Maneuver",
+    "Ability Description": "Take 2 unresisted lethal damage to add one free hit to a roll",
+    "Rules Text": "Take 2 unresisted lethal damage to add one free hit to a roll before dice are rolled.",
+    "CP cost": "15",
+    "Affinity": "14B(18)"
+  },
+  "Phasing": {
+    "AbilityNames": "Phasing",
+    "Category": "Maneuver",
+    "Ability Description": "Pass through walls of varying thickness",
+    "Rules Text": "As a simple action you may fully pass through thin materials and structures up to a few inches thick. Lead and other specific materials cannot be so bypassed._____________________________________As previous rank except you may pass through up to a foot in thickness._____________________________________As previous rank except you may pass through up to 10'_____________________________________You have a 30s pool of phasing recharges at 3s every 6s when not in use",
+    "CP cost": "15/20/25/30",
+    "Affinity": "6U(12)7U(15)9U(18)10U(21)"
+  },
+  "Pinning Strike": {
+    "AbilityNames": "Pinning Strike",
+    "Category": "Maneuver",
+    "Ability Description": "Pin target to nearby surface harder to remove the larger the weapon is.",
+    "Rules Text": "You may attempt to pin an enemy to a nearby surface. If you hit do no damage. Instead the enemy is pinned and must roll grapple or AGI + ESCAPE ARTIST vs. TOTAL HITS + (weapon size modifier) to escape. Every successive check gains 1 free hit to escape._____________________________________As previous rank except the target takes damage on hit and on escaping. Net hits do not contribute to damage on the initial attack._____________________________________As previous rank except you may target multiple adjacent enemies Impaling them together instead of to a surface. Net hits do not contribute to damage on the initial attack.",
+    "CP cost": "5/10/2010",
+    "Affinity": "4(R|B)(6) per"
+  },
+  "Prescient Teleport": {
+    "AbilityNames": "Prescient Teleport",
+    "Category": "Maneuver",
+    "Ability Description": "Teleport anytime you damn well please",
+    "Rules Text": "(5) as a nonaction at any time. Resolve one of your teleportation abilities.",
+    "CP cost": "40",
+    "Affinity": "19U(24)"
+  },
+  "Pro X": {
+    "AbilityNames": "Pro X",
+    "Category": "Maneuver",
+    "Ability Description": "Grant (+dice) protection from color",
+    "Rules Text": "Grant (+RANK) protection from color. Color selection is locked upon purchase of this ability. This benefit lasts for one minute or until you conffer Pro X on another target. Simple Action",
+    "CP cost": "10 per",
+    "Affinity": "4W(6) per"
+  },
+  "Rain of Arrows": {
+    "AbilityNames": "Rain of Arrows",
+    "Category": "Maneuver",
+    "Ability Description": "You can attack an area with arrows",
+    "Rules Text": "You can target up to AGI continguous squares with simultaneous ranged attacks each at -6 dicepool",
+    "CP cost": "10",
+    "Affinity": "G"
+  },
+  "Rain of Steel": {
+    "AbilityNames": "Rain of Steel",
+    "Category": "Maneuver",
+    "Ability Description": "Spend extra initiative become a maelstrom of weaponry for one round",
+    "Rules Text": "Complex action. (5) All enemies within reach are subject to a melee attack from you at -5 dicepool. All enemies treat the area covered by your reach as difficult terrain. All enemies outside your reach that enter while Rain of Steel continues are subject to a single attack at -5. You are treated as on full parry while Rain of Steel persists. Rain of steel lasts until the end of the round.",
+    "CP cost": "30",
+    "Affinity": "6W8(W|R|G)(18)"
+  },
+  "Reactive Block": {
+    "AbilityNames": "Reactive Block",
+    "Category": "Maneuver",
+    "Ability Description": "You may attempt a free block against enemies you have attacked in melee previously this round",
+    "Rules Text": "Once per round you may attempt a block at (0) against an enemy you have attacked this round.",
+    "CP cost": "15",
+    "Affinity": "4W(9)"
+  },
+  "Reckless Swing": {
+    "AbilityNames": "Reckless Swing",
+    "Category": "Maneuver",
+    "Ability Description": "Take dice pool penalty to improve damage or shave off enemy's dodge pool",
+    "Rules Text": "For every -2 penalty you take when attacking with this maneuver add +1 to the damage value of the attack up to +AGI",
+    "CP cost": "15",
+    "Affinity": "9(B|R)(12)"
+  },
+  "Red Rover": {
+    "AbilityNames": "Red Rover",
+    "Category": "Maneuver",
+    "Ability Description": "Group charge",
+    "Rules Text": "Make a charging attack. Allies can spend (10) to also make a charging attack as an interrupt. If you spend (10) the cost for allies joining the charge becomes (5). Resolve all attacks after you and all allies have moved. ",
+    "CP cost": "5",
+    "Affinity": "4W4R(12)"
+  },
+  "Redirect": {
+    "AbilityNames": "Redirect",
+    "Category": "Maneuver",
+    "Ability Description": "Spend (5) after counterspelling to redirect spell",
+    "Rules Text": "Spend (5) after counterspelling to redirect spell",
+    "CP cost": "5",
+    "Affinity": "7U(9)"
+  },
+  "Retalliatory Strike": {
+    "AbilityNames": "Retalliatory Strike",
+    "Category": "Maneuver",
+    "Ability Description": "Retalliate when struck in melee",
+    "Rules Text": "(5) when hit you may make an attack against the opponent that struck you in melee.",
+    "CP cost": "15",
+    "Affinity": "7(W|B)(9)"
+  },
+  "Revivify": {
+    "AbilityNames": "Revivify",
+    "Category": "Maneuver",
+    "Ability Description": "Spend luck restore a recently deceased creature to life.",
+    "Rules Text": "Spend (2L) heal an ally for CAST STAT without inflicting healing drain. This effect can be used on creatures that have died within the past round returning them to life if the healing is sufficient to remove excess overflow. This effect requires you to be touching the target.",
+    "CP cost": "20",
+    "Affinity": "9W(18)"
+  },
+  "Second Chance": {
+    "AbilityNames": "Second Chance",
+    "Category": "Maneuver",
+    "Ability Description": "Spend luck points rewind turn",
+    "Rules Text": "Spend 3L as an interrupt. Rewind your turn.",
+    "CP cost": "20",
+    "Affinity": "3(U|R)(18)"
+  },
+  "Second Wind": {
+    "AbilityNames": "Second Wind",
+    "Category": "Maneuver",
+    "Ability Description": "Generate temp hp",
+    "Rules Text": "Roll BOD + WIL. For every 2 hits you gain 1 temp hp.",
+    "CP cost": "5",
+    "Affinity": "4(W|G)(6)"
+  },
+  "Shield Counter": {
+    "AbilityNames": "Shield Counter",
+    "Category": "Maneuver",
+    "Ability Description": "When an enemy strikes bash him in the face first",
+    "Rules Text": "(5) when wielding a shield and an enemy in melee range is making an attack with your shield. The damage from the attack is the Target Number for the physical resist roll the enemy must make. If they fail the physical resist check their attack resolves as a miss.",
+    "CP cost": "5",
+    "Affinity": "7W(9)"
+  },
+  "Shifting Synapse": {
+    "AbilityNames": "Shifting Synapse",
+    "Category": "Maneuver",
+    "Ability Description": "You may use your physical resist in place of your mental resist at a cost",
+    "Rules Text": "You may spend an additional (5) when rolling mental resistance to use your physical resistance instead.",
+    "CP cost": "30",
+    "Affinity": "8U8G(21)"
+  },
+  "Spatial Slip": {
+    "AbilityNames": "Spatial Slip",
+    "Category": "Maneuver",
+    "Ability Description": "boost dodge teleport after dodge roll",
+    "Rules Text": "spend an additional (5) as part of a dodge. Gain +5 dice after resolving the dodge you may trigger one of your free action teleportation abilities as a nonaction.",
+    "CP cost": "10",
+    "Affinity": "9U(18)"
+  },
+  "Spell Reflection": {
+    "AbilityNames": "Spell Reflection",
+    "Category": "Maneuver",
+    "Ability Description": "Spend (5?10?) when successfully resisting a spell to redirect it",
+    "Rules Text": "Spend (5) when you successfully resist a direct spell to choose a new target for the spell resolving it as if cast by the original caster.",
+    "CP cost": "10",
+    "Affinity": "9(U|R)(12)"
+  },
+  "Spread shot": {
+    "AbilityNames": "Spread shot",
+    "Category": "Maneuver",
+    "Ability Description": "You may attack multiple opponents as part of a single ranged attack",
+    "Rules Text": "Make a ranged attack against however many targets you choose in a 90 degree cone within your first range increment splitting your dicepool among all targets.",
+    "CP cost": "5",
+    "Affinity": "2(R|G)(6)"
+  },
+  "Spring up": {
+    "AbilityNames": "Spring up",
+    "Category": "Maneuver",
+    "Ability Description": "Stand up as free action",
+    "Rules Text": "Stand up as free action that does not provoke attacks of opportunity. All your jumps are treated as having a running start.",
+    "CP cost": "4",
+    "Affinity": "2(R|G)(3)"
+  },
+  "Stalwart Vanguard": {
+    "AbilityNames": "Stalwart Vanguard",
+    "Category": "Maneuver",
+    "Ability Description": "You always go last during an initiative pass gain (armor?)",
+    "Rules Text": "You may opt to act last in an initiative pass before initiative is rolled. If multiple creatures would act last tiebreak as usual with actual initiative rolls then REA and finally LUK. Gain +2 armor per rank until the start of the next initiative pass.",
+    "CP cost": "10 per",
+    "Affinity": "4G(6)9G(12)14G(18)19G(24)24G(30)"
+  },
+  "Stay death": {
+    "AbilityNames": "Stay death",
+    "Category": "Maneuver",
+    "Ability Description": "Target ally (gains + on atk and ignores one lethal blow) until next initiative roll.",
+    "Rules Text": "Complex action. One ally within (CHA*10 ft) gains 1 die on all attack rolls. Negate the damage from the next attack that would reduce the subject's health below zero if this occurs the die bonus ends. 1L Trigger this ability as an interrupt.These benefits last until the next initiative roll.",
+    "CP cost": "10",
+    "Affinity": "7(W|B)(15)"
+  },
+  "Sunflask": {
+    "AbilityNames": "Sunflask",
+    "Category": "Maneuver",
+    "Ability Description": "Prepare (number) heals at dawn heals WHITE characters for more",
+    "Rules Text": "Prepare (WIL) flasks at dawn. A character who consumes a flask rolls 2xBOD (or the creator of the sunflask rolls first aid) and heals up to that many hits taking drain as normal for magical healing. You gain +2 to the check if the recipient is a WHITE character.",
+    "CP cost": "10",
+    "Affinity": "4W(9)"
+  },
+  "Surge of Resilience": {
+    "AbilityNames": "Surge of Resilience",
+    "Category": "Maneuver",
+    "Ability Description": "IRON HEART SURGE THE SUN",
+    "Rules Text": "(5) or free action make another roll against a debilitating condition (i.e. stun) as if you were resisting it the first time. Success removes the condition.",
+    "CP cost": "15",
+    "Affinity": "4(W|G)(9)"
+  },
+  "Tactical Surge": {
+    "AbilityNames": "Tactical Surge",
+    "Category": "Maneuver",
+    "Ability Description": "1L use a white maneuver immediately as though it was an interrupt.",
+    "Rules Text": "1L use a white maneuver immediately as though it was an interrupt.",
+    "CP cost": "10",
+    "Affinity": "9W(12)"
+  },
+  "Temporal Extortion": {
+    "AbilityNames": "Temporal Extortion",
+    "Category": "Maneuver",
+    "Ability Description": "Spend life take your next turn",
+    "Rules Text": "Spend 2 life during your turn (nonaction) you act again after the end of this turn if you have the initiative to do so  ",
+    "CP cost": "15",
+    "Affinity": "12B(15)"
+  },
+  "Thunderous Impact": {
+    "AbilityNames": "Thunderous Impact",
+    "Category": "Maneuver",
+    "Ability Description": "Can attack multiple opponents at range with thrown heavy weapon. AOE = STR + (3 if weapon is 2h) + rankTargeted area becomes difficult terrain if damage threshold is met. (Damage value + rank \u00e2\u2030\u00a5 threshold)",
+    "Rules Text": "(5) Can attack multiple opponents at range with thrown heavy weapon. AOE = STR + (3 if weapon is 2h) + rankTargeted area becomes difficult terrain if damage threshold is met. (Damage value + rank \u00e2\u2030\u00a5 threshold)",
+    "CP cost": "10",
+    "Affinity": "7(R|G)(15)"
+  },
+  "Time Dilation": {
+    "AbilityNames": "Time Dilation",
+    "Category": "Maneuver",
+    "Ability Description": "boost later init",
+    "Rules Text": "Next round maximize all your initiative dice. You can spend 1 luck point to trigger this ability as a free action.",
+    "CP cost": "40",
+    "Affinity": "24U(30)"
+  },
+  "Toss": {
+    "AbilityNames": "Toss",
+    "Category": "Maneuver",
+    "Ability Description": "toss creature deal damage or enable ally to make attack",
+    "Rules Text": "1. You must have an enemy grappled or a willing adjacent ally2. Make a ranged attack with 1(ranges)3. If enemy base damage = (?body). If ally your net hits contribute to the dice pool on their attack",
+    "CP cost": "5",
+    "Affinity": "7R(9)"
+  },
+  "Trick shot": {
+    "AbilityNames": "Trick shot",
+    "Category": "Maneuver",
+    "Ability Description": "Not bending bullets but you can shoot around corners n such",
+    "Rules Text": "At one point during the trajectory of your projectile you may have it take up to one 90 turn.",
+    "CP cost": "5",
+    "Affinity": "7(R|G)(9)"
+  },
+  "Triumphant Shout": {
+    "AbilityNames": "Triumphant Shout",
+    "Category": "Maneuver",
+    "Ability Description": "Mass intimidate on knockout/kill",
+    "Rules Text": "(5) as a nonaction after your attack renders a creature dead or disabled. You may attempt an intimidation check against all opponents that can see both you and the aforementioned victim.",
+    "CP cost": "5",
+    "Affinity": "7(R|G)(9)"
+  },
+  "Twin Strike": {
+    "AbilityNames": "Twin Strike",
+    "Category": "Maneuver",
+    "Ability Description": "Hit simultaneously with two weapons",
+    "Rules Text": "(10) Make two attacks at full dice pool against single target. On one hit apply damage as normal. On two hits total net successes between both attacks and apply that on top of the damage for the less damaging weapon.",
+    "CP cost": "20",
+    "Affinity": "12(W|R)(15)"
+  },
+  "Twist the Blade": {
+    "AbilityNames": "Twist the Blade",
+    "Category": "Maneuver",
+    "Ability Description": "Followup attack if you strike an enemy that was not actively defending.",
+    "Rules Text": "Trigger: an enemy takes damage from your light weapon melee attack and was not actively defending. Spend (5) as a nonaction. Make another attack with the same weapon at base DV 0 this attack cannot be actively defended against this attack has 50% armor penetration.  ",
+    "CP cost": "20",
+    "Affinity": "7B(15)"
+  },
+  "Vanguard Strike": {
+    "AbilityNames": "Vanguard Strike",
+    "Category": "Maneuver",
+    "Ability Description": "You lead the attack your allies becoming more effective at helping you focus a target down.",
+    "Rules Text": "Make a melee attack net hits don't contributeto damage. The target is marked on hit and all allies attacking the marked target gain +1 hits when attacking the target. You may only have one target marked by vanguard strike at a time striking a new target changes the target. The target is no longer marked at the end of the next round.",
+    "CP cost": "5",
+    "Affinity": "12W(15)"
+  },
+  "Vault": {
+    "AbilityNames": "Vault",
+    "Category": "Maneuver",
+    "Ability Description": "Target is enchanted with the powers of flight for the round",
+    "Rules Text": "Simple Action. One ally within (RANGE) gains a fly speed equal to their movement speed until the end of the round.",
+    "CP cost": "25",
+    "Affinity": "8(U|R|B|W)(9)"
+  },
+  "War stomp": {
+    "AbilityNames": "War stomp",
+    "Category": "Maneuver",
+    "Ability Description": "Str check vs. balance checks knock enemies prone in AoE or stagger.",
+    "Rules Text": "Roll 2 * STR. All enemies within (STR/2) squares must roll higher on AGI + Gymnastics or be knocked prone. ",
+    "CP cost": "10",
+    "Affinity": "7G(9)"
+  },
+  "Weather the blow": {
+    "AbilityNames": "Weather the blow",
+    "Category": "Maneuver",
+    "Ability Description": "Spend initiative gain damage dampening reactively against one hit",
+    "Rules Text": "(5) as an interrupt gain damage dampening equal to half your BODY against one attack.",
+    "CP cost": "10",
+    "Affinity": "7(W|G)(9)"
+  },
+  "Whirlwind attack": {
+    "AbilityNames": "Whirlwind attack",
+    "Category": "Maneuver",
+    "Ability Description": "Cleave 360",
+    "Rules Text": "You may attack any number of enemies in the one attack splitting your full dicepool among them. (Note that reach is an attack modifier and not innate to the dicepool thus it is added to every attack after the dicepool has been split)________________________As previous rank but you also gain the option to spend (10) Attack all enemies within reach.",
+    "CP cost": "5 10",
+    "Affinity": "4(W|R|G)(6)9(W|R|G)(12)"
+  },
+  "Luck of the Hour": {
+    "AbilityNames": "Luck of the Hour",
+    "Category": "Maneuver",
+    "Ability Description": "spend init in place of luck",
+    "Rules Text": "You may spend (10) per (L) for abilities that cost (L) instead of their normal cost",
+    "CP cost": "10",
+    "Affinity": "9R(18)"
+  },
+  "Mcguiver": {
+    "AbilityNames": "Mcguiver",
+    "Category": "Manuever",
+    "Ability Description": "For better or for worse things seem to unexplicably break or work when you mess with them",
+    "Rules Text": "You may attempt to fix or break mechanical and/or magical devices such as locks or crystal balls.  Who knows what will happen!",
+    "CP cost": "5",
+    "Affinity": "7(U|R)(9)"
+  },
+  "Bond of Pursuit": {
+    "AbilityNames": "Bond of Pursuit",
+    "Category": "Mark",
+    "Ability Description": "Mark enemy pursue and punish their ignorance of you in combat.",
+    "Rules Text": "As a free action you may mark a target within (CHA*5)ft with your Bond of Pursuit. This mark persists for 24 hours or until the subject is slain. You may only have one subject marked at a time and cannot mark another while an older mark exists.Any mode of movement that takes the subject away from you while the subject is within your reach provokes an intercept at (0) before the movement is resolved. You may shift as a nonaction to follow the subject after it has moved or teleport as a nonaction if you possess capabilities at least matching that of the subject. ",
+    "CP cost": "15",
+    "Affinity": "7(W|R|G)(9)"
+  },
+  "Vendetta": {
+    "AbilityNames": "Vendetta",
+    "Category": "Mark",
+    "Ability Description": "Declare vendetta target bonus vs. them penalties vs. other targets. Delay on new vendetta target if you fail to slay current one.",
+    "Rules Text": "Nonaction. Spend (1) luck to declare a vendetta against a target within (RANGE). Gain 1 free hit on all attacks against that target while it is subject to your vendetta. It gains 1 free hit on all attacks against you while it is subject to your vendetta. Your vendetta ends when the target falls unconscious you fall unconscious or you spend (1) luck to change the target of your vendetta.",
+    "CP cost": "10",
+    "Affinity": "7B7(B|R)(18)"
+  },
+  "Caustic demise": {
+    "AbilityNames": "Caustic demise",
+    "Category": "Metamagic",
+    "Ability Description": "Enemies killed by your acid abilities explode ",
+    "Rules Text": "Enemies killed by your acid abiilities explode for FORCE damage to adjacent enemies",
+    "CP cost": "30",
+    "Affinity": "9(B|G)(12)"
+  },
+  "Centering Technique": {
+    "AbilityNames": "Centering Technique",
+    "Category": "Metamagic",
+    "Ability Description": "By spending longer to cast a spell you reduce the drain that spell has on you.  You gain the ability to cast a spell over multiple rounds.",
+    "Rules Text": "You may extend the casting duration of a spell by a multiple of its base casting action. For each increment add half your WIL to the drain dicepool for this casting up to a total of 2*WIL contributed by this ability. For each interval you can increase the FORCE of the spell by up to 1 over the normal maximum FORCE. Casting at FORCE above your normal maximum causes drain damage to be physical instead of stamina damage.Possessing this ability removes WIL from your drain soak pool for all spells not cast with centering technique.",
+    "CP cost": "0",
+    "Affinity": "0"
+  },
+  "Contingency": {
+    "AbilityNames": "Contingency",
+    "Category": "Metamagic",
+    "Ability Description": "Invest luck into holding spell until chosen trigger",
+    "Rules Text": "Spend 1 Luck you can\u00e2\u20ac\u2122t regain this point of luck while you have an active contingency. Cast a spell to be your contingency noting your current dicepool and other parameters resisting drain when creating this contingency. Set a condition under which the contingency will trigger...",
+    "CP cost": "30",
+    "Affinity": "10U(21)"
+  },
+  "Delayed Enhancement": {
+    "AbilityNames": "Delayed Enhancement",
+    "Category": "Metamagic",
+    "Ability Description": "You may delay the effects of a buff to begin at the start of the next round.",
+    "Rules Text": "You may delay the effects of a buff to begin at the start of the next round by spending a free action as part of the action of activating the buff effect.",
+    "CP cost": "5",
+    "Affinity": "9(W|U|G)(12)"
+  },
+  "Echoing spell": {
+    "AbilityNames": "Echoing spell",
+    "Category": "Metamagic",
+    "Ability Description": "Increase spell drain by 3 spell can be recast within one round as a nonaction on your turn",
+    "Rules Text": "You may Increase a spells drain by 3.  If you do the spell can be recast as a nonaction on your next turn drain is not rolled for this recast.",
+    "CP cost": "10",
+    "Affinity": "7U7(W|U)(18)"
+  },
+  "Fork": {
+    "AbilityNames": "Fork",
+    "Category": "Metamagic",
+    "Ability Description": "Cast a copy of a spell being cast",
+    "Rules Text": "Spend (15) cast another copy of the spell",
+    "CP cost": "10",
+    "Affinity": "7R(9)"
+  },
+  "Frostborn": {
+    "AbilityNames": "Frostborn",
+    "Category": "Metamagic",
+    "Ability Description": "Deal 1 damage when your cold effects would reduce an opponent's initiative below zero",
+    "Rules Text": "When your Cold effect would reduce an opponent's initiative to a value equal to or below 0 you also deal 1 cold damage this ability cannot trigger itself. ",
+    "CP cost": "15",
+    "Affinity": "3B3U(15)"
+  },
+  "Irresistible Spell": {
+    "AbilityNames": "Irresistible Spell",
+    "Category": "Metamagic",
+    "Ability Description": "(5) as a cost when casting spell this spell cannot be countered",
+    "Rules Text": "(5) as a cost when casting spell this spell cannot be countered",
+    "CP cost": "10",
+    "Affinity": "4G(9)"
+  },
+  "Lightning Rod": {
+    "AbilityNames": "Lightning Rod",
+    "Category": "Metamagic",
+    "Ability Description": "You can choose for your lightning damage to apply a static charge instead of potentially inflicting a stun. Reduce enemies lightning resistance by 1 for each static charge. You can consume charges to increase the DC of a stun you are attempting to inflict. You can consume charges for your lightning damage to chain.",
+    "Rules Text": "You can choose for your lightning damage to apply a static charge instead of potentially inflicting a stun. Reduce enemies lightning resistance by 1 for each static charge. You can consume charges to increase the DC of a stun you are attempting to inflict by +1 for each charge. You can consume charges for your lightning damage to chain (3 charges per additional target targets of the initial effect cannot be targets of the chain).  ",
+    "CP cost": "15",
+    "Affinity": "4U4R(18)"
+  },
+  "Lingering (SPELL SCHOOL)": {
+    "AbilityNames": "Lingering (SPELL SCHOOL)",
+    "Category": "Metamagic",
+    "Ability Description": "Sustained spells of chosen school persist for up to RANK rounds after you stop sustaining them",
+    "Rules Text": "Sustained spells of chosen school persist for up to RANK rounds after you stop sustaining them",
+    "CP cost": "30/40/50",
+    "Affinity": "7U(9)"
+  },
+  "Mass combustion": {
+    "AbilityNames": "Mass combustion",
+    "Category": "Metamagic",
+    "Ability Description": "Enemies you set alight have a chance to set adjacent enemies alight each turn",
+    "Rules Text": "For enemies that you cause to burn at the start of their turn adjacent enemies must resist the current flame intensity with Armor Soak or catch on fire.",
+    "CP cost": "15",
+    "Affinity": "9R(12)"
+  },
+  "Multicast": {
+    "AbilityNames": "Multicast",
+    "Category": "Metamagic",
+    "Ability Description": "Multispelling bonus limit drain increase extra dice",
+    "Rules Text": "You do not suffer increased drain for casting multiple spells in one action. Gain +1 dice to each spellcasting roll when multicasting. ",
+    "CP cost": "20",
+    "Affinity": "7(U|R)(15)"
+  },
+  "Permafrost": {
+    "AbilityNames": "Permafrost",
+    "Category": "Metamagic",
+    "Ability Description": "Initiative damage beyond 0 is applied to enemy's next turn",
+    "Rules Text": "Initiative damage resulting from your cold effects that would reduce an enemy's initiative below 0 is applied towards their next round's initiative.",
+    "CP cost": "5",
+    "Affinity": "9U(12)"
+  },
+  "Sculpt Spell": {
+    "AbilityNames": "Sculpt Spell",
+    "Category": "Metamagic",
+    "Ability Description": "Reshape AoEs. Increase drain by 1.",
+    "Rules Text": "For spells with an AOE you may shape the radial aoe into either a a cylinder (F/4*STAT wide 3F/4*STAT high) cone (F*STAT ft.) line (4*F*STAT) ball (F/2  * STAT radius) or 4 cubes (F/4 * STAT ft.).",
+    "CP cost": "5",
+    "Affinity": "7U(9)"
+  },
+  "Stoke the flames": {
+    "AbilityNames": "Stoke the flames",
+    "Category": "Metamagic",
+    "Ability Description": "Increase severity of ignite by hitting a burning target",
+    "Rules Text": "Burning enemies that fail the save vs. your fire abilities increase the Force of their Burning by 2 or to the Force of your fire effect whichever is higher.",
+    "CP cost": "15",
+    "Affinity": "6R(12)"
+  },
+  "Tactical Spell": {
+    "AbilityNames": "Tactical Spell",
+    "Category": "metamagic",
+    "Ability Description": "Your area spellcasts fold around specified targets ignoring them",
+    "Rules Text": "adds +1 drain any number of subjects that would be subject to the aoe spell being augmented can be designated as ignored by the spell",
+    "CP cost": "5",
+    "Affinity": "9U(18)"
+  },
+  "Acrobat": {
+    "AbilityNames": "Acrobat",
+    "Category": "Passive",
+    "Ability Description": "Move at full speed doing gymnastics at no penalty. Ignore most penalties for having hands full during gymnastics.",
+    "Rules Text": "move at full speed doing gymnastics at no penalty. Ignore most penalties for having hands full during gymnastics.",
+    "CP cost": "5",
+    "Affinity": "4(U|R)(6)"
+  },
+  "Adaptive Resistance": {
+    "AbilityNames": "Adaptive Resistance",
+    "Category": "Passive",
+    "Ability Description": "Gain dampening/elemental dampening after taking appropriate damage type",
+    "Rules Text": "After taking damage gain RANK damage dampening that only applies to that damage type. This resistance expires after 10*BOD minutes or when this ability is triggered again.",
+    "CP cost": "10 per",
+    "Affinity": "7G(9)14G(18)21G(27)"
+  },
+  "Adrenaline Surge": {
+    "AbilityNames": "Adrenaline Surge",
+    "Category": "Passive",
+    "Ability Description": "You are more likely to go first at the start of a round",
+    "Rules Text": "Treat your initiative as 5 higher for determining the acting order at the start of a round.",
+    "CP cost": "10",
+    "Affinity": "6R(12)"
+  },
+  "Arresting Impact": {
+    "AbilityNames": "Arresting Impact",
+    "Category": "Passive",
+    "Ability Description": "Dealing damage to an enemy stops its movement",
+    "Rules Text": "When you hit an enemy with an AoO or readied attack it loses all remaining movement for the turn stopping in place if it was moving. Airborne creatures may fall if they cannot hover.",
+    "CP cost": "10",
+    "Affinity": "6(W|B)(12)"
+  },
+  "Bardic Knowledge": {
+    "AbilityNames": "Bardic Knowledge",
+    "Category": "Passive",
+    "Ability Description": "Generally applicable knowledge checks",
+    "Rules Text": "For a given topic you may make a Bardic Knowledge roll of (2*RANK + INTUITION or LOGIC as relevant). The general thresholds for recalling useful information are as follows.1: Common Knowledge3: Uncommon knowledge4: Obscure / Hard to come by5: Extremely Obscure",
+    "CP cost": "5101520",
+    "Affinity": "2U(3) per"
+  },
+  "Blandness": {
+    "AbilityNames": "Blandness",
+    "Category": "Passive",
+    "Ability Description": "Harder to remember harder to pick out of a crowd",
+    "Rules Text": "Apply a -3 penalty to all attempts to notice you in a crowd or remember your features. This bonus does not apply if exotic clothing / gear would make you stand out.",
+    "CP cost": "4",
+    "Affinity": "4B(6)"
+  },
+  "Blindsense": {
+    "AbilityNames": "Blindsense",
+    "Category": "Passive",
+    "Ability Description": "Perceive general location of things",
+    "Rules Text": "10/30/60/100ft blindsense",
+    "CP cost": "10203040",
+    "Affinity": "7(B|G)(9)12(B|G)(15)16(B|G)(21)21(B|G)(27)"
+  },
+  "Blindsight": {
+    "AbilityNames": "Blindsight",
+    "Category": "Passive",
+    "Ability Description": "Pinpoint awareness of things around you",
+    "Rules Text": "5/15/30/50ft blindsight",
+    "CP cost": "20406080",
+    "Affinity": "9(W|U|G)(12)14(W|U|G)(18)19(W|U|G)(24)24(W|U|G)(30"
+  },
+  "Blinkstrike": {
+    "AbilityNames": "Blinkstrike",
+    "Category": "Passive",
+    "Ability Description": "You may teleport as part of your attack action awareness permitting",
+    "Rules Text": "You may use a teleport ability as part of an attack action. Use your departure location for determining LoS.",
+    "CP cost": "20",
+    "Affinity": "6U10(U|B|R)(21)"
+  },
+  "Blood Magic": {
+    "AbilityNames": "Blood Magic",
+    "Category": "Passive",
+    "Ability Description": "Soak drain with BOD take drain as health.",
+    "Rules Text": "Lose all sources of WIL to your drain soak dicepool. Gain BOD to your drain dicepool. You have no drain bar. When you are the recipient of healing the caster must give up health or stamina at a 1:1 rate to heal you. You take all drain damage as health damage.",
+    "CP cost": "0",
+    "Affinity": "4B(6)"
+  },
+  "Blood Mana": {
+    "AbilityNames": "Blood Mana",
+    "Category": "Passive",
+    "Ability Description": "You may take drain as lethal",
+    "Rules Text": "You may choose to take any amount of drain you would suffer as twice its value in lethal damage.",
+    "CP cost": "30",
+    "Affinity": "7B(15)"
+  },
+  "Blunt the Storm": {
+    "AbilityNames": "Blunt the Storm",
+    "Category": "Passive",
+    "Ability Description": "Shield bonus vs. AoE indirect effects",
+    "Rules Text": "Your shield bonus applies against area attacks",
+    "CP cost": "5",
+    "Affinity": "2W2U(6)"
+  },
+  "Burrowing": {
+    "AbilityNames": "Burrowing",
+    "Category": "Passive",
+    "Ability Description": "various burrow speeds limited burrow to 100% uptime",
+    "Rules Text": "5ft per round___________10ft per round______20ft per round________Normal Movement speed",
+    "CP cost": "20 per",
+    "Affinity": "6(R/G) +2"
+  },
+  "Camoflague": {
+    "AbilityNames": "Camoflague",
+    "Category": "Passive",
+    "Ability Description": "Hide in plain sight: terrain",
+    "Rules Text": "Select a climate region this ability may be purchased multiple times once for each such region. When in chosen region you may attempt stealth checks at any time as if unobserved.",
+    "CP cost": "15",
+    "Affinity": "7G(9)"
+  },
+  "Catlike": {
+    "AbilityNames": "Catlike",
+    "Category": "Passive",
+    "Ability Description": "Reduced falling damage better climbing jumping escape artist",
+    "Rules Text": "Reduce the effective height of all falls by 20' then halve the distance for purposes of damage sustained.",
+    "CP cost": "4",
+    "Affinity": "2(U/B)2(U/G)2(B/G)"
+  },
+  "Changeling": {
+    "AbilityNames": "Changeling",
+    "Category": "Passive",
+    "Ability Description": "Alter appearance immitate others",
+    "Rules Text": "Assume disguises in 12 seconds+6 on disguise+4 on mimicryGain Shapeshifter subtype",
+    "CP cost": "10",
+    "Affinity": "10(U/B)"
+  },
+  "Chaotic Haversack": {
+    "AbilityNames": "Chaotic Haversack",
+    "Category": "Passive",
+    "Ability Description": "Trinkets and objects seem to end up in your backpack but you didn't put them there.",
+    "Rules Text": "As a standard action you may pull out any simple non-magical inanimate object (rope candle etc).  You may have up to a total of 3 spontaneously generated items at a time; these items may be returned to the sack and exchanged.  Items spontaneously created are entirely mundane items posessing no magical properties.  Should a spontaneously generated item be unreturned to the sack there is a 24 hour period before that use is restored. Ability to pull out various low value items without specifically having them in inventory representing character's collection of useful odds and ends. Pull out an item based on hits: 1. basic object 2. simple item 4. complex item 5. exotic substanceDicepool of LOG+INT+3",
+    "CP cost": "5",
+    "Affinity": "4R3(U|R|G)(9)"
+  },
+  "Close and Personal": {
+    "AbilityNames": "Close and Personal",
+    "Category": "Passive",
+    "Ability Description": "By closing to CQC you negate enemy's reach when using(smaller) weapons",
+    "Rules Text": "By entering an opponent's square (check to circumvent being pushed out) you treat that opponent as having no reach for attacks involving you and that opponent so long as you are attacking/defending with light weapons or lighter.",
+    "CP cost": "5",
+    "Affinity": "2B2R(6)"
+  },
+  "Darkvision": {
+    "AbilityNames": "Darkvision",
+    "Category": "Passive",
+    "Ability Description": "See in pure darkness monochromatic",
+    "Rules Text": "30/60/120ft darkvision",
+    "CP cost": "51015",
+    "Affinity": "3(B|G|R)(6) per"
+  },
+  "Deadly Momentum": {
+    "AbilityNames": "Deadly Momentum",
+    "Category": "Passive",
+    "Ability Description": "Combat bonuses for moving each round",
+    "Rules Text": "If you move 3 or more squares during your turn your next attack made during that turn has superior ground.",
+    "CP cost": "30",
+    "Affinity": "9R(18)"
+  },
+  "Deflective Skin": {
+    "AbilityNames": "Deflective Skin",
+    "Category": "Passive",
+    "Ability Description": "Natural armor provides you with damage dampening against ranged attacks.",
+    "Rules Text": "Damage dampening X against non-magical attacks made from ranged against you.  This ability does not protect against polearms or other reach melee attacks.",
+    "CP cost": "10/10/2010",
+    "Affinity": "6(U/G) +4"
+  },
+  "Delay Potion": {
+    "AbilityNames": "Delay Potion",
+    "Category": "Passive",
+    "Ability Description": "Upon drinking a potion you can choose to delay its effects for up to BODY+WILL hours",
+    "Rules Text": "Upon drinking a potion you can choose to delay its effects for up to BODY+WILL hours",
+    "CP cost": "5",
+    "Affinity": "2U2G"
+  },
+  "Diehard": {
+    "AbilityNames": "Diehard",
+    "Category": "Passive",
+    "Ability Description": "Act normally while bleeding out",
+    "Rules Text": "You do not fall unconscious when your condition track is filled you still bleed out as normal.",
+    "CP cost": "5",
+    "Affinity": "7(R|G)(9)"
+  },
+  "Distraction": {
+    "AbilityNames": "Distraction",
+    "Category": "Passive",
+    "Ability Description": "Flanking benefits",
+    "Rules Text": "When outnumbering an enemy in melee that enemy may not take attacks of opportunity for triggers other than movement.",
+    "CP cost": "5",
+    "Affinity": "4(W/R)"
+  },
+  "Driven by Pain": {
+    "AbilityNames": "Driven by Pain",
+    "Category": "Passive",
+    "Ability Description": "Gain 2 initiative per lethal damage you take gain 1 initiative per nonlethal damage you take",
+    "Rules Text": "Gain 2 initiative per lethal damage you take gain 1 initiative per nonlethal damage you take",
+    "CP cost": "20",
+    "Affinity": "6B6(B|R)(15)"
+  },
+  "Durable": {
+    "AbilityNames": "Durable",
+    "Category": "Passive",
+    "Ability Description": "hp +1 overflow hp +1",
+    "Rules Text": "Increase your maximum health and your overflow health by 1 each.",
+    "CP cost": "4812",
+    "Affinity": "2/4/6/8/20"
+  },
+  "Elusive combatant": {
+    "AbilityNames": "Elusive combatant",
+    "Category": "Passive",
+    "Ability Description": "first (Y) squares of movement do not provoke",
+    "Rules Text": "The first (1/3/*) squares of each movement you make do not provoke attacks of opportunity.",
+    "CP cost": "5+5+10",
+    "Affinity": "4(U|B)(6)9(U|B)(12)14(U|B)(18)"
+  },
+  "Evasion": {
+    "AbilityNames": "Evasion",
+    "Category": "Passive",
+    "Ability Description": "Armor encumbrance limitation avoid area effects",
+    "Rules Text": "While you are lightly encumbered you may attempt a dodge roll when subjected to an AoE you are aware of. (5) make a gymnastics check and move (X) per hit without provoking. If this places you outside the AoE you are no longer targeted by it. Additionally double your dodge skill dice on active dodges and full dodges.",
+    "CP cost": "10",
+    "Affinity": "6(U/B/R)"
+  },
+  "Extraordinary Defender": {
+    "AbilityNames": "Extraordinary Defender",
+    "Category": "Passive",
+    "Ability Description": "Guaranteed a minimum of take 4 on parries and blocks",
+    "Rules Text": "When rolling parry/block treat any value below the take-4 value as the take-4 value",
+    "CP cost": "30",
+    "Affinity": "16"
+  },
+  "Extraordinary Evasion": {
+    "AbilityNames": "Extraordinary Evasion",
+    "Category": "Passive",
+    "Ability Description": "Guaranteed a minimum of take 4 on dodge",
+    "Rules Text": "When rolling dodge treat any roll below the take-4 value as the take-4 value",
+    "CP cost": "50",
+    "Affinity": "16"
+  },
+  "Extraordinary Resilience": {
+    "AbilityNames": "Extraordinary Resilience",
+    "Category": "Passive",
+    "Ability Description": "Guaranteed a minimum of take 4 on chosen save",
+    "Rules Text": "Choose a resistance (physical mental). When rolling that resistance treat any roll below the take-4 value as the take-4 value. Rank 2: applies to both resistances",
+    "CP cost": "3040",
+    "Affinity": "16"
+  },
+  "Extraordinary Skill": {
+    "AbilityNames": "Extraordinary Skill",
+    "Category": "Passive",
+    "Ability Description": "Guaranteed a minimum of take 4 on chosen skill",
+    "Rules Text": "Choose a skill (except spellcasting or weapon skill). When rolling that skill treat any roll below the take-4 value as the take-4 value. ",
+    "CP cost": "20",
+    "Affinity": "16"
+  },
+  "Fast Talker": {
+    "AbilityNames": "Fast Talker",
+    "Category": "Passive",
+    "Ability Description": "No penalty for rushing Con checks. Allow for secondary con roll to avert social blunder.",
+    "Rules Text": "You no longer take a penalty for rushing a con attempt. You may attempt a con roll to smooth over an unsuccessful negotiation or etiquette roll.",
+    "CP cost": "4",
+    "Affinity": "BR"
+  },
+  "Faster movement": {
+    "AbilityNames": "Faster movement",
+    "Category": "Passive",
+    "Ability Description": "Increase base movespeed",
+    "Rules Text": "5 extra movement speed per rank",
+    "CP cost": "4per",
+    "Affinity": "1(R|G)(3) per"
+  },
+  "Fearsome reputation": {
+    "AbilityNames": "Fearsome reputation",
+    "Category": "Passive",
+    "Ability Description": "bonus on diplomacy / intimidate varying",
+    "Rules Text": "Gain +3 dice on intimidation/diplomacy/leadership checks when the subjects of such checks are aware of your reputation. Others so aware of your reputation gain a +3 bonus on checks to recognize you recall seeing you etc. so long as you are not adequately disguised.",
+    "CP cost": "5",
+    "Affinity": "1(B|W)(3)"
+  },
+  "Fickle sinew": {
+    "AbilityNames": "Fickle sinew",
+    "Category": "Passive",
+    "Ability Description": "All successful melee attacks against you are subject to a free disarm. Attacker's AGI + SKILL vs. BOD",
+    "Rules Text": "All successful melee attacks against you are subject to a free disarm. Attacker's AGI + SKILL vs. BOD",
+    "CP cost": "5",
+    "Affinity": "6G"
+  },
+  "Finger Lopper": {
+    "AbilityNames": "Finger Lopper",
+    "Category": "Passive",
+    "Ability Description": "Deal damage on successful disarm",
+    "Rules Text": "Disarming an enemy subjects them to a hit at normal weapon damage net hits do not contribute to damage.",
+    "CP cost": "5",
+    "Affinity": "3W3B"
+  },
+  "Flawless Defense": {
+    "AbilityNames": "Flawless Defense",
+    "Category": "Passive",
+    "Ability Description": "Any full defense action allows you to defend with any relevant dicepool of your choosing.",
+    "Rules Text": "Any full defense action allows you to defend with any relevant dicepool of your choosing.",
+    "CP cost": "40",
+    "Affinity": "9W(18)"
+  },
+  "Flight": {
+    "AbilityNames": "Flight",
+    "Category": "Passive",
+    "Ability Description": "Various degrees of flight",
+    "Rules Text": "Ignore falling damage so long as you can manage a glide glide ratio of 2:1_____________________________________Fly up to a minute requiring 10x the amount of rest to recoup your flight capabilities. Very wide turns_____________________________________Continuous flight wide turns_____________________________________Continuous flight faster hover_____________________________________Continuous flight fastest hover turn on a dime",
+    "CP cost": "10/30/20/20/20",
+    "Affinity": "8(W|U|R|B)/10(W|U|R|B)/12(U|W)/14(U|W)"
+  },
+  "Food Taster": {
+    "AbilityNames": "Food Taster",
+    "Category": "Passive",
+    "Ability Description": "Detect poison venom resistance",
+    "Rules Text": "Your past career as a paid food taster has granted you the experience to detect poisoned food.  Additionally you are immune to venom of (idfk how poisons work but I assume it would be like catagories so like snakes vs spiders idk)Gain +4 on perception checks to notice the presence of poison. In addition you are either immune to one poison of your choosing or have a +2 bonus against all poisons.",
+    "CP cost": "5",
+    "Affinity": "2(B/G)"
+  },
+  "Force of Presence": {
+    "AbilityNames": "Force of Presence",
+    "Category": "Passive",
+    "Ability Description": "Increase maximum auras you can sustain",
+    "Rules Text": "You may sustain two auras at once",
+    "CP cost": "100",
+    "Affinity": "12W 12G (30)"
+  },
+  "Fortunate Fool": {
+    "AbilityNames": "Fortunate Fool",
+    "Category": "Passive",
+    "Ability Description": "All critical failures become normal failures all normal failures restore a point of luck",
+    "Rules Text": "All critical failures restore a point of luck and are reduced to normal failures subject to DM discretion. Do not apply this to trivial or nondramatic failures. ",
+    "CP cost": "5",
+    "Affinity": "7R(9)"
+  },
+  "Freedom of movement": {
+    "AbilityNames": "Freedom of movement",
+    "Category": "Passive",
+    "Ability Description": "Bonus to resist movement impairing effects",
+    "Rules Text": "2*RANK to resist movement impairing effects (including grapples)",
+    "CP cost": "204060",
+    "Affinity": "3W3(R/G) per +4"
+  },
+  "Go the Distance": {
+    "AbilityNames": "Go the Distance",
+    "Category": "Passive",
+    "Ability Description": "Improved Athletics",
+    "Rules Text": "Running thing Now a non action to sprint. Enemies do not gain bonus vs you when you sprint Plus something about sprint longer with no exhaustion",
+    "CP cost": "4",
+    "Affinity": "RW"
+  },
+  "Hardline Negotiator": {
+    "AbilityNames": "Hardline Negotiator",
+    "Category": "Passive",
+    "Ability Description": "Allow second attempts on failed negotiations where there otherwise wouldn\u00e2\u20ac\u2122t be one. +3 to negotiation dicepool.",
+    "Rules Text": "Allow second attempts on failed negotiations where there otherwise wouldn\u00e2\u20ac\u2122t be one. ",
+    "CP cost": "5",
+    "Affinity": "4"
+  },
+  "Hawk Eyed": {
+    "AbilityNames": "Hawk Eyed",
+    "Category": "Passive",
+    "Ability Description": "Reduce vision penalties by 3",
+    "Rules Text": "Reduce vision penalties by 3. This includes the penalty for attacking faraway targets.",
+    "CP cost": "5",
+    "Affinity": "3G"
+  },
+  "Heavy Hitter": {
+    "AbilityNames": "Heavy Hitter",
+    "Category": "Passive",
+    "Ability Description": "More likely to knockdown",
+    "Rules Text": "Reduce the threshold for inflicting knockdown with your melee attacks by 2",
+    "CP cost": "15",
+    "Affinity": "4R4G"
+  },
+  "Helping Hand": {
+    "AbilityNames": "Helping Hand",
+    "Category": "Passive",
+    "Ability Description": "Ally benefits vs foes you are in melee with",
+    "Rules Text": "You and your allies gain the benefits of ALLIES IN MELEE COMBAT when making ranged attacks into a melee.",
+    "CP cost": "5",
+    "Affinity": "(W/G)"
+  },
+  "Hold Breath": {
+    "AbilityNames": "Hold Breath",
+    "Category": "Passive",
+    "Ability Description": "Practice and necessity has improved your lung capacity and oxygen usage",
+    "Rules Text": "Quadruple the time you can hold your breath for without having to roll dice. You gain a +5 bonus against inhalation based poisons.",
+    "CP cost": "3",
+    "Affinity": "3G"
+  },
+  "Indomitable ": {
+    "AbilityNames": "Indomitable ",
+    "Category": "Passive",
+    "Ability Description": "You may take up to half the damage from every hit as drain.",
+    "Rules Text": "You may take up to half the damage from every hit as drain.",
+    "CP cost": "5",
+    "Affinity": "8(W/B/G)"
+  },
+  "Inevitability": {
+    "AbilityNames": "Inevitability",
+    "Category": "Passive",
+    "Ability Description": "Gain attack bonus after missing",
+    "Rules Text": "After you miss an attack gain 2 dice on the next attack you make before the end of the next round.",
+    "CP cost": "5",
+    "Affinity": "4R(6)"
+  },
+  "init fixing": {
+    "AbilityNames": "init fixing",
+    "Category": "Passive",
+    "Ability Description": "roll 1 extra init die at start set aside 1 die for next round",
+    "Rules Text": "Roll 1 extra initiative dice at the start of combat and choose one roll to set aside. On subsequent rounds you roll dice as normal then add this kept die and choose one die among them to set aside for the next round.",
+    "CP cost": "30",
+    "Affinity": "9G(18)"
+  },
+  "Init Growth": {
+    "AbilityNames": "Init Growth",
+    "Category": "Passive",
+    "Ability Description": "slowly gain initiative",
+    "Rules Text": "At the start of round Y reroll all initiative dice that are lower than min(Y1+rank)",
+    "CP cost": "203040",
+    "Affinity": "7G(15)10G(21)13G(27)"
+  },
+  "Invigorate": {
+    "AbilityNames": "Invigorate",
+    "Category": "Passive",
+    "Ability Description": "Recipients of your healing gain +1 die to all checks for a short while",
+    "Rules Text": "Recipients of your healing gain +1 die to all checks for a number of rounds equal to half the health restored rounded up.",
+    "CP cost": "10",
+    "Affinity": "12(W|G)(15)"
+  },
+  "It's all in the wrist": {
+    "AbilityNames": "It's all in the wrist",
+    "Category": "Passive",
+    "Ability Description": "Cheat at games; manipulate dice cards",
+    "Rules Text": "You may make a palming check to make games of chance end in your favor.  Gain +4 dice to these checks you may spend a luck point to ensure a victory.  Additionally you may spend a point of luck to win a bet limited to gambling such as betting on a fight or race.  May apply circumstance bonuses at the GMs discretion.",
+    "CP cost": "5",
+    "Affinity": "4(U|R)(6)"
+  },
+  "Killing Hands": {
+    "AbilityNames": "Killing Hands",
+    "Category": "Passive",
+    "Ability Description": "Unarmed strikes deal lethal",
+    "Rules Text": "You can choose for your unarmed strikes to do lethal damage. Your unarmed strike is a 4/2 weapon (medium size).",
+    "CP cost": "5",
+    "Affinity": "-6"
+  },
+  "Light Sleeper": {
+    "AbilityNames": "Light Sleeper",
+    "Category": "Passive",
+    "Ability Description": "You don't take any penalty to perception checks while sleeping you can act on the turn you wake up",
+    "Rules Text": "You don't take any penalty to perception checks while sleeping you can act on the turn you wake up",
+    "CP cost": "5",
+    "Affinity": "2(R|G)(3)"
+  },
+  "Lightning Reflexes": {
+    "AbilityNames": "Lightning Reflexes",
+    "Category": "Passive",
+    "Ability Description": "extra initiative dice",
+    "Rules Text": "(RANK) extra initiative dice",
+    "CP cost": "204060",
+    "Affinity": "(12)(18)(24)"
+  },
+  "Lingering Aura": {
+    "AbilityNames": "Lingering Aura",
+    "Category": "Passive",
+    "Ability Description": "The effects of your aura linger after affected individuals leave its zone of effect.",
+    "Rules Text": "The effects of your auras persist for one round after an affected individual leaves the zone of effect.",
+    "CP cost": "20",
+    "Affinity": "14"
+  },
+  "Lore Master": {
+    "AbilityNames": "Lore Master",
+    "Category": "Passive",
+    "Ability Description": "Various bonuses granted to combat for identifying enemies",
+    "Rules Text": "Once per combat you may attempt to recall relevant information to help combat a type of foe. Make a knowledge roll as a simple action using the appropriate skill for every two hits on this check you add +1 die to all opposed checks against the chosen type until combat ends to a maximum of half your LOGIC.  ",
+    "CP cost": "15",
+    "Affinity": "4U5(W|U)(12)"
+  },
+  "Magic resistance": {
+    "AbilityNames": "Magic resistance",
+    "Category": "Passive",
+    "Ability Description": "always on resistance to magic",
+    "Rules Text": "Gain RANK dice to resist magical effects. You always roll to resist magical effects and are not considered willing. You can suppress this ability at will a free action in combat. Resuming this ability is also a free action.",
+    "CP cost": "10 per",
+    "Affinity": "4(G|U)(6)9(G|U)(12)14(G|U)(18)19(G|U)(24)24(G|U)(30)"
+  },
+  "magical device affinity / magic sensitive / aura viewing": {
+    "AbilityNames": "magical device affinity / magic sensitive / aura viewing",
+    "Category": "Passive",
+    "Ability Description": "Affinity: Notice items are magical with hands on inspection. Glean some idea of the magic item's functionSensitive: Notice items are magica after a few moments of observationAura: Notice magical auras in addition to items discern more specific functionality of items (identify given time)",
+    "Rules Text": "Affinity: Notice items are magical with hands on inspection. Glean some idea of the magic item's functionSensitive: Notice items are magica after a few moments of observationAura: Notice magical auras in addition to items discern more specific functionality of items (identify given time)",
+    "CP cost": "5/5/2010",
+    "Affinity": "2U per"
+  },
+  "Master of Poisons": {
+    "AbilityNames": "Master of Poisons",
+    "Category": "Passive",
+    "Ability Description": "Create identify use resist poisons",
+    "Rules Text": "GainKnowledge of poison craftingability to learn new poison recipes and develop your own+3 dice vs. poison effects+3 dice to identify poisons",
+    "CP cost": "20",
+    "Affinity": "4(B|G)(6)"
+  },
+  "Master smuggler": {
+    "AbilityNames": "Master smuggler",
+    "Category": "Passive",
+    "Ability Description": "Bonuses on sleight of hand hiding things",
+    "Rules Text": "Treat unattended objects one size smaller for fitting them through tight spaces",
+    "CP cost": "3",
+    "Affinity": "2(U/B)2(U/R)2(B/R)"
+  },
+  "Mingling": {
+    "AbilityNames": "Mingling",
+    "Category": "Passive",
+    "Ability Description": "Hide in plain sight: crowds",
+    "Rules Text": "You can always attempt a stealth check when in crowds even if observed. ",
+    "CP cost": "5",
+    "Affinity": "4B(6)"
+  },
+  "Natural weapons various": {
+    "AbilityNames": "Natural weapons various",
+    "Category": "Passive",
+    "Ability Description": "Claws Bite Tail blades spines etc",
+    "Rules Text": "You gain a natural weapon. Additional features may be purchased to customize it.",
+    "CP cost": "5",
+    "Affinity": "4G"
+  },
+  "Nothing Personal": {
+    "AbilityNames": "Nothing Personal",
+    "Category": "Passive",
+    "Ability Description": "Treated as having superior ground during a turn you have teleported.",
+    "Rules Text": "After teleporting you have superior ground until the end of your turn (or end of next turn if you teleported when it wasn't your turn)",
+    "CP cost": "10",
+    "Affinity": "10(W/U)"
+  },
+  "Opportunist": {
+    "AbilityNames": "Opportunist",
+    "Category": "Passive",
+    "Ability Description": "Gain +3 dice on all readied attacks and intercepts  ",
+    "Rules Text": "Gain +3 dice on all readied attacks and intercepts  ",
+    "CP cost": "5",
+    "Affinity": "6W"
+  },
+  "Pain Brings Suffering": {
+    "AbilityNames": "Pain Brings Suffering",
+    "Category": "Passive",
+    "Ability Description": "Victims of your DoTs take a dicepool penalty equal to half the total ongoing damage value.",
+    "Rules Text": "Victims of your DoTs take a dicepool penalty equal to half the total ongoing damage value.",
+    "CP cost": "5",
+    "Affinity": "6B"
+  },
+  "Pain is Temporary": {
+    "AbilityNames": "Pain is Temporary",
+    "Category": "Passive",
+    "Ability Description": "1 phys damage per hit is taken as nonlethal",
+    "Rules Text": "When you take 2 or more physical damage 1 point of that damage is taken as nonlethal instead.",
+    "CP cost": "10",
+    "Affinity": "2(W|B)2(W|G)2(B|G)(9)"
+  },
+  "Pain tolerance": {
+    "AbilityNames": "Pain tolerance",
+    "Category": "Passive",
+    "Ability Description": "Increases number of damage boxes required to acquire wound penalties",
+    "Rules Text": "You require 3 + (RANK) boxes per wound penalty rather than 3.",
+    "CP cost": "5101520",
+    "Affinity": "4(W/B/G) per"
+  },
+  "Paragon of Skill": {
+    "AbilityNames": "Paragon of Skill",
+    "Category": "Passive",
+    "Ability Description": "reroll all 4s for a noncombat skill can be taken multiple times",
+    "Rules Text": "reroll all 4s for a noncombat skill can be taken multiple times",
+    "CP cost": "20",
+    "Affinity": "7(U|G)(15)"
+  },
+  "Parry and Twist": {
+    "AbilityNames": "Parry and Twist",
+    "Category": "Passive",
+    "Ability Description": "Attempting a disarm as part of a riposte only costs (5)",
+    "Rules Text": "Attempting a disarm as part of a riposte only costs (5)",
+    "CP cost": "5",
+    "Affinity": "3W3U"
+  },
+  "Photographic memory": {
+    "AbilityNames": "Photographic memory",
+    "Category": "Passive",
+    "Ability Description": "remember stuff prompt GM for refreshers of detail",
+    "Rules Text": "Gain 2 dice on knowledge checks to remember something. You may recall additional relevant details by prompting the GM for a clearer picture of a memory subject to GM discretion. Rolling memory is now faster (typically a free action).",
+    "CP cost": "3",
+    "Affinity": "3U(6)"
+  },
+  "Projectile deflection": {
+    "AbilityNames": "Projectile deflection",
+    "Category": "Passive",
+    "Ability Description": "Parry some projectiles",
+    "Rules Text": "You can parry projectile based attacks from various item size categoriesyour size +2 (arrows daggers)your size +1 (thrown weapons)your size (heavy thrown weapons powder shot weapons)",
+    "CP cost": "10",
+    "Affinity": "6(W/U)"
+  },
+  "Prowess": {
+    "AbilityNames": "Prowess",
+    "Category": "Passive",
+    "Ability Description": "Every non attack ability used increases your combat prowess",
+    "Rules Text": "Gain +1 extra dice on all defenses and weapon attacks for each non attack ability used. This bonus stacks and lasts until the end of the round.",
+    "CP cost": "25",
+    "Affinity": "3W3R3(W|U|R)(18)"
+  },
+  "quickdraw": {
+    "AbilityNames": "quickdraw",
+    "Category": "Passive",
+    "Ability Description": "quickdraw without check // quickdraw large items ",
+    "Rules Text": "Items that can be quickdrawn normally require no check and are drawn as a nonaction. Most items that cannot normally be quickdrawn may be attempted as a standard quickdraw (Free action roll palming vs. 2)",
+    "CP cost": "3",
+    "Affinity": "4R(6)"
+  },
+  "Ranger favored enemy": {
+    "AbilityNames": "Ranger favored enemy",
+    "Category": "Passive",
+    "Ability Description": "gain bonuses against specific enemy types",
+    "Rules Text": "Gain (RANK) extra dice for checks pertaining to the chosen (sub)type. ",
+    "CP cost": "10x next rank",
+    "Affinity": "4(W/G) per"
+  },
+  "Reactive Dodge": {
+    "AbilityNames": "Reactive Dodge",
+    "Category": "Passive",
+    "Ability Description": "Shift 10ft as part of a dodge",
+    "Rules Text": "As part of a dodge or when dodging on full dodge you may move 10 ft.",
+    "CP cost": "5",
+    "Affinity": "4U(6)"
+  },
+  "Regenerating Fortitude": {
+    "AbilityNames": "Regenerating Fortitude",
+    "Category": "Passive",
+    "Ability Description": "Restore 1 stamina on dealing damage",
+    "Rules Text": "Once per turn when you directly cause damage to an enemy you heal 1 point of nonlethal damage.",
+    "CP cost": "40",
+    "Affinity": "WB"
+  },
+  "Regeneration": {
+    "AbilityNames": "Regeneration",
+    "Category": "Passive",
+    "Ability Description": "Converts lethal to nonlethal over time",
+    "Rules Text": "Convert 1 lethal to nonlethal every hour starting with smallest wounds. Regeneration can regrow severed limbs in a day.",
+    "CP cost": "15",
+    "Affinity": "10G"
+  },
+  "Reserves of Spirit": {
+    "AbilityNames": "Reserves of Spirit",
+    "Category": "Passive",
+    "Ability Description": "Increase drain bar",
+    "Rules Text": ".+RANK to drain bar",
+    "CP cost": "51015...",
+    "Affinity": "2/4/..."
+  },
+  "Resist (ELEMENT)": {
+    "AbilityNames": "Resist (ELEMENT)",
+    "Category": "Passive",
+    "Ability Description": "2x RANK dice against (ELEMENT) effects. W: radiantU: coldB: acid darkR: fire lightningG: cold acid fire lightning",
+    "Rules Text": "2x RANK dice against (ELEMENT) effects",
+    "CP cost": "369...",
+    "Affinity": "4/8/..."
+  },
+  "Resistance General": {
+    "AbilityNames": "Resistance General",
+    "Category": "Passive",
+    "Ability Description": "RANK dice against elemental effects",
+    "Rules Text": "RANK dice against elemental effects (firecoldacidlightning)",
+    "CP cost": "51015...",
+    "Affinity": "3G(6) per"
+  },
+  "Roll with the blows": {
+    "AbilityNames": "Roll with the blows",
+    "Category": "Passive",
+    "Ability Description": "Gain dodge bonus after being hit",
+    "Rules Text": "After you are hit by an attack and suffer damage gain 1 free hit to the next defense roll you make against an attack.",
+    "CP cost": "10",
+    "Affinity": "WR"
+  },
+  "Runecarving": {
+    "AbilityNames": "Runecarving",
+    "Category": "Passive",
+    "Ability Description": "Carve magical runes to delay magical effects for use at a desired time",
+    "Rules Text": "You cannot cast spells directly.You can scribe up to (CAST STAT)/2 runes per day given sufficient downtime. Runes are typically scribed onto small durable objects that fit in one's hand but nearly any surface can accept runes. The dicepool force and cast stat parameters of a runic spell are set when it is created. Runic spells are never affected by wound penalties.A rune must be attuned before it can be used. A rune can be attuned as part of the action of casting the stored spell. Attuning a rune costs 1 unpreventable point of drain damage. As a runecaster you may have up to (CAST STAT)/2 runes attuned at once. Non runecasters are limited to 1 rune and may only attune runes as part of the action of casting the stored spell.A rune comes with (Your drain pool / 2 / spell drain value ) uses.",
+    "CP cost": "0",
+    "Affinity": "W/U"
+  },
+  "Scent": {
+    "AbilityNames": "Scent",
+    "Category": "Passive",
+    "Ability Description": "Detect things by sense of smell",
+    "Rules Text": "You can easily distinguish different scents as easily as sounds shapes and colors. This allows you to be aware of things in the general vacinity (30ft) things that have been in an area you are closely expecting (modified by circumstances).",
+    "CP cost": "5",
+    "Affinity": "G"
+  },
+  "Shadowmeld": {
+    "AbilityNames": "Shadowmeld",
+    "Category": "Passive",
+    "Ability Description": "Hide in plain sight: shadows",
+    "Rules Text": "You can always attempt a stealth check when in dimly lit or dark areas even if observed.",
+    "CP cost": "40",
+    "Affinity": "9B(18)"
+  },
+  "Shielded mind": {
+    "AbilityNames": "Shielded mind",
+    "Category": "Passive",
+    "Ability Description": "bonus vs. mind affecting",
+    "Rules Text": "Gain +RANK dice against mind affecting",
+    "CP cost": "5 per",
+    "Affinity": "3(W|G)(6) per"
+  },
+  "Silent as a shadow": {
+    "AbilityNames": "Silent as a shadow",
+    "Category": "Passive",
+    "Ability Description": "Climb swim and jump extra quietly. Quiet kills",
+    "Rules Text": "You take no penalty for sneaking at normal speed. Enemies take -4 to hear most sounds you make in combat",
+    "CP cost": "4",
+    "Affinity": "4(U|B)(6)"
+  },
+  "Skirmishing Sharpshooter": {
+    "AbilityNames": "Skirmishing Sharpshooter",
+    "Category": "Passive",
+    "Ability Description": "Threaten adjacent spaces with bow",
+    "Rules Text": "You may treat ranged weapons as melee weapons for purposes of threatened area and related combat modifiers. ",
+    "CP cost": "20",
+    "Affinity": "10(R/G)"
+  },
+  "Speedloader": {
+    "AbilityNames": "Speedloader",
+    "Category": "Passive",
+    "Ability Description": "Reload weapons more quickly",
+    "Rules Text": "As a simple action you may reload HITS weapons on a Palming roll.",
+    "CP cost": "5",
+    "Affinity": "-9"
+  },
+  "Spell drinking": {
+    "AbilityNames": "Spell drinking",
+    "Category": "Passive",
+    "Ability Description": "invigorated by failed spells targeting user",
+    "Rules Text": "Gain 1 temp hp when you resist a hostile spell.",
+    "CP cost": "5",
+    "Affinity": "4U4G"
+  },
+  "Spiderclimb": {
+    "AbilityNames": "Spiderclimb",
+    "Category": "Passive",
+    "Ability Description": "You can walk on walls as if they were level ground",
+    "Rules Text": "You can walk on walls as easily as ground. Climb checks are still required thresholds are lowered.",
+    "CP cost": "10",
+    "Affinity": "9(G|R)(12)"
+  },
+  "Stinging Denial": {
+    "AbilityNames": "Stinging Denial",
+    "Category": "Passive",
+    "Ability Description": "Lock enemy out of ability action you counter",
+    "Rules Text": "When you successfully counterspell an opponents spell or ability they cannot use that ability until after the end of their next turn. ",
+    "CP cost": "10",
+    "Affinity": "8(W/U)"
+  },
+  "Stoneskin": {
+    "AbilityNames": "Stoneskin",
+    "Category": "Passive",
+    "Ability Description": "Damage dampening (Y)",
+    "Rules Text": "Gain +1 damage dampening per rank",
+    "CP cost": "30 per",
+    "Affinity": "6G per"
+  },
+  "Supreme Contortionist": {
+    "AbilityNames": "Supreme Contortionist",
+    "Category": "Passive",
+    "Ability Description": "fit through unusually small spaces",
+    "Rules Text": "You can contort and deform your body to fit in/through spaces smaller than normal.",
+    "CP cost": "3",
+    "Affinity": "1R(3)"
+  },
+  "Tangential Luck": {
+    "AbilityNames": "Tangential Luck",
+    "Category": "Passive",
+    "Ability Description": "Various secondary effects that trigger off spending points of luck",
+    "Rules Text": "After you spend a point of luck you gain +1 die to all pools until the end of the current round.",
+    "CP cost": "10",
+    "Affinity": "9R.(12)"
+  },
+  "Telepathic link": {
+    "AbilityNames": "Telepathic link",
+    "Category": "Passive",
+    "Ability Description": "Communicate telepathically ",
+    "Rules Text": "Range (LOG*10 ft). This is one way communication in which you can convey words given you and your target share a language._______________________You may attune up to LOG targets for two way communication_______________________Attuned targets can be communicated with out to LOG*100 ft",
+    "CP cost": "51015",
+    "Affinity": "2(U|B)(9) per"
+  },
+  "Timely Disruption": {
+    "AbilityNames": "Timely Disruption",
+    "Category": "Passive",
+    "Ability Description": "Readied attacks also inflict their damage as a dice pool penalty to an action they interrupt.",
+    "Rules Text": "Readied attacks also inflict their damage as a dice pool penalty to an action they interrupt.",
+    "CP cost": "10",
+    "Affinity": "6(W/U/B)"
+  },
+  "Tireless": {
+    "AbilityNames": "Tireless",
+    "Category": "Passive",
+    "Ability Description": "nonlethal hp +1",
+    "Rules Text": "Increase your maximum nonlethal health by 1.",
+    "CP cost": "51015...",
+    "Affinity": "2/4/..."
+  },
+  "Trap finding": {
+    "AbilityNames": "Trap finding",
+    "Category": "Passive",
+    "Ability Description": "trapfinding the dangerous ones not the anime ones",
+    "Rules Text": "Your passive perception checks do not take the usual penalty to detect traps or other hidden/harmful mechanisms. Additionally you gain 2 dice on all checks to find such things.",
+    "CP cost": "5",
+    "Affinity": "4(U/G)"
+  },
+  "Tremorsense": {
+    "AbilityNames": "Tremorsense",
+    "Category": "Passive",
+    "Ability Description": "Pintpoint awareness of things moving in contact with solid objects you are also in contact with like the ground",
+    "Rules Text": "15/45/90ft tremorsense",
+    "CP cost": "102030",
+    "Affinity": "4(R|G)(9)9(R|G)(18)13(R|G)(27)"
+  },
+  "Uncanny Awareness": {
+    "AbilityNames": "Uncanny Awareness",
+    "Category": "Passive",
+    "Ability Description": "Harder to surprise bonuses vs. attacks you aren't aware of",
+    "Rules Text": "You can take an active defense even when surprised gain +6 dice on surprise checks initiated against you.",
+    "CP cost": "10",
+    "Affinity": "4(U|R)4(U|G)4(R|G)(15)"
+  },
+  "Underworld contact": {
+    "AbilityNames": "Underworld contact",
+    "Category": "Passive",
+    "Ability Description": "It's rather easy for you to get into contact with the local criminal underground and more often than not you start out on their good side",
+    "Rules Text": "gain 3 dice on checks relating to interactions with or knowledge about black markets/criminal undergrounds/fences etc. You may attempt to \"know a guy\" if the DM permits spend 1L and you find an underground contact who starts out initially friendly.",
+    "CP cost": "3",
+    "Affinity": "1B(3)"
+  },
+  "Unmovable": {
+    "AbilityNames": "Unmovable",
+    "Category": "Passive",
+    "Ability Description": "Resist various debuffs combat maneuvers",
+    "Rules Text": "Gain +3 dice against knockdown disarm grapple balance overrun and other effects that forcibly move you. ",
+    "CP cost": "5",
+    "Affinity": "R3/R6/R9/R12 G limited"
+  },
+  "Untrackable": {
+    "AbilityNames": "Untrackable",
+    "Category": "Passive",
+    "Ability Description": "You cannot be tracked in natural surroundings.",
+    "Rules Text": "With your guidance the party may move through natural terrain using your stealth or survival check to cover up your tracks.  You are always untrackable when moving through natural terrain alone however the party cannot gain the benefit of your Untrackable ability when this is the case.",
+    "CP cost": "5",
+    "Affinity": "4G"
+  },
+  "Venomous Vitality": {
+    "AbilityNames": "Venomous Vitality",
+    "Category": "Passive",
+    "Ability Description": "succeeding on a roll vs. poison grants you 1 temp hp",
+    "Rules Text": "Whenever you succeed on a resistance roll against a poison effect gain 1 temp hp.",
+    "CP cost": "5",
+    "Affinity": "3B3G(12)"
+  },
+  "Wary Traversal": {
+    "AbilityNames": "Wary Traversal",
+    "Category": "Passive",
+    "Ability Description": "reduce damage from AoOs",
+    "Rules Text": "Halve damage from AoOs after armor before damage dampening.",
+    "CP cost": "5",
+    "Affinity": "???"
+  },
+  "Water Walking": {
+    "AbilityNames": "Water Walking",
+    "Category": "Passive",
+    "Ability Description": "You can walk on water as if it were solid ground",
+    "Rules Text": "You can walk on water as if it were solid ground",
+    "CP cost": "5",
+    "Affinity": "7(U|G)(9)"
+  },
+  "": {
+    "AbilityNames": "",
+    "Category": "",
+    "Ability Description": "Gain bonuses per X wound boxes",
+    "Rules Text": "",
+    "CP cost": "",
+    "Affinity": "RB"
+  },
+  "What goes around comes around": {
+    "AbilityNames": "What goes around comes around",
+    "Category": "Passive",
+    "Ability Description": "Gain 1 die on your next attack for each damage you take",
+    "Rules Text": "For every point of damage you take add one die to your revenge pool. Add your revenge pool to the next attack you make this sets your revenge pool to 0 afterwards. If you have not added a die to your revenge pool in the last 3 rounds your revenge pool resets to 0.",
+    "CP cost": "5",
+    "Affinity": "3B3R(9)"
+  },
+  "Awaken": {
+    "AbilityNames": "Awaken",
+    "Category": "Ritual",
+    "Ability Description": "Stir sentience in a creature",
+    "Rules Text": "1 HourYou awaken an animal to humanlike sentience. The creature is initially indifferent to you. Awakened creatures have 3 LOG and are magical beasts.",
+    "CP cost": "5",
+    "Affinity": "12G"
+  },
+  "Foretelling": {
+    "AbilityNames": "Foretelling",
+    "Category": "Ritual",
+    "Ability Description": "Determine what fate might result from a given course of action",
+    "Rules Text": "1 Minute RitualAnswers a question about an action to be taken in the near future (roughly 1 hour)Weal (if the action will probably bring good results).Woe (for bad results).Weal and woe (for both).Nothing (for actions that don\u00e2\u20ac\u2122t have especially good or bad results).",
+    "CP cost": "10",
+    "Affinity": "4U"
+  },
+  "Analyze Dweomer": {
+    "AbilityNames": "Analyze Dweomer",
+    "Category": "Spell",
+    "Ability Description": "High focus detect and analyze magic",
+    "Rules Text": "SUST SELFFWhile sustaining this spell you may make Perceive Magic checks with your spellcasting dicepool but only for objects you are physically touching or effects you are in contact with.",
+    "CP cost": "5",
+    "Affinity": "U"
+  },
+  "Animate Object": {
+    "AbilityNames": "Animate Object",
+    "Category": "Spell",
+    "Ability Description": "Animate an object with varying degrees of control",
+    "Rules Text": "SUST TRGTF/2+2 if fineF \u00e2\u2030\u00a5 size category *2+1Animate an object with crude or fine control over its actions issue new directions for animated object as a simple action.",
+    "CP cost": "15",
+    "Affinity": "6(W/U)"
+  },
+  "Arcane Mark": {
+    "AbilityNames": "Arcane Mark",
+    "Category": "Spell",
+    "Ability Description": "Put a magic mark on something",
+    "Rules Text": "PERM TRGTFPlace an invisible magical mark on an object after 1 minute of casting. The mark is not invisible to you and up to (cast stat) others of your choice present upon casting. The mark may be viewed normally with Perceive Magic). ",
+    "CP cost": "5",
+    "Affinity": "4(W/U)"
+  },
+  "Armor": {
+    "AbilityNames": "Armor",
+    "Category": "Spell",
+    "Ability Description": "Increase armor by hits",
+    "Rules Text": "SUST TRGT(SELF)F/2 + 2AoE +1 per 10ftSingle/MultipleAdd FORCE to armor for the duration of this spell.Casting this spell is a simple action",
+    "CP cost": "15",
+    "Affinity": "4(W/G)"
+  },
+  "Banishment": {
+    "AbilityNames": "Banishment",
+    "Category": "Spell",
+    "Ability Description": "Direct opposed check to banish",
+    "Rules Text": "INST TRGTF/2 + 3/5AoE +1 per 10ftTouch Ranged AoE (15ft)Resisted with mental resMust make net hits >= target's BODBanishes a summoned target",
+    "CP cost": "5",
+    "Affinity": "10W"
+  },
+  "Cause Fear": {
+    "AbilityNames": "Cause Fear",
+    "Category": "Spell",
+    "Ability Description": "Affected enemies flee if able",
+    "Rules Text": "INST SINGLE AOEF/2+3AoE +1 per 10fteDV = 4+F/2Resisted with mental resSoaked with mental soakfor every 4 damage this ability would do (round up) the target takes 1 fear stack ",
+    "CP cost": "10",
+    "Affinity": "4B(9)"
+  },
+  "Clairvoyance": {
+    "AbilityNames": "Clairvoyance",
+    "Category": "Spell",
+    "Ability Description": "See hear from nearby location",
+    "Rules Text": "SUST SELFF/2 - 1/+1 (extended)See hear from nearby location. Range = F*magic stat * 3ft(*30ft if extended) Casting this spell is a simple action",
+    "CP cost": "5",
+    "Affinity": "4U(9)"
+  },
+  "Confusion": {
+    "AbilityNames": "Confusion",
+    "Category": "Spell",
+    "Ability Description": "Cause affected targets to behave erratically for duration",
+    "Rules Text": "DIRECT SUST SINGLE AOEF/2+4AoE +1 per 10ftResist with mental resAffected target 25% does nothing25% runs in a random direction25% attacks nearest target25% act normally",
+    "CP cost": "10",
+    "Affinity": "6R"
+  },
+  "Control Weather": {
+    "AbilityNames": "Control Weather",
+    "Category": "Spell",
+    "Ability Description": "Control local weather",
+    "Rules Text": "SUST F/2+6 Change to weather manifests in 10-F minutes. Change up to hits/4 aspects of the weather.",
+    "CP cost": "20",
+    "Affinity": "6U6(G/R)"
+  },
+  "Create Light": {
+    "AbilityNames": "Create Light",
+    "Category": "Spell",
+    "Ability Description": "Cause object touched to emanate light",
+    "Rules Text": "INST SUSTF/2Light Radius 5ft per F/2Casting this spell is a simple action",
+    "CP cost": "5",
+    "Affinity": "4W"
+  },
+  "Curse of Vulnerability": {
+    "AbilityNames": "Curse of Vulnerability",
+    "Category": "Spell",
+    "Ability Description": "Reduce enemy's damage dampening",
+    "Rules Text": "SUST AOEF/2 + 3 (10ft)+1 per additional 10ftReduce enemy's damage dampening by HITS up to FORCE/2. Resisted by PHYS",
+    "CP cost": "15",
+    "Affinity": "6B"
+  },
+  "Dampening Field": {
+    "AbilityNames": "Dampening Field",
+    "Category": "Spell",
+    "Ability Description": "Reduce magical effects by HITS up to FORCE",
+    "Rules Text": "SUSTF/2 + 4 (10ft)+1 per additional 10ftReduce magical effects by HITS up to FORCECasting this spell is a simple action",
+    "CP cost": "20",
+    "Affinity": "6(W/U)"
+  },
+  "Danger Sense": {
+    "AbilityNames": "Danger Sense",
+    "Category": "Spell",
+    "Ability Description": "HITS to defensive dice pool up to FORCE/2",
+    "Rules Text": "SUST SELFF/2 + 2Add FORCE/2 to defensive checks (passive and active dodgeparryblock) for duration of spellCasting this spell is a simple action",
+    "CP cost": "10",
+    "Affinity": "2(W/U) 2(U/G)"
+  },
+  "Death Blast": {
+    "AbilityNames": "Death Blast",
+    "Category": "Spell",
+    "Ability Description": "Direct damage kill spell",
+    "Rules Text": "INSTF/2 + 0/2AoE +1 per 10ftTouch/Ranged/AoEF damageAvoided by physical resistSoaked by physical soak",
+    "CP cost": "10",
+    "Affinity": "4B"
+  },
+  "Detect Hostile Intent": {
+    "AbilityNames": "Detect Hostile Intent",
+    "Category": "Spell",
+    "Ability Description": "Detect those with hostile intent towards caster",
+    "Rules Text": "SELFF/2 + 1 (5ft cone)+1 per additional 5ftCasting this spell is a simple action",
+    "CP cost": "5",
+    "Affinity": "WB"
+  },
+  "Detect Life": {
+    "AbilityNames": "Detect Life",
+    "Category": "Spell",
+    "Ability Description": "Detect living creatures in a forward facing cone",
+    "Rules Text": "SELFF/2 (5ft cone)+1 per additional 5ftCasting this spell is a simple action",
+    "CP cost": "5",
+    "Affinity": "WG"
+  },
+  "Detect X": {
+    "AbilityNames": "Detect X",
+    "Category": "Spell",
+    "Ability Description": "As Detect Life only one type of creature color alignment etc.",
+    "Rules Text": "SELFF/2 - 1 (5ft cone)+1 per additional 5ftCasting this spell is a simple action",
+    "CP cost": "5",
+    "Affinity": "WBUG"
+  },
+  "Dispel Magic": {
+    "AbilityNames": "Dispel Magic",
+    "Category": "Spell",
+    "Ability Description": "Dispell ongoing magical effects. ",
+    "Rules Text": "INST SINGLE/AOEF/2 + 2AoE +1 per 5ftRoll vs. threshold (force of ongoing effect). AoE only can dispel one effect from each entity in area - continuously checking against effects on each target until all pass or one is dispelled per target. Targeted rolls against all ongoing effects.",
+    "CP cost": "20",
+    "Affinity": "8(W/U/G)"
+  },
+  "Ease Pain": {
+    "AbilityNames": "Ease Pain",
+    "Category": "Spell",
+    "Ability Description": "Convert lethal to nonlethal",
+    "Rules Text": "INST DIRECTF=WoundF/2-1Converts up to HITS of the lethal wound to nonlethal",
+    "CP cost": "5",
+    "Affinity": "4W"
+  },
+  "Elemental Blast": {
+    "AbilityNames": "Elemental Blast",
+    "Category": "Spell",
+    "Ability Description": "F elemental damage purchased per element typeW-radiantU-ColdB-Acid darkR-Lighting fireG-Acid",
+    "Rules Text": "INST/SUSTF/2 + 2/3AoE +1 per 5ft diameter (note that it starts at 5ft effectively)Sust +1Touch/Ranged/AoE/S.AoEIndirect F/2+5 damage (ELEMENT)",
+    "CP cost": "5",
+    "Affinity": "4*C*(9)"
+  },
+  "Energy Wall": {
+    "AbilityNames": "Energy Wall",
+    "Category": "Spell",
+    "Ability Description": "1 point of Armor and Structure rating per hit. Barrier regenerates at start of next turn.",
+    "Rules Text": "SUSTF/2 + 410*F ft. length.  1 point of Armor and Structure rating per hit. Barrier regenerates at start of next turn. Enemies that end the round adjacent to the wall are subject to an indirect area attack at F/2+5 DV.",
+    "CP cost": "5",
+    "Affinity": "WUGRB"
+  },
+  "Explosive Runes": {
+    "AbilityNames": "Explosive Runes",
+    "Category": "Spell",
+    "Ability Description": "Create an explosive magical trap that triggers upon being read",
+    "Rules Text": "PERM INDIRECTF/2+4Casting time: 1 minuteEnchant one instance of Explosive Runes on target object. Explosive Runes if viewed from greater than 30' away appear vague and indistinct. If viewed within 30' they explode using the caster's dicepool at the time of creation as well as the force they were cast with. ",
+    "CP cost": "10",
+    "Affinity": "8R"
+  },
+  "Eye of the Hurricane": {
+    "AbilityNames": "Eye of the Hurricane",
+    "Category": "Spell",
+    "Ability Description": "Create a wind effect centered on yourself that knocks others back",
+    "Rules Text": "F/2 + 3Make an opposed check against adjacent targets' Physical Resist using your spellcasting dicepool. On success they are driven back. Succeed by 3 or more and they are knocked prone. Succeed by 6 or more and they are sent flying.",
+    "CP cost": "5",
+    "Affinity": "UG"
+  },
+  "Fire Conjuring": {
+    "AbilityNames": "Fire Conjuring",
+    "Category": "Spell",
+    "Ability Description": "Create manipulate fire",
+    "Rules Text": "INSTF/2+4You can conjure fire into any shape that suits your purpose. While it\u00e2\u20ac\u2122s possible to make crude walls and so forth with this function fine detail isn\u00e2\u20ac\u2122t possible. (10 cubic feet per FORCE). Fire cannot be conjured into occupied space. Being adjacent to fire forces a save vs. DV 5 immersion or passthrough is DV7.You can form fire with focused detail into an weapon that suits your purpose. For every (3 FORCE) beyond (F=1) you may create another item as part of the same action. If shaping the item from existing fire you may instead create one item per (FORCE). These items are safe for you to hold but will dissipate at the end of the round they leave your possession.You can ignite easily combustible objects. If the objects are attended they are entitled to resist with the owner\u00e2\u20ac\u2122s Mental Resistance. You can ignite up to (5 square feet per force) of contiguous objects.",
+    "CP cost": "25",
+    "Affinity": "R"
+  },
+  "Flash Freeze": {
+    "AbilityNames": "Flash Freeze",
+    "Category": "Spell",
+    "Ability Description": "Damage init with ice",
+    "Rules Text": "INST DIRECT AOE (centered on self)F/2+2 (5ft)+1 per additional 5ftFlash Freeze does no damage though it still applies the resulting DV as initiative damage.",
+    "CP cost": "10",
+    "Affinity": "6U"
+  },
+  "Fling": {
+    "AbilityNames": "Fling",
+    "Category": "Spell",
+    "Ability Description": "Toss object as if with STR = MAG/2",
+    "Rules Text": "INST TRGTF/2 + 3Throw an object with effective STR = Fup to 25kg per FORCE.When throwing a weapon or other similarly sized item (limited to weapons of your size) you may resolve the fling as an attack roll when directing the object at a specific target. When throwing larger objects the item is treated as a falling object and creatures in the target zone are entitled to a dodge(2) threshold check to avoid it.",
+    "CP cost": "5",
+    "Affinity": "3R(6)"
+  },
+  "Fog": {
+    "AbilityNames": "Fog",
+    "Category": "Spell",
+    "Ability Description": "A dense blanket of fog rolls in clouding vision.  Fog moves into the region.  Everyone inside can only see 10 ft away clearly and 20 ft dimly.  Fog rolls into lower regions in the area.  If on higher elevations the fog will dissipate faster.  Fog will not sustain in high winds or existing rainstorms.",
+    "Rules Text": "SUSTF/2 5ft radius per FORCEImpedes vision by HITS. Slowly disipates reducing penalties by 1 until no penalty remains.",
+    "CP cost": "5",
+    "Affinity": "4(U|G)(9)"
+  },
+  "Glitterdust": {
+    "AbilityNames": "Glitterdust",
+    "Category": "Spell",
+    "Ability Description": "Chance to blind reveal invis",
+    "Rules Text": "SUST AOEF/2 + 4 (5ft)+1 per additional 5ftResist with willpower. Targets are illuminated for duration regardless. Blinded on success.Targets get an additional save to end the effect at the end of every round.",
+    "CP cost": "5",
+    "Affinity": "4(W/G)(15)"
+  },
+  "Gust of Wind": {
+    "AbilityNames": "Gust of Wind",
+    "Category": "Spell",
+    "Ability Description": "Magical bullrush based off spell force // up to net hits?",
+    "Rules Text": "INST AOEF/2 +0/4(amp)STR = FAmplified affects up to FORCE squares.",
+    "CP cost": "5",
+    "Affinity": "RG"
+  },
+  "Haste": {
+    "AbilityNames": "Haste",
+    "Category": "Spell",
+    "Ability Description": "5 more speed per 2 HITS up to FORCE HITS",
+    "Rules Text": "SUST TRGT(SELF)F/2Gain 5 speed per HIT up to FORCE HITS.Casting this spell is a simple action",
+    "CP cost": "5",
+    "Affinity": "UR"
+  },
+  "Hush": {
+    "AbilityNames": "Hush",
+    "Category": "Spell",
+    "Ability Description": "Applies penalty to those attempting to hear the subject",
+    "Rules Text": "SUST SINGLE/AOE TRGT(SELF)F/2 + 1AoE +1 per 10ftInflict HITS penalty on audio perception checks attempting to perceive subject Casting this spell is a simple action",
+    "CP cost": "5",
+    "Affinity": "UB"
+  },
+  "Ice Conjuring": {
+    "AbilityNames": "Ice Conjuring",
+    "Category": "Spell",
+    "Ability Description": "Create manipulate ice",
+    "Rules Text": "INSTF/2+4You can conjure ice into any shape that suits your purpose. While it\u00e2\u20ac\u2122s possible to make crude coffers doors and so forth with this function fine detail isn\u00e2\u20ac\u2122t possible. (10 cubic feet per FORCE). For surfaces you can choose rough (nonslip) or smooth (checks required) ice. Ice has (barrier rating / HP per thickness) . (40 cubic feet per force) of existing ice may be reshaped instead. Ice cannot be conjured into occupied space cannot exert force in the conjuring process or be conjured flush with intricate surfaces.You can form ice with focused detail into an object that suits your purpose. For every (3 FORCE) beyond (F=1) you may create another item as part of the same action. If shaping the item from existing ice you may instead create one item per (FORCE)You can flash freeze existing water and liquids. If the objects are attended they are entitled to resist with the owner\u00e2\u20ac\u2122s Mental Resistance. You can freeze up to (20 cubic feet per force) of contiguous water or liquid.",
+    "CP cost": "25",
+    "Affinity": "7U(15)"
+  },
+  "Ignite": {
+    "AbilityNames": "Ignite",
+    "Category": "Spell",
+    "Ability Description": "Set a target on fire",
+    "Rules Text": "INST TRGTF/2Ignites target for F/2+5 fire damage per round end of round.Resisted with physical resist.",
+    "CP cost": "5",
+    "Affinity": "6R"
+  },
+  "Invisibility": {
+    "AbilityNames": "Invisibility",
+    "Category": "Spell",
+    "Ability Description": "drastically reduce chance to be noticed by sight",
+    "Rules Text": "SUST SINGLE/AOE TRGT(SELF)F/2+3AoE +1 per 10ftSingle/MultipleF penalty to being perceived visually.",
+    "CP cost": "10",
+    "Affinity": "7(U|B)(9)"
+  },
+  "Lay on Hands": {
+    "AbilityNames": "Lay on Hands",
+    "Category": "Spell",
+    "Ability Description": "Heal lethal",
+    "Rules Text": "INST DIRECT TRGT(SELF)F/2+3Heals a wound for up to HITS/2 or force/2 lethal damage  ",
+    "CP cost": "5",
+    "Affinity": "4W"
+  },
+  "Lethal Force": {
+    "AbilityNames": "Lethal Force",
+    "Category": "Spell",
+    "Ability Description": "F phys damage touch",
+    "Rules Text": "INST INDIRECT (SUST)F/2 + 1/2AoE +1 per 10ftSust +1Touch/Ranged/AoE/S.AoEIndirect F damage Avoided by dodge/blockSoaked with armor soak",
+    "CP cost": "20",
+    "Affinity": "4R"
+  },
+  "Levitate": {
+    "AbilityNames": "Levitate",
+    "Category": "Spell",
+    "Ability Description": "Threshold test 1 per 200kg",
+    "Rules Text": "SUST TRGTF/2 + 2Range = 30 ftLift up to 200kg per FORCE (single object or clump of objects)Or up to FORCE * CAST STAT / 2 individual objects of negligible weightCan only target attended objects if the attendee is willingCannot move objects that are stuck or restrainedYou can move the object at a rate of 5ft per simple action or in the case of multiple small objects 20ft. As a simple action you can also set the object(s) to follow you but they are limited to traveling at the listed speeds per round and move at the end of the round. ",
+    "CP cost": "5",
+    "Affinity": "3U(6)"
+  },
+  "Life drain": {
+    "AbilityNames": "Life drain",
+    "Category": "Spell",
+    "Ability Description": "force save heal user etc",
+    "Rules Text": "INST DIRECTTouchF/2+4 drainF/2+5 DVHeal half damage dealt. Damage is dealt as drain damage soaked with phys soak.",
+    "CP cost": "15",
+    "Affinity": "3B(12)"
+  },
+  "Lightning Storm": {
+    "AbilityNames": "Lightning Storm",
+    "Category": "Spell",
+    "Ability Description": "Build up an escalating number of bolts then unleash them all at once.",
+    "Rules Text": "INST INDIRECTF/2+4 drainF/2+5 DVCasting a new Lightning Storm starts a Storm Pool at 1. Each subsequent casting of Lightning Storm at the same force adds 1 more to the storm pool than the previous casting (+2+3... etc) up to a maximum of WIL+(mainstat) maximum points in your Storm Pool. As a free action you may expend all points in your storm pool to designate the target area for this ability resolving one single target attack per Storm Pool Point split equally among targets. These attacks use the FORCE you originally started the Lightning Storm at.",
+    "CP cost": "15",
+    "Affinity": "9R(18)"
+  },
+  "Mage Hand": {
+    "AbilityNames": "Mage Hand",
+    "Category": "Spell",
+    "Ability Description": "Hits = STR and AGI of hands -2 on skills performed with hands",
+    "Rules Text": "SUSTF/2 + 1Range = 10 ftF = STR and AGI of hand all checks performed at -2 through the hand.You have mild tactile feedback through the hand but cannot feel temperature.",
+    "CP cost": "5",
+    "Affinity": "3U(6)"
+  },
+  "Mask": {
+    "AbilityNames": "Mask",
+    "Category": "Spell",
+    "Ability Description": "Disguises an individual. Hits contribute to disguise up to FORCE as cap.",
+    "Rules Text": "SUST TRGT(SELF)F/2 + 1AoE +1 per 10ftSingle/MultipleHits contribute to disguise dicepool up to FORCECasting this spell is a simple action",
+    "CP cost": "10",
+    "Affinity": "1U1B1(U|B)(6)"
+  },
+  "Mass Translocation": {
+    "AbilityNames": "Mass Translocation",
+    "Category": "Spell",
+    "Ability Description": "All willing allies may exchange places with one another",
+    "Rules Text": "INST AoEF/2+3 (5ft)+1 per additional 5ftAll willing targets within the area may exchange places with one another.",
+    "CP cost": "15",
+    "Affinity": "6(W|U)(12)"
+  },
+  "Memory Cast": {
+    "AbilityNames": "Memory Cast",
+    "Category": "Spell",
+    "Ability Description": "Copy spell you recently saw cast",
+    "Rules Text": "Make a Perceive Magic check with a -1 penalty for each (INT+LOG) /3 rounds since the observed spell was cast. If any hits result you succeed at recalling the spell and cast it within your capabilities. If no net hits result you fail and the action (typical for spellcasting) is wasted.",
+    "CP cost": "10",
+    "Affinity": "9U(18)"
+  },
+  "Mind Control": {
+    "AbilityNames": "Mind Control",
+    "Category": "Spell",
+    "Ability Description": "Overpower someones mind and be able to order them.",
+    "Rules Text": "TRGT SUSTF/2+3F/2+4 eDVTarget resists with mental resistTarget then soaks with mental soak resulting damage this spell would do is duration of mind control. Mind control must be sustained. Issuing a command is a simple action.(clause for more saves to escape. clause for making it permanent)",
+    "CP cost": "20",
+    "Affinity": "10U(21)"
+  },
+  "Mindblank": {
+    "AbilityNames": "Mindblank",
+    "Category": "Spell",
+    "Ability Description": "HITS to dice pool against mind affecting and divination up to FORCE/2",
+    "Rules Text": "SUST SELFF/2+2HITS to dice pool against mind affecting and divination effects up to FORCE/2Casting this spell is a simple action",
+    "CP cost": "5",
+    "Affinity": "6(U|B)(12)"
+  },
+  "Petrify": {
+    "AbilityNames": "Petrify",
+    "Category": "Spell",
+    "Ability Description": "Petrify target",
+    "Rules Text": "INST DIRECT TRGTF/2 + 3F/2 +4 eDVTarget resists with physical resistanceTarget then soaks with mental soak. resulting damage this spell would do is duration of petrify. Target gets a (barrier rating) while petrified.",
+    "CP cost": "20",
+    "Affinity": "1B1G1(G|B)(12)"
+  },
+  "Phantasm": {
+    "AbilityNames": "Phantasm",
+    "Category": "Spell",
+    "Ability Description": "Create illusory effects. Individuals directly interacting have chance to disbelieve. Indirect interaction has chance to disbelieve or discern the effect is illusory.",
+    "Rules Text": "SUSTF/2 + 3Default: stationary image+1 Add sound+1 Add movementResisted with mental res.",
+    "CP cost": "20",
+    "Affinity": "4U"
+  },
+  "Rageful Treason": {
+    "AbilityNames": "Rageful Treason",
+    "Category": "Spell",
+    "Ability Description": "This turn an enemy attacks their allies in a blinding fury of rage",
+    "Rules Text": "INST TRGTF/2+3F/2+5 eDVTarget resists with mental resTarget then soaks with mental soak. Resulting damage this spell would do is applied as a dicepool bonus to target's attacks for the duration of this spell. Until the end of the target's next turn it considers all enemies as allies and all allies as enemies attacking the latter to the best of its ability.",
+    "CP cost": "15",
+    "Affinity": "8R"
+  },
+  "Rejuvenate": {
+    "AbilityNames": "Rejuvenate",
+    "Category": "Spell",
+    "Ability Description": "Heal over time",
+    "Rules Text": "SUST TRGT(SELF)F+2 Heal 2 per round up to HITS FORCE or full health. Healing occurs at the end of the round.",
+    "CP cost": "5",
+    "Affinity": "4G"
+  },
+  "Renew Vitality": {
+    "AbilityNames": "Renew Vitality",
+    "Category": "Spell",
+    "Ability Description": "Heal lethal",
+    "Rules Text": "INST TRGT(SELF)F/2+4Heals a wound for up to HITS lethal damage to a max of FORCE",
+    "CP cost": "5",
+    "Affinity": "4G(9)"
+  },
+  "Seal": {
+    "AbilityNames": "Seal",
+    "Category": "Spell",
+    "Ability Description": "Reinforce lock door etc against opening +1 threshold per hit up to FORCE / 2.Unseal",
+    "Rules Text": "SUST TRGTF/2+1 to door/lock threshold per hit up to FORCE/2_____________________________________+1 to open lock dicepool per hit up to FORCE/2Casting this spell is a simple action",
+    "CP cost": "5",
+    "Affinity": "3(W|U|G)(6)"
+  },
+  "Sending": {
+    "AbilityNames": "Sending",
+    "Category": "Spell",
+    "Ability Description": "Send message of X words per hit",
+    "Rules Text": "INSTF/2 - 1/+1/+3Send a message of 4 words per hit up to (F*MAG*10/100/1000) feet to a known recipient.",
+    "CP cost": "5",
+    "Affinity": "4U(9)"
+  },
+  "Shadow": {
+    "AbilityNames": "Shadow",
+    "Category": "Spell",
+    "Ability Description": "Reduce visibility in an area",
+    "Rules Text": "SUST AoEF/2 + 1Area = 30' reduce visibility by FORCE.",
+    "CP cost": "5",
+    "Affinity": "1B(6)"
+  },
+  "Shatter": {
+    "AbilityNames": "Shatter",
+    "Category": "Spell",
+    "Ability Description": "Break objects",
+    "Rules Text": "DIRECT INSTF/2+3Can only target objects roll vs. hardness deal damage if overcome",
+    "CP cost": "10",
+    "Affinity": "7(W|R|G)(9)"
+  },
+  "Sheepstick": {
+    "AbilityNames": "Sheepstick",
+    "Category": "Spell",
+    "Ability Description": "The target is turned into a dimminutive animal: squirrel bunny sheep (1/1) NOT GOATS GOATS ARE (0/1)",
+    "Rules Text": "INST SUST TRGTF/2+4F/2+3 eDVTarget resists with mental resistTarget then soaks with physical soak. Damage this spell would do is the duration of the effect. ",
+    "CP cost": "30",
+    "Affinity": "14U"
+  },
+  "Sleep": {
+    "AbilityNames": "Sleep",
+    "Category": "Spell",
+    "Ability Description": "Put targets to sleep damage / other stuff wakes",
+    "Rules Text": "SUST AOEF/2+6F/2+3 eDVTarget resists with mental resistTarget then soaks with mental soak. Damage this spell would do is the duration of the effect.",
+    "CP cost": "10",
+    "Affinity": "6U(12)"
+  },
+  "Stasis": {
+    "AbilityNames": "Stasis",
+    "Category": "Spell",
+    "Ability Description": "Remove target from reality for a turn",
+    "Rules Text": "INST TRGTF/2 + 4F/2 +3 eDVTarget resists with mental resist.Target soaks with mental soak. If this spell would do damage the target is instead removed from reality for the rest of the round. When removed from reality the target may not take turns may not be targeted or interacted with. It does not occupy space time does not pass for it. It returns at the start of the next round in or as close to where it departed from. ",
+    "CP cost": "15",
+    "Affinity": "2W2U(15)"
+  },
+  "Suggestion": {
+    "AbilityNames": "Suggestion",
+    "Category": "Spell",
+    "Ability Description": "Implant a compulsion in targets mind",
+    "Rules Text": "INST SINGLE/AOE MIND-AFFECTING TRGT F/2+3+1 (10ft radius)Commands contrary to subjects nature allow recurring saves with accumulating bonuses.",
+    "CP cost": "5",
+    "Affinity": "4(U|B)(9)"
+  },
+  "Supressing Field": {
+    "AbilityNames": "Supressing Field",
+    "Category": "Spell",
+    "Ability Description": "Reduce spells' force of specified tag by net hits up to force if force goes below 1 they are nullified",
+    "Rules Text": "SUST optional:SELFF/2 + 4Reduce spells' force of specified tag by net hits up to force if force goes below 1 they are nullifiedCasting this spell is a simple action",
+    "CP cost": "5",
+    "Affinity": "WU"
+  },
+  "Translocating Eye": {
+    "AbilityNames": "Translocating Eye",
+    "Category": "Spell",
+    "Ability Description": "Two target creatures swap places",
+    "Rules Text": "INST TRGTF/2+4Two target creatures within RANGE swap places. If a target is unwilling this spell only succeeds if the caster wins an opposed check. If both targets are unwilling the caster must succeed on both opposed checks.Force -> Range1: 30 ft3: 40 ft5: 70 ft7: 120 ft9: 210 ft",
+    "CP cost": "15",
+    "Affinity": "6(U/R)"
+  },
+  "True Seeing": {
+    "AbilityNames": "True Seeing",
+    "Category": "Spell",
+    "Ability Description": "Imbued with visions of the truth illusions and magical darkness melt from your vision and all is clear.  Negate up to HITS penalty/bonus from illusions magical or normal darkness concealment etc",
+    "Rules Text": "SUST SELFF/2Ignore up to HITS penalty on visual perception rolls to a maximum of FORCECasting this spell is a simple action",
+    "CP cost": "5",
+    "Affinity": "4W"
+  },
+  "Truelight": {
+    "AbilityNames": "Truelight",
+    "Category": "Spell",
+    "Ability Description": "Reduce vision penalties in an area",
+    "Rules Text": "AOE SUST optional:SELFF/2 + 1 (5ft)+1 per additional 5ftCasting this spell is a simple actionreduce visibility penalties by FORCE.",
+    "CP cost": "5",
+    "Affinity": "6(W/G/U)"
+  },
+  "Wall of Force": {
+    "AbilityNames": "Wall of Force",
+    "Category": "Spell",
+    "Ability Description": "1 point of Armor and Structure rating per hit. Barrier regenerates at start of next turn.",
+    "Rules Text": "SUSTF/2 + 31 point of Armor and Structure rating per hit. Barrier regenerates at start of next turn.",
+    "CP cost": "10",
+    "Affinity": "WU"
+  },
+  "Warp World": {
+    "AbilityNames": "Warp World",
+    "Category": "Spell",
+    "Ability Description": "All allies and enemies in the encounter randomly swap positions",
+    "Rules Text": "INST AOEF/2+2All creatures that fail to save or are willing within F*M*3 ft (round up for squares) randomly swap places. Resolution advice: remove all subjects and mark their locations roll one by one for each subject's reentry to a location after assigning each location a number.",
+    "CP cost": "20",
+    "Affinity": "14R(18)"
+  },
+  "Word of Binding": {
+    "AbilityNames": "Word of Binding",
+    "Category": "Spell",
+    "Ability Description": "Save or suck no physical actions",
+    "Rules Text": "SUST TRGTF/2 + 4Target resists with mental resWhile the target is subject to Word of Binding it is paralyzed and can take no physical actions.At end of turn target can use a free action to make an active mental res roll vs. the effect if successful the effect ends.The effect also ends after the target has rolled (FORCE) additional saves against it.",
+    "CP cost": "15",
+    "Affinity": "12W?"
+  },
+  "1v1 me bro": {
+    "AbilityNames": "1v1 me bro",
+    "Category": "Stance",
+    "Ability Description": "Ignore full defense free parries vs. stuff you are fighting",
+    "Rules Text": "You ignore an enemy's full defense with melee attacks. After attacking an enemy the next parry you attempt against that enemy this round costs (0).",
+    "CP cost": "20",
+    "Affinity": "6W6R(15)"
+  },
+  "Adroit riposte": {
+    "AbilityNames": "Adroit riposte",
+    "Category": "Stance",
+    "Ability Description": "bonus vs. enemies who are foiled by your parry // only costs (5) to riposte",
+    "Rules Text": "When your parry prevents an attack from hitting add (NET HITS) to your next attack against that opponent. It only costs (5) to make a riposte. Enemies do not benefit from reach when you are riposting. ",
+    "CP cost": "40",
+    "Affinity": "5W5U"
+  },
+  "Berserker": {
+    "AbilityNames": "Berserker",
+    "Category": "Stance",
+    "Ability Description": "full offense",
+    "Rules Text": "Your dice explode on attack actions. All active defenses cost an additional (5). You cannot take the total defense action.",
+    "CP cost": "30",
+    "Affinity": "12(B|R)(15)"
+  },
+  "Celeritas Dominus": {
+    "AbilityNames": "Celeritas Dominus",
+    "Category": "Stance",
+    "Ability Description": "When casting a spell extra mobility options become available",
+    "Rules Text": "When casting a...\\Red: Shift 1; Blue: tele 10ft; RU: choose oneWhen casting a... \\Red: Shift 2; Blue: tele 15ft; RU; both",
+    "CP cost": "10 per",
+    "Affinity": "8(R/U) per"
+  },
+  "Counterspell Stance": {
+    "AbilityNames": "Counterspell Stance",
+    "Category": "Stance",
+    "Ability Description": "Counterspelling costs (5)",
+    "Rules Text": "Counterspelling costs (5). You are always making passive perception checks to detect magic within 10* (cast stat) feet of you and are aware of what spell is being cast.",
+    "CP cost": "10",
+    "Affinity": "6U(12)"
+  },
+  "dodge stance": {
+    "AbilityNames": "dodge stance",
+    "Category": "Stance",
+    "Ability Description": "Full dodge costs (5)",
+    "Rules Text": "Full dodge is now (5) or a simple action. Every time you attempt a dodge you may shift 5ft after resolving the dodge.",
+    "CP cost": "10",
+    "Affinity": "9(U|B|R)(12)"
+  },
+  "Horde Culling Stance": {
+    "AbilityNames": "Horde Culling Stance",
+    "Category": "Stance",
+    "Ability Description": "bonuses when fighting multiple opponents ignore some penalties from being outnumbered",
+    "Rules Text": "2 extra dice on each attack per target when attacking multiple targets with melee. Opponents do not get bonus dice for outnumbering you in melee.",
+    "CP cost": "5",
+    "Affinity": "4(W/R)"
+  },
+  "Mountain Stance": {
+    "AbilityNames": "Mountain Stance",
+    "Category": "Stance",
+    "Ability Description": "Shield bonus is added to armor full block is now (5)",
+    "Rules Text": "Add your shield bonus to any calculation that includes your armor. The full block defensive action only costs (5).",
+    "CP cost": "5",
+    "Affinity": "4W"
+  },
+  "Never Outnumbered": {
+    "AbilityNames": "Never Outnumbered",
+    "Category": "Stance",
+    "Ability Description": "Bonus to evasion for each enemy in sight up to X",
+    "Rules Text": "Gain 1 die on dodge and full dodge for each enemy within 60' (LOS and LOE required)",
+    "CP cost": "10",
+    "Affinity": "12(W|R|G)(15)"
+  },
+  "Quickfire Storm": {
+    "AbilityNames": "Quickfire Storm",
+    "Category": "Stance",
+    "Ability Description": "Whenever you cast a spell that normally deals no damage you may chuck a firebolt at an opponent",
+    "Rules Text": "After you resolve a spellcast that was not an INST or DIRECT combat spell you may fire a 3F lightning bolt as per the spell you automatically resist all of its drain.",
+    "CP cost": "20",
+    "Affinity": "4U8R"
+  },
+  "Reach Stance": {
+    "AbilityNames": "Reach Stance",
+    "Category": "Stance",
+    "Ability Description": "Increases reach",
+    "Rules Text": "Adds (RANK) Reach",
+    "CP cost": "5 per",
+    "Affinity": "3G(6) per"
+  },
+  "Rooted Bulwark": {
+    "AbilityNames": "Rooted Bulwark",
+    "Category": "Stance",
+    "Ability Description": "While in this stance you resist all attempts to be moved against your will.  Additionally at the end of your turns vines grow from the ground attempting to root all adjacent enemies in place.  If continuously rooted enemies will become entangled and eventually engulfed in vines and plants.  This stance is ended if the roots are hacked away and is usable the next day or when your nature is regenerated (lol idk what I'm thinking honestly feel free to rationalize this a lot)",
+    "Rules Text": "Gain +4 dice to resist all attempts to be moved against your will. At the end of the round vines grow out from your body attempting to root all adjacent enemes in place (Your weapon skill or spellcasting + STR vs. enemy grapple). If an enemy is already rooted the check is instead to entangle. If already entangled the check is to engulf and imprison.The vines can be hacked away (BOD/2+4 health BOD*2 barrier rating)",
+    "CP cost": "5",
+    "Affinity": "6G(12)"
+  },
+  "The Blood Tells": {
+    "AbilityNames": "The Blood Tells",
+    "Category": "Stance",
+    "Ability Description": "Hear and feel all heartbeats within an extended range.  The range increases with blood for the blood god and lust for the lust throne.  Additionally gain a bonus on active bluff detection against characters with a heartrate.",
+    "Rules Text": "All heartbeats within (CHA*5 ft) can be heard (DC 2). Gain +4 dice on judge intentions rolls against targets that you are aware of who have a heartbeat.",
+    "CP cost": "15",
+    "Affinity": "12B"
+  },
+  "Thicket of Blades": {
+    "AbilityNames": "Thicket of Blades",
+    "Category": "Stance",
+    "Ability Description": "AoO stance",
+    "Rules Text": "Attacks of opportunity cost (2/1). ",
+    "CP cost": "2080",
+    "Affinity": "12W(15)24W(30)"
+  },
+  "Threatening Archer": {
+    "AbilityNames": "Threatening Archer",
+    "Category": "Stance",
+    "Ability Description": "Opponents that move within (Y) of you provoke",
+    "Rules Text": "Treat all squares within (AGI/2)*5 as threatened by your ranged weapon for purposes of opportunity attacks.",
+    "CP cost": "50",
+    "Affinity": "16(W|G)(21)"
+  },
+  "Unyielding Stance": {
+    "AbilityNames": "Unyielding Stance",
+    "Category": "Stance",
+    "Ability Description": "Ignore wound penalties falling unconscious as long as you hold your ground or for one day WHICHE ER COMES FIRST. If at any point your overflow is filled during this time you die when this benefit ends. ",
+    "Rules Text": "Ignore wound penalties falling unconscious as long as you hold your ground or for one day WHICHEVER COMES FIRST. If at any point your overflow is filled during this time you die when this benefit ends. ",
+    "CP cost": "10",
+    "Affinity": "12(W/B)"
+  },
+  "Vengeful Bulwark": {
+    "AbilityNames": "Vengeful Bulwark",
+    "Category": "Stance",
+    "Ability Description": "Bonus vs. targets you block",
+    "Rules Text": "Gain your shield bonus to your dice pool on your attack against a target you have successfully blocked in the past round. You may spend (5) to make an attack against a target you have succesfully blocked this attack is made with your shield. (reach 0 buckler = 1 dv med shield = 3 dv heavy shield = 4dv tower shield = 6dv)",
+    "CP cost": "5",
+    "Affinity": "6W"
+  },
+  "Willow stance": {
+    "AbilityNames": "Willow stance",
+    "Category": "Stance",
+    "Ability Description": "Get +4 on defense after a turn in which you do not attack. If you did not attack last turn you have +4 on your next attack. If you do nothing during your turn you do not lose initiative. ",
+    "Rules Text": "You have +4 defensive dice if you did not attack since your last turn. If you have not attacked since your last turn you have +4 dice on your next attack. You can pass your turn once per round at zero initiative loss.",
+    "CP cost": "25",
+    "Affinity": "8W"
+  },
+  "Undead": {
+    "AbilityNames": "Undead",
+    "Category": "Template",
+    "Ability Description": "Become undead with benefits and drawbacks. Multiple options. Vampire (necropolitan) mummy skeleton death knight?",
+    "Rules Text": "You permanently become undead gaining benefits and drawbacks according to the specific type selected.General:An undead's BOD does not contribute to its overflow track. Thus by default an undead dies when its physical wounds equal or exceed its health.Undead are immune to poisons diseases life drain effects effects that depend upon physical pain/pleasure/discomfort and most death effects.",
+    "CP cost": "40",
+    "Affinity": "12B"
+  },
+  "Bonemonger": {
+    "AbilityNames": "Bonemonger",
+    "Category": "Buff",
+    "Ability Description": "Successful attacks generate a temp hp shield can detonate temp hp shield",
+    "Rules Text": "Successful attacks generate 1 temp hp. You may detonate your temp hp discharging the buff as a complex action to deal BOD/2+temp hp DV as an AoE attack (attacking with your weapon skill or spellcasting dicepool). This is a body buff.",
+    "CP cost": "",
+    "Affinity": "WB"
+  },
+  "Elemental Body (Air)": {
+    "AbilityNames": "Elemental Body (Air)",
+    "Category": "Buff",
+    "Ability Description": "Flight increased movement speed deflection immunity to gases/inhaled poisons wind blast discharge",
+    "Rules Text": "",
+    "CP cost": "15/25/35",
+    "Affinity": "WU"
+  },
+  "Spare a hand?": {
+    "AbilityNames": "Spare a hand?",
+    "Category": "Buff",
+    "Ability Description": "Grow extra limbs!",
+    "Rules Text": "Grow 2 extra limbs",
+    "CP cost": "10",
+    "Affinity": ""
+  },
+  "Iceblock": {
+    "AbilityNames": "Iceblock",
+    "Category": "Maneuver",
+    "Ability Description": "Immobilize yourself in protective ice",
+    "Rules Text": "(10) Immobilize yourself in a block of ice as an interrupt. The ice has (CAST STAT) health and uses your soak pool. The ice disperses when its health reaches zero or you spend a complex action to dismiss it. Excess damage beyond the ice's health is dealt as nonlethal to you.",
+    "CP cost": "",
+    "Affinity": "U"
+  },
+  "Last Word": {
+    "AbilityNames": "Last Word",
+    "Category": "Maneuver",
+    "Ability Description": "spend init to prevent enemies from reacting to your nonaction",
+    "Rules Text": "(5) as part of a nonaction ability. No abilities can trigger in response to the activation or resolution of the empowered ability.",
+    "CP cost": "40",
+    "Affinity": ""
+  },
+  "Nightmare Blade": {
+    "AbilityNames": "Nightmare Blade",
+    "Category": "Maneuver",
+    "Ability Description": "Stab them in the MIND",
+    "Rules Text": "Make a melee attack at -3DV the target resists with mental save instead of dodge/block/parry.",
+    "CP cost": "40",
+    "Affinity": ""
+  },
+  "Bomb making": {
+    "AbilityNames": "Bomb making",
+    "Category": "Passive",
+    "Ability Description": "Create rudimentary explosive devices for battle",
+    "Rules Text": "",
+    "CP cost": "20",
+    "Affinity": "2R"
+  },
+  "Keen Eyed Tracker": {
+    "AbilityNames": "Keen Eyed Tracker",
+    "Category": "Passive",
+    "Ability Description": "Bonus on tracking negate penalties by using multiple methods to discern concealed tracks",
+    "Rules Text": "",
+    "CP cost": "5",
+    "Affinity": "4(W/G)"
+  },
+  "Regional Adaptation": {
+    "AbilityNames": "Regional Adaptation",
+    "Category": "Passive",
+    "Ability Description": "Pick a region/climate bonuses for enduring things typical to the area. Knowledge about area etc",
+    "Rules Text": "",
+    "CP cost": "2",
+    "Affinity": "2G"
+  },
+  "Unyielding Focus": {
+    "AbilityNames": "Unyielding Focus",
+    "Category": "Passive",
+    "Ability Description": "Can't be counterspelled can't be foiled",
+    "Rules Text": "Your abilities cannot be countered or interrupted. ",
+    "CP cost": "",
+    "Affinity": "WG"
+  },
+  "Restorative Resonance": {
+    "AbilityNames": "Restorative Resonance",
+    "Category": "Passive",
+    "Ability Description": "Whenever you heal an ally trigge a heal on another nearby ally",
+    "Rules Text": "Whenever an effect of yours heals an ally heal another ally within 30' of one of the original healing recipients for 2. This ability can't trigger itself",
+    "CP cost": "",
+    "Affinity": "W"
+  },
+  "Alarm": {
+    "AbilityNames": "Alarm",
+    "Category": "Spell",
+    "Ability Description": "Sets a ward upon an area that if it detects things that meet specified conditions sets off an alarm.",
+    "Rules Text": "",
+    "CP cost": "5",
+    "Affinity": "WU"
+  },
+  "Antipathy": {
+    "AbilityNames": "Antipathy",
+    "Category": "Spell",
+    "Ability Description": "Repell types of creatures from an area",
+    "Rules Text": "RITUAL",
+    "CP cost": "",
+    "Affinity": "14W"
+  },
+  "Chaosmorph": {
+    "AbilityNames": "Chaosmorph",
+    "Category": "Spell",
+    "Ability Description": "The target is turned into a dimminutive animal or a giant beast as polymorph or dino/bear/rhino (5/5)",
+    "Rules Text": "INST SUST TRGTF/2+1 F=BOD+SIZEMODOn success vs. 2x targets BOD the victim is changed. Flip a coin.Heads: (1/1)Tails: (5/5)",
+    "CP cost": "10",
+    "Affinity": ""
+  },
+  "Detention": {
+    "AbilityNames": "Detention",
+    "Category": "Spell",
+    "Ability Description": "Choose Spells or maneuvers target can't use the chosen on its next turn.",
+    "Rules Text": "INST TRGTF/2+2Target opposes with MENTALNeed F+net hits > target's WIL *2Casting this spell is a simple actionOn success choose Maneuvers or Spells. The target cannot use the selected type of ability on its next turn.",
+    "CP cost": "",
+    "Affinity": "WU"
+  },
+  "Earthshape": {
+    "AbilityNames": "Earthshape",
+    "Category": "Spell",
+    "Ability Description": "Move/reshape the earth",
+    "Rules Text": "F/2 + 3Shift up to 200kg of earth per net hit forming it with minimal control over finer details.",
+    "CP cost": "",
+    "Affinity": "G"
+  },
+  "Embiggen": {
+    "AbilityNames": "Embiggen",
+    "Category": "Spell",
+    "Ability Description": "Increase size of target ally",
+    "Rules Text": "SUST TRGT(SELF)F/2+5F1: +1 sizeF5: +2 sizeF9: +3 size",
+    "CP cost": "15",
+    "Affinity": ""
+  },
+  "Mirror Image": {
+    "AbilityNames": "Mirror Image",
+    "Category": "Spell",
+    "Ability Description": "Create multiple illusiory duplicates ",
+    "Rules Text": "SUST",
+    "CP cost": "",
+    "Affinity": "U"
+  },
+  "Resist Energy": {
+    "AbilityNames": "Resist Energy",
+    "Category": "Spell",
+    "Ability Description": "Create ward that absorbs energy damage of a type specified at casting",
+    "Rules Text": "",
+    "CP cost": "10",
+    "Affinity": "WG"
+  },
+  "Seeping Deluge": {
+    "AbilityNames": "Seeping Deluge",
+    "Category": "Spell",
+    "Ability Description": "A flash flood hits the area. Water swells swallowing up the ground.  Creatures must seek saftey among trees boulders or rooves.  The deluge may take hours or days to pass depending on how flat the surrounding region is.",
+    "Rules Text": "",
+    "CP cost": "30",
+    "Affinity": "6U"
+  },
+  "Sleetstorm": {
+    "AbilityNames": "Sleetstorm",
+    "Category": "Spell",
+    "Ability Description": "Blinding freezing sleet pelts down from the skys. A sleetstorm begins.  If it is summertime a hailstorm may appear instead.  Hailstorms hurt and break things but dont do anything else.  Sleetstorms make the ground icy and extingquish campfires torches etc as well as reducing vision down to 10ft.  Sleetstorms rarely last more than a day but in harsh winters can remain for a week.",
+    "Rules Text": "",
+    "CP cost": "20",
+    "Affinity": "6(U/R)"
+  },
+  "Time Spiral": {
+    "AbilityNames": "Time Spiral",
+    "Category": "Spell",
+    "Ability Description": "All creatures involved in combat reroll initiative",
+    "Rules Text": "AoE INSTF/2+12All creatures in the current combat reroll initiative.",
+    "CP cost": "",
+    "Affinity": "U (R10)"
+  },
+  "Tornado": {
+    "AbilityNames": "Tornado",
+    "Category": "Spell",
+    "Ability Description": "The wind whips up injuring flying creatures and blowing stuff over.  A windstorm picks up in the region blowing sails grounding flyers and overall making a ruccus of anything not tied down.  Lasts as long as it takes a high pressure system to dissapate",
+    "Rules Text": "",
+    "CP cost": "20",
+    "Affinity": "6(U/G)"
+  },
+  "Zone of Silence": {
+    "AbilityNames": "Zone of Silence",
+    "Category": "Spell",
+    "Ability Description": "Silence an area",
+    "Rules Text": "F/2 + 4Sets a threshold of (F) for casting opposed by ",
+    "CP cost": "",
+    "Affinity": "W"
+  },
+  "Size control": {
+    "AbilityNames": "Size control",
+    "Category": "Buff",
+    "Ability Description": "shrink / grow ",
+    "Rules Text": "",
+    "CP cost": "",
+    "Affinity": "6(U/G)"
+  },
+  "Mark": {
+    "AbilityNames": "Mark",
+    "Category": "Debuff",
+    "Ability Description": "Mark target easily track target bonuses against marked target",
+    "Rules Text": "",
+    "CP cost": "",
+    "Affinity": "4G"
+  },
+  "Body Diving": {
+    "AbilityNames": "Body Diving",
+    "Category": "Maneuver",
+    "Ability Description": "meld into flesh",
+    "Rules Text": "",
+    "CP cost": "",
+    "Affinity": "B"
+  },
+  "Crunching Bullrush": {
+    "AbilityNames": "Crunching Bullrush",
+    "Category": "Maneuver",
+    "Ability Description": "Deal damage when bullrushing something into an obstacle",
+    "Rules Text": "",
+    "CP cost": "",
+    "Affinity": "2(G/R/B)"
+  },
+  "Detaining Strike": {
+    "AbilityNames": "Detaining Strike",
+    "Category": "Maneuver",
+    "Ability Description": "Attack inflicts dice penalty on enemy's attacks for the rest of the round",
+    "Rules Text": "",
+    "CP cost": "",
+    "Affinity": "W"
+  },
+  "Devour": {
+    "AbilityNames": "Devour",
+    "Category": "Maneuver",
+    "Ability Description": "Swallow whole enemies much smaller than you",
+    "Rules Text": "",
+    "CP cost": "",
+    "Affinity": "BG"
+  },
+  "Fatespin": {
+    "AbilityNames": "Fatespin",
+    "Category": "Maneuver",
+    "Ability Description": "Force an enemy to choose what they will do on their next turn this locks them into those actions.",
+    "Rules Text": "",
+    "CP cost": "",
+    "Affinity": "8B"
+  },
+  "Find the Gap": {
+    "AbilityNames": "Find the Gap",
+    "Category": "Maneuver",
+    "Ability Description": "Bypass armor in a moment of opportunity",
+    "Rules Text": "",
+    "CP cost": "",
+    "Affinity": "2W"
+  },
+  "Goad": {
+    "AbilityNames": "Goad",
+    "Category": "Maneuver",
+    "Ability Description": "",
+    "Rules Text": "",
+    "CP cost": "5",
+    "Affinity": "2R"
+  },
+  "Grand Bend": {
+    "AbilityNames": "Grand Bend",
+    "Category": "Maneuver",
+    "Ability Description": "Line attack AoE shot",
+    "Rules Text": "Make a line attack (AoE) with your ranged weapon at -6 dicepool out to the end of your weapon's short range. Take Aim bonuses are doubled for this attack.",
+    "CP cost": "",
+    "Affinity": ""
+  },
+  "Invoke Paragon": {
+    "AbilityNames": "Invoke Paragon",
+    "Category": "Maneuver",
+    "Ability Description": "spend luck (or whatever) immediate action gain temporary immunity from death effects.",
+    "Rules Text": "",
+    "CP cost": "",
+    "Affinity": "8W"
+  },
+  "Puff of Smoke": {
+    "AbilityNames": "Puff of Smoke",
+    "Category": "Maneuver",
+    "Ability Description": "Flash powder smoke bomb or a magical breath; whatever the source of the distraction the user has dissapeared",
+    "Rules Text": "As a simple action or for (5) as part of movement you may toss the flask to generate a 10' cube of smoke that lasts until the start of your next turn. The smoke applies a -2 vision penalty to see into or through it. (scale cooldown with investment or go with daily charges?)",
+    "CP cost": "",
+    "Affinity": ""
+  },
+  "Redirecting parry": {
+    "AbilityNames": "Redirecting parry",
+    "Category": "Maneuver",
+    "Ability Description": "cause enemy to hit themselves with their weapon on a successful parry",
+    "Rules Text": "(5) as part of attempting a parry. If your parry is successful the attacker must soak the unmodified DV of their weapon.",
+    "CP cost": "",
+    "Affinity": ""
+  },
+  "Spellshank": {
+    "AbilityNames": "Spellshank",
+    "Category": "Maneuver",
+    "Ability Description": "Deal reduced damage possibly steal and cast spell target recently cast",
+    "Rules Text": "",
+    "CP cost": "",
+    "Affinity": "UB"
+  },
+  "Touch of Purity": {
+    "AbilityNames": "Touch of Purity",
+    "Category": "Maneuver",
+    "Ability Description": "Purge various effects from ally",
+    "Rules Text": "",
+    "CP cost": "",
+    "Affinity": "4W"
+  },
+  "Volatilize": {
+    "AbilityNames": "Volatilize",
+    "Category": "Maneuver",
+    "Ability Description": "double dice 1s count as -1s if 1/4 are 1s auto fail",
+    "Rules Text": "",
+    "CP cost": "",
+    "Affinity": "UR"
+  },
+  "Wild Ricochet": {
+    "AbilityNames": "Wild Ricochet",
+    "Category": "Maneuver",
+    "Ability Description": "Cast a copy of a spell being cast and redirect the targets of the spell being cast",
+    "Rules Text": "",
+    "CP cost": "",
+    "Affinity": "8R"
+  },
+  "Cloudy Conjuration": {
+    "AbilityNames": "Cloudy Conjuration",
+    "Category": "Metamagic",
+    "Ability Description": "Create a fog cloud after casting a conjuration spell",
+    "Rules Text": "",
+    "CP cost": "",
+    "Affinity": "2(U/G)"
+  },
+  "Animal companion / familiar": {
+    "AbilityNames": "Animal companion / familiar",
+    "Category": "Passive",
+    "Ability Description": "Various levels / access / options",
+    "Rules Text": "",
+    "CP cost": "",
+    "Affinity": "2(G/U)"
+  },
+  "Covert Poisoning": {
+    "AbilityNames": "Covert Poisoning",
+    "Category": "Passive",
+    "Ability Description": "Much easier to poison unsuspecting targets",
+    "Rules Text": "",
+    "CP cost": "",
+    "Affinity": "B / G"
+  },
+  "Elemental Charge": {
+    "AbilityNames": "Elemental Charge",
+    "Category": "Passive",
+    "Ability Description": "When you make a charge attack while you have an element imbued in your weapons you leave a lingering trail of that element.",
+    "Rules Text": "Prerequisite: an Imbue (element) ability.You may spend (5) to activate one of your Imbue(element) buffs as part of a charge.When you charge with an imbue(element) buff active you leave behind a lingering trail of the element in all spaces you exit as part of the charge. This trail lasts until the end of the round and automatically hits creatures that enter cross or end their turn inside it dealing (2+STAT??) damage of the appropriate element.",
+    "CP cost": "",
+    "Affinity": ""
+  },
+  "Fed by Fear": {
+    "AbilityNames": "Fed by Fear",
+    "Category": "Passive",
+    "Ability Description": "Generate expendable offensive dice when you successfully fear an enemy",
+    "Rules Text": "",
+    "CP cost": "",
+    "Affinity": "B"
+  },
+  "Find the weakspot": {
+    "AbilityNames": "Find the weakspot",
+    "Category": "Passive",
+    "Ability Description": "Various bonuses granted to combat for identifying fighting styles armor weapons",
+    "Rules Text": "",
+    "CP cost": "",
+    "Affinity": "4(W/U)"
+  },
+  "Flawless stride": {
+    "AbilityNames": "Flawless stride",
+    "Category": "Passive",
+    "Ability Description": "ignore some/all difficult terrain",
+    "Rules Text": "",
+    "CP cost": "",
+    "Affinity": "4(G/U)"
+  },
+  "Peerless Tracker": {
+    "AbilityNames": "Peerless Tracker",
+    "Category": "Passive",
+    "Ability Description": "Track all manner of things even magical auras",
+    "Rules Text": "",
+    "CP cost": "",
+    "Affinity": "G"
+  },
+  "Speed Read": {
+    "AbilityNames": "Speed Read",
+    "Category": "Passive",
+    "Ability Description": "You can read at astonishing speed",
+    "Rules Text": "You can read a full page of text in six seconds getting a general idea of its contents. ",
+    "CP cost": "",
+    "Affinity": ""
+  },
+  "Titan Toppler": {
+    "AbilityNames": "Titan Toppler",
+    "Category": "Passive",
+    "Ability Description": "Climb enemies much larger than you benefits tactics",
+    "Rules Text": "",
+    "CP cost": "",
+    "Affinity": "2(R/W)"
+  },
+  "Unbalancing": {
+    "AbilityNames": "Unbalancing",
+    "Category": "Passive",
+    "Ability Description": "Gain (bonus) against enemies you have recently dodged",
+    "Rules Text": "Gain +2 dice on trip grapple and disarm checks against enemies you dodged since the end of the last round.",
+    "CP cost": "",
+    "Affinity": "B"
+  },
+  "Scrying": {
+    "AbilityNames": "Scrying",
+    "Category": "Ritual",
+    "Ability Description": "View location individual or objects remotely from great distance",
+    "Rules Text": "",
+    "CP cost": "",
+    "Affinity": "12U"
+  },
+  "Elemental Trap": {
+    "AbilityNames": "Elemental Trap",
+    "Category": "Spell",
+    "Ability Description": "Create elemental attack that can be triggered after an arming time",
+    "Rules Text": "",
+    "CP cost": "",
+    "Affinity": "8"
+  },
+  "Fly": {
+    "AbilityNames": "Fly",
+    "Category": "Spell",
+    "Ability Description": "Causes subject(s) to fly successes influence speed/maneuverability of flight",
+    "Rules Text": "",
+    "CP cost": "",
+    "Affinity": "U"
+  },
+  "Phase Lock": {
+    "AbilityNames": "Phase Lock",
+    "Category": "Spell",
+    "Ability Description": "Target is bound to this dimension cannot teleport or phase.",
+    "Rules Text": "",
+    "CP cost": "",
+    "Affinity": "W?"
+  },
+  "Phase Lock Field": {
+    "AbilityNames": "Phase Lock Field",
+    "Category": "Spell",
+    "Ability Description": "Region is warded against teleportation and extradimensional access.",
+    "Rules Text": "",
+    "CP cost": "",
+    "Affinity": "W?"
+  },
+  "Thoughtsway": {
+    "AbilityNames": "Thoughtsway",
+    "Category": "Spell",
+    "Ability Description": "mind affecting to determine target's next attack",
+    "Rules Text": "",
+    "CP cost": "",
+    "Affinity": "U"
+  },
+  "Transmorgriphy Snake": {
+    "AbilityNames": "Transmorgriphy Snake",
+    "Category": "Spell",
+    "Ability Description": "Turn linked chain or rope into a snake.  Can be used to release shackles or rope bonds.  Snake can be venomous if (G).",
+    "Rules Text": "",
+    "CP cost": "",
+    "Affinity": "BUG"
+  },
+  "Stifling Presence": {
+    "AbilityNames": "Stifling Presence",
+    "Category": "Aura",
+    "Ability Description": "silence?",
+    "Rules Text": "",
+    "CP cost": "",
+    "Affinity": ""
+  },
+  "Fusion": {
+    "AbilityNames": "Fusion",
+    "Category": "Buff",
+    "Ability Description": "Temporarily merge with target willing ally forming a fusion of stats and abilities.",
+    "Rules Text": "",
+    "CP cost": "",
+    "Affinity": ""
+  },
+  "Primeval Embodiment": {
+    "AbilityNames": "Primeval Embodiment",
+    "Category": "Buff",
+    "Ability Description": "",
+    "Rules Text": "",
+    "CP cost": "",
+    "Affinity": "20G"
+  },
+  "Unchained Instinct": {
+    "AbilityNames": "Unchained Instinct",
+    "Category": "Buff",
+    "Ability Description": "",
+    "Rules Text": "",
+    "CP cost": "",
+    "Affinity": "20R"
+  },
+  "Advanced alchemical creation": {
+    "AbilityNames": "Advanced alchemical creation",
+    "Category": "Craft",
+    "Ability Description": "Create smoke bombs flashers ",
+    "Rules Text": "",
+    "CP cost": "",
+    "Affinity": ""
+  },
+  "Meld into stone": {
+    "AbilityNames": "Meld into stone",
+    "Category": "Maneuver",
+    "Ability Description": "",
+    "Rules Text": "",
+    "CP cost": "",
+    "Affinity": "G"
+  },
+  "Shield Slam": {
+    "AbilityNames": "Shield Slam",
+    "Category": "Maneuver",
+    "Ability Description": "Generate shockwave with shield",
+    "Rules Text": "",
+    "CP cost": "",
+    "Affinity": ""
+  },
+  "Spellcatching/Spelltheft": {
+    "AbilityNames": "Spellcatching/Spelltheft",
+    "Category": "Maneuver",
+    "Ability Description": "Steal and hold spell effect to reuse later",
+    "Rules Text": "",
+    "CP cost": "",
+    "Affinity": "4U"
+  },
+  "Turn X (undead etc)": {
+    "AbilityNames": "Turn X (undead etc)",
+    "Category": "Maneuver",
+    "Ability Description": "Repel abhorrent entities of a specific type varporize weaker entities",
+    "Rules Text": "",
+    "CP cost": "",
+    "Affinity": ""
+  },
+  "Volley": {
+    "AbilityNames": "Volley",
+    "Category": "Maneuver",
+    "Ability Description": "Fire multiple projectiles as one attack",
+    "Rules Text": "",
+    "CP cost": "",
+    "Affinity": ""
+  },
+  "Enduring Fortitude": {
+    "AbilityNames": "Enduring Fortitude",
+    "Category": "Passive",
+    "Ability Description": "Temp HP decays slower",
+    "Rules Text": "",
+    "CP cost": "",
+    "Affinity": ""
+  },
+  "Sense Heretic": {
+    "AbilityNames": "Sense Heretic",
+    "Category": "Passive",
+    "Ability Description": "Detect heresy as appropriate for your viewpoint",
+    "Rules Text": "",
+    "CP cost": "",
+    "Affinity": ""
+  },
+  "Shield Push": {
+    "AbilityNames": "Shield Push",
+    "Category": "Passive",
+    "Ability Description": "Enemies you hit with your shield are subject to a free push attempt",
+    "Rules Text": "",
+    "CP cost": "",
+    "Affinity": ""
+  },
+  "Souleater": {
+    "AbilityNames": "Souleater",
+    "Category": "Passive",
+    "Ability Description": "",
+    "Rules Text": "",
+    "CP cost": "",
+    "Affinity": "B"
+  },
+  "Unarmed Master": {
+    "AbilityNames": "Unarmed Master",
+    "Category": "Passive",
+    "Ability Description": "Improve unarmed attacks",
+    "Rules Text": "",
+    "CP cost": "",
+    "Affinity": ""
+  },
+  "Artillery Usage": {
+    "AbilityNames": "Artillery Usage",
+    "Category": "Skill",
+    "Ability Description": "Crew understand use ballista cannon boardplank",
+    "Rules Text": "",
+    "CP cost": "",
+    "Affinity": ""
+  },
+  "Astral Readings": {
+    "AbilityNames": "Astral Readings",
+    "Category": "Skill",
+    "Ability Description": "star reading navigation cardinal direction weather events",
+    "Rules Text": "",
+    "CP cost": "",
+    "Affinity": ""
+  },
+  "Fencing and Smuggling": {
+    "AbilityNames": "Fencing and Smuggling",
+    "Category": "Skill",
+    "Ability Description": "Abiliity to disguise goods and convince buyers that said goods are not stolen",
+    "Rules Text": "",
+    "CP cost": "",
+    "Affinity": ""
+  },
+  "Geometric interpolation": {
+    "AbilityNames": "Geometric interpolation",
+    "Category": "Skill",
+    "Ability Description": "Feel the tectonics in the earth shape and bend them to your will",
+    "Rules Text": "",
+    "CP cost": "",
+    "Affinity": ""
+  },
+  "Predict Storm": {
+    "AbilityNames": "Predict Storm",
+    "Category": "Skill",
+    "Ability Description": "With some % of accuracy predict storms (hurricane sandstorm and more)",
+    "Rules Text": "",
+    "CP cost": "",
+    "Affinity": ""
+  },
+  "Shot and Blade": {
+    "AbilityNames": "Shot and Blade",
+    "Category": "Skill",
+    "Ability Description": "Duel wield firing a one handed ranged weapon and a one handed sword. May have different targets no penalties or provokes from shooting ranged",
+    "Rules Text": "",
+    "CP cost": "",
+    "Affinity": ""
+  },
+  "Animate Dead": {
+    "AbilityNames": "Animate Dead",
+    "Category": "Spell",
+    "Ability Description": "",
+    "Rules Text": "",
+    "CP cost": "",
+    "Affinity": "B"
+  },
+  "Cloud of Knives": {
+    "AbilityNames": "Cloud of Knives",
+    "Category": "Spell",
+    "Ability Description": "Conjure a variable amount of knives that you can fire off individually as an attack",
+    "Rules Text": "",
+    "CP cost": "",
+    "Affinity": ""
+  },
+  "Meteor": {
+    "AbilityNames": "Meteor",
+    "Category": "Spell",
+    "Ability Description": "",
+    "Rules Text": "",
+    "CP cost": "",
+    "Affinity": "R"
+  },
+  "Scrying Ward": {
+    "AbilityNames": "Scrying Ward",
+    "Category": "Spell",
+    "Ability Description": "",
+    "Rules Text": "",
+    "CP cost": "",
+    "Affinity": "WU"
+  },
+  "Inner Focus": {
+    "AbilityNames": "Inner Focus",
+    "Category": "Stance",
+    "Ability Description": "Holding focus mechanics bonuses while holding focus can be shaken out of focus increasingly hard to sustain focus",
+    "Rules Text": "",
+    "CP cost": "",
+    "Affinity": ""
+  },
+  "Control Plants": {
+    "AbilityNames": "Control Plants",
+    "Category": "",
+    "Ability Description": "Command or Rebuke plant creatures-your WIL vs. ??",
+    "Rules Text": "As description.  Alternatively some sort of plant affinity plant growing and other naturey things",
+    "CP cost": "",
+    "Affinity": ""
+  },
+  "Quake": {
+    "AbilityNames": "Quake",
+    "Category": "",
+    "Ability Description": "Knock prone damage vs. those on ground",
+    "Rules Text": "",
+    "CP cost": "",
+    "Affinity": "R"
+  },
+  "Shifting Form": {
+    "AbilityNames": "Shifting Form",
+    "Category": "",
+    "Ability Description": "Pick a new adaptation each time you roll init",
+    "Rules Text": "",
+    "CP cost": "",
+    "Affinity": "UG"
+  },
+  "Conjure personal steed": {
+    "AbilityNames": "Conjure personal steed",
+    "Category": "Buff",
+    "Ability Description": "",
+    "Rules Text": "",
+    "CP cost": "",
+    "Affinity": ""
+  },
+  "Bone Storm": {
+    "AbilityNames": "Bone Storm",
+    "Category": "Maneuver",
+    "Ability Description": "",
+    "Rules Text": "",
+    "CP cost": "",
+    "Affinity": ""
+  },
+  "Duress": {
+    "AbilityNames": "Duress",
+    "Category": "Passive",
+    "Ability Description": "",
+    "Rules Text": "",
+    "CP cost": "",
+    "Affinity": ""
+  },
+  "Familiar": {
+    "AbilityNames": "Familiar",
+    "Category": "Passive",
+    "Ability Description": "",
+    "Rules Text": "",
+    "CP cost": "",
+    "Affinity": ""
+  },
+  "Magical device macguivering ": {
+    "AbilityNames": "Magical device macguivering ",
+    "Category": "Passive",
+    "Ability Description": "",
+    "Rules Text": "",
+    "CP cost": "",
+    "Affinity": ""
+  },
+  "Pain Begets Clarity": {
+    "AbilityNames": "Pain Begets Clarity",
+    "Category": "Passive",
+    "Ability Description": "",
+    "Rules Text": "",
+    "CP cost": "",
+    "Affinity": ""
+  },
+  "Quick healer // regeneration": {
+    "AbilityNames": "Quick healer // regeneration",
+    "Category": "Passive",
+    "Ability Description": "",
+    "Rules Text": "",
+    "CP cost": "",
+    "Affinity": ""
+  },
+  "Imbue Region": {
+    "AbilityNames": "Imbue Region",
+    "Category": "Ritual",
+    "Ability Description": "",
+    "Rules Text": "",
+    "CP cost": "",
+    "Affinity": ""
+  },
+  "Imprison": {
+    "AbilityNames": "Imprison",
+    "Category": "Ritual",
+    "Ability Description": "",
+    "Rules Text": "",
+    "CP cost": "",
+    "Affinity": ""
+  },
+  "Adapt Body": {
+    "AbilityNames": "Adapt Body",
+    "Category": "Spell",
+    "Ability Description": "",
+    "Rules Text": "",
+    "CP cost": "",
+    "Affinity": ""
+  },
+  "Blind": {
+    "AbilityNames": "Blind",
+    "Category": "Spell",
+    "Ability Description": "",
+    "Rules Text": "",
+    "CP cost": "",
+    "Affinity": ""
+  },
+  "Charm": {
+    "AbilityNames": "Charm",
+    "Category": "Spell",
+    "Ability Description": "",
+    "Rules Text": "",
+    "CP cost": "",
+    "Affinity": ""
+  },
+  "Comprehend Languages": {
+    "AbilityNames": "Comprehend Languages",
+    "Category": "Spell",
+    "Ability Description": "",
+    "Rules Text": "",
+    "CP cost": "",
+    "Affinity": ""
+  },
+  "Conjure Weapon": {
+    "AbilityNames": "Conjure Weapon",
+    "Category": "Spell",
+    "Ability Description": "",
+    "Rules Text": "",
+    "CP cost": "",
+    "Affinity": ""
+  },
+  "Constricting Field": {
+    "AbilityNames": "Constricting Field",
+    "Category": "Spell",
+    "Ability Description": "",
+    "Rules Text": "",
+    "CP cost": "",
+    "Affinity": ""
+  },
+  "Creation Permanent": {
+    "AbilityNames": "Creation Permanent",
+    "Category": "Spell",
+    "Ability Description": "",
+    "Rules Text": "",
+    "CP cost": "",
+    "Affinity": ""
+  },
+  "Creation Temporary": {
+    "AbilityNames": "Creation Temporary",
+    "Category": "Spell",
+    "Ability Description": "",
+    "Rules Text": "",
+    "CP cost": "",
+    "Affinity": ""
+  },
+  "Discern Alignment": {
+    "AbilityNames": "Discern Alignment",
+    "Category": "Spell",
+    "Ability Description": "",
+    "Rules Text": "",
+    "CP cost": "",
+    "Affinity": ""
+  },
+  "Earthquake": {
+    "AbilityNames": "Earthquake",
+    "Category": "Spell",
+    "Ability Description": "",
+    "Rules Text": "",
+    "CP cost": "",
+    "Affinity": ""
+  },
+  "Know Nemesis": {
+    "AbilityNames": "Know Nemesis",
+    "Category": "Spell",
+    "Ability Description": "",
+    "Rules Text": "",
+    "CP cost": "",
+    "Affinity": ""
+  },
+  "Magic Jar": {
+    "AbilityNames": "Magic Jar",
+    "Category": "Spell",
+    "Ability Description": "",
+    "Rules Text": "",
+    "CP cost": "",
+    "Affinity": ""
+  },
+  "Poison Burst": {
+    "AbilityNames": "Poison Burst",
+    "Category": "Spell",
+    "Ability Description": "",
+    "Rules Text": "",
+    "CP cost": "",
+    "Affinity": ""
+  },
+  "Poison Cloud": {
+    "AbilityNames": "Poison Cloud",
+    "Category": "Spell",
+    "Ability Description": "",
+    "Rules Text": "",
+    "CP cost": "",
+    "Affinity": ""
+  },
+  "Share Pain": {
+    "AbilityNames": "Share Pain",
+    "Category": "Spell",
+    "Ability Description": "",
+    "Rules Text": "",
+    "CP cost": "",
+    "Affinity": ""
+  },
+  "X Wall": {
+    "AbilityNames": "X Wall",
+    "Category": "Spell",
+    "Ability Description": "",
+    "Rules Text": "",
+    "CP cost": "",
+    "Affinity": ""
+  },
+  "Zone of Truth": {
+    "AbilityNames": "Zone of Truth",
+    "Category": "Spell",
+    "Ability Description": "",
+    "Rules Text": "",
+    "CP cost": "",
+    "Affinity": ""
+  },
+  "Sneaky ": {
+    "AbilityNames": "Sneaky ",
+    "Category": "Stance",
+    "Ability Description": "",
+    "Rules Text": "",
+    "CP cost": "",
+    "Affinity": ""
+  },
+  "HERITAGE TRAITS": {
+    "AbilityNames": "HERITAGE TRAITS",
+    "Category": "",
+    "Ability Description": "",
+    "Rules Text": "",
+    "CP cost": "",
+    "Affinity": ""
+  },
+  "Fade Strike": {
+    "AbilityNames": "Fade Strike",
+    "Category": "Maneuver",
+    "Ability Description": "Make an attack move after the attack",
+    "Rules Text": "Make an attack net hits don't contribute to damage. Shift up to half your speed after the attack.",
+    "CP cost": "5",
+    "Affinity": "3U(12)"
+  },
+  "Singe & Cauterize": {
+    "AbilityNames": "Singe & Cauterize",
+    "Category": "Buff",
+    "Ability Description": "Dealing direct fire damage triggers a targeted heal on an ally. Healing triggers a targeted fire bolt.",
+    "Rules Text": "Body Buff. Dealing direct fire damage to an enemy triggers a targeted heal on an ally within (CHA*10 ft) for up to half the damage dealt. Healing an ally triggers a targeted firebolt (DV = 2x heal) attack (spellcasting) at an enemy in range.",
+    "CP cost": "30",
+    "Affinity": "5W 5R (21)"
+  },
+  "Unsettle": {
+    "AbilityNames": "Unsettle",
+    "Category": "Maneuver",
+    "Ability Description": "Startle an enemy out of their action but they act swiftly afterwards",
+    "Rules Text": "Simple action. Target an enemy. The next simple or complex action they attempt before your next turn triggers an attack from you. This attack does no damage on a successful hit instead negating their action. On their next turn the enemy gains 15 initiative (regardless of hit or miss).",
+    "CP cost": "15",
+    "Affinity": "BG"
+  },
+  "Implement Focus": {
+    "AbilityNames": "Implement Focus",
+    "Category": "Metamagic",
+    "Ability Description": "You cannot cast without your implement. Choose an implement gain minor benefits from it",
+    "Rules Text": "",
+    "CP cost": "",
+    "Affinity": ""
+  },
+  "Think You're Scary?": {
+    "AbilityNames": "Think You're Scary?",
+    "Category": "Passive",
+    "Ability Description": "Resist fear retalliate against failed fear effects.",
+    "Rules Text": "Act as if your fear state was 1 lower. Your max fear state is increased by 1. You passively roll active mental against all fear effects. After succeeding on a mental res vs. a fear effect you may spend (5) as an interrupt to attempt intimidation vs. the source of the triggering fear.",
+    "CP cost": "",
+    "Affinity": ""
+  },
+  "Noncommital Blow": {
+    "AbilityNames": "Noncommital Blow",
+    "Category": "Maneuver",
+    "Ability Description": "if this attack misses regain a simple action",
+    "Rules Text": "Make an attack if it misses you regain a simple action.",
+    "CP cost": "20",
+    "Affinity": "R8?"
+  },
+  "Overdrive": {
+    "AbilityNames": "Overdrive",
+    "Category": "Buff",
+    "Ability Description": "costs drain to trigger various general combat bonuses",
+    "Rules Text": "",
+    "CP cost": "",
+    "Affinity": ""
+  },
+  "Time is Mana": {
+    "AbilityNames": "Time is Mana",
+    "Category": "Passive",
+    "Ability Description": "Can spend drain to cover init costs for U abilities",
+    "Rules Text": "Spend 2 drain per (5) of a blue ability",
+    "CP cost": "10",
+    "Affinity": "10U(21)"
+  },
+  "Manacleave": {
+    "AbilityNames": "Manacleave",
+    "Category": "Maneuver",
+    "Ability Description": "Attack removes buff(s)",
+    "Rules Text": "Make an attack net hits do not contribute to damage. Target soaks with mental soak. On hit one of the target's buffs (chosen randomly) ends. ___________________________Half net hits buffs are removed___________________________Half net hits also contribute to damage",
+    "CP cost": "",
+    "Affinity": ""
+  },
+  "Generous Enchancements": {
+    "AbilityNames": "Generous Enchancements",
+    "Category": "Aura",
+    "Ability Description": "Share the effects of one ongoing buff you are subject to with all allies in range of this aura.",
+    "Rules Text": "",
+    "CP cost": "80",
+    "Affinity": "12W12G(30)"
+  },
+  "Overdrive": {
+    "AbilityNames": "Overdrive",
+    "Category": "Buff",
+    "Ability Description": "costs drain to trigger various general combat bonuses",
+    "Rules Text": "",
+    "CP cost": "",
+    "Affinity": ""
+  },
+  "Time is Mana": {
+    "AbilityNames": "Time is Mana",
+    "Category": "Passive",
+    "Ability Description": "Can spend drain to cover init costs for U abilities",
+    "Rules Text": "Spend 2 drain per (5) of a blue ability",
+    "CP cost": "10",
+    "Affinity": "10U(21)"
+  },
+  "Manacleave": {
+    "AbilityNames": "Manacleave",
+    "Category": "Maneuver",
+    "Ability Description": "Attack removes buff(s)",
+    "Rules Text": "Make an attack net hits do not contribute to damage. Target soaks with mental soak. On hit one of the target's buffs (chosen randomly) ends. \n___________________________\nHalf net hits buffs are removed\n___________________________\nHalf net hits also contribute to damage",
+    "CP cost": "",
+    "Affinity": ""
+  },
+  "Generous Enchancements": {
+    "AbilityNames": "Generous Enchancements",
+    "Category": "Aura",
+    "Ability Description": "Share the effects of one ongoing buff you are subject to with all allies in range of this aura.",
+    "Rules Text": "",
+    "CP cost": "80",
+    "Affinity": "12W12G(30)"
+  }
+}

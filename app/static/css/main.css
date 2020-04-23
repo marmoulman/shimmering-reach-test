@@ -1,0 +1,11 @@
+.modal-xxl {
+    width: 1600px;
+    margin: auto;
+}
+
+.modal-body {
+    position: relative;
+    overflow-y: auto;
+    max-height: 400px;
+    padding: 15px;
+}
