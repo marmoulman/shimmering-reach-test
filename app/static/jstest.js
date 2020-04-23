@@ -129,4 +129,5 @@ class Character {           //this is a character class.
 
 
 
+
 var character = new Character('Joe', 'Tavor', 1, 1, 1, 1, 1, 1, 1, 1, 1, 675, 0);
