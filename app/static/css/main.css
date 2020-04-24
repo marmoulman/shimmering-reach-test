@@ -1,11 +1,12 @@
 .modal-xxl {
     width: 1600px;
     margin: auto;
+    height: 800px;
 }
 
 .modal-body {
     position: relative;
     overflow-y: auto;
-    max-height: 400px;
+    max-height: 800px;
     padding: 15px;
 }

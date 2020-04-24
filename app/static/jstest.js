@@ -2,21 +2,21 @@
 
 function init(text)     //update HTML to match saved values
 {
-    abilityTable.abilities = text;
-    console.log('Initializing...');
-    emptyTableBody();
-    document.getElementById("characterpoints").innerHTML=character.cpCurrent;
-    Object.keys(text).forEach(function(key) {
-        if (abilityTable.selectedAbilities.includes(key))
-        {
-            console.log(key);
-        }
-        else
-        {
-            abilityTable.addRow(key,text[key]);
-        }
-    })
-
+        abilityTable.abilities = text;
+        console.log('Initializing...');
+        emptyTableBody();
+        document.getElementById("characterpoints").innerHTML=character.cpCurrent;
+        Object.keys(text).forEach(function(key) {
+            if (abilityTable.selectedAbilities.includes(key))
+            {
+                console.log(key);
+            }
+            else
+            {
+                abilityTable.addRow(key,text[key]);
+            }
+        })
+    $("#datatablemaybe").DataTable();
 }
 
 function increaseItem(type, skill, btn)
@@ -116,7 +116,7 @@ class Character {           //this is a character class.
             canIncrease(x,y) {return (this.incStat(x+1) + this.parent.cpCurrent > this.parent.cpMax) ? false: true;},
             canDecrease(x,y) {return (x > 1) ? true: false;}
         };
-        this.trad.parent = this;
+        this.abi.parent = this;
 
         this.trad = {
             trad: trad,
@@ -135,7 +135,7 @@ class Character {           //this is a character class.
             },
             canDecrease(x,y) {return (x > 1) ? true: false;}
         }
-        this.abi.parent = this;
+        this.trad.parent = this;
 
         this.cpMax=cpMax;
         this.cpCurrent=cpCurrent;
