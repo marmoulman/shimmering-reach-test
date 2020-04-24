@@ -19,34 +19,38 @@ function init(text)     //update HTML to match saved values
 
 }
 
-function plusAbility(skill, btn)        //increment a stat
+function increaseItem(type, skill, btn)
 {
-    if (character.canIncrease(character[skill]+1))
+    if (character[type].canIncrease(character[type][skill], [skill]))
     {
-        character[skill] ++;
-        document.getElementById(skill).innerHTML = character[skill];
-        character["cpCurrent"] += character.incStat(character[skill]);
-        document.getElementById("characterpoints").innerHTML = character.cpCurrent;
+        character[type][skill] ++;
+        document.getElementById(type +"-" + skill).innerHTML = character[type][skill];
+
+        if (!"wubrg".includes(skill)){
+            character.cpCurrent += character[type].incStat(character[type][skill], [skill]);
+            document.getElementById("characterpoints").innerHTML = character.cpCurrent;
+        }
     }
     else
     {
-        document.getElementById('prompt').innerHTML="this stat can't be increased anymore at this time! Try removing CP from other stats or abilities.";
-
+        document.getElementById('prompt').innerHTML = "This stat cannot be changed anymore!";
     }
 }
 
-function minusAbility(skill, btn)       //decrement a stat
+function decreaseItem(type, skill, btn)
 {
-    if(character[skill] -1 >= 1)
+    if (character[type].canDecrease(character[type][skill], [skill]))
     {
-        character[skill]--;
-        document.getElementById(skill).innerHTML = character[skill];
-        character.cpCurrent  += character.decStat(character[skill]);
-        document.getElementById("characterpoints").innerHTML = character.cpCurrent;
+        character[type][skill] --;
+        document.getElementById(type + "-" + skill).innerHTML = character[type][skill];
+        if(!"wubrg".includes(skill)){
+            character.cpCurrent += character[type].decStat(character[type][skill]);
+            document.getElementById("characterpoints").innerHTML = character.cpCurrent;
+        }
     }
     else
     {
-        document.getElementById('prompt').innerHTML="this stat cannot be decreased anymore!";
+        document.getElementById('prompt').innerHTML = "This stat cannot be decreased anymore!";
     }
 }
 
@@ -90,38 +94,51 @@ function selectedAbility(key)
     }
 }
 
+
 class Character {           //this is a character class.
-    constructor(playerName, characterName, bod, agi, rea, str, wil, int, log, cha, luk, cpMax, cpCurrent)
+    constructor(playerName, characterName, bod, agi, rea, str, wil, int, log, cha, luk, cpMax, cpCurrent, trad, w,u,b,r,g)
     {
         this.playerName = playerName;
         this.characterName = characterName;
-        this.bod = bod;
-        this.agi=agi;
-        this.rea=rea;
-        this.str=str;
-        this.wil=wil;
-        this.int=int;
-        this.log=log;
-        this.cha=cha;
-        this.luk=luk;
+
+        this.abi = {
+            bod: bod,
+            agi: agi,
+            rea: rea,
+            str: str,
+            wil: wil,
+            int: int,
+            log: log,
+            cha: cha,
+            luk: luk,
+            incStat(x) {return (x**2 + x-2)*2.5 - ((x-1)**2 + (x-1)-2)*2.5;},
+            decStat(x) {return (x**2 + x-2)*2.5 - ((x+1)**2 + (x+1)-2)*2.5;},
+            canIncrease(x,y) {return (this.incStat(x+1) + this.parent.cpCurrent > this.parent.cpMax) ? false: true;},
+            canDecrease(x,y) {return (x > 1) ? true: false;}
+        };
+        this.trad.parent = this;
+
+        this.trad = {
+            trad: trad,
+            w: w,
+            u: u,
+            b: b,
+            r: r,
+            g: g,
+            incStat(x) {return (x**2 + 7*x-8)*2.5 - ((x-1)**2 + 7*(x-1)-8)*2.5;},
+            decStat(x) {return (x**2 + 7*x-8)*2.5 - ((x+1)**2 + 7*(x+1)-8)*2.5;},
+            canIncrease(x,y){
+                switch(y[0]){
+                    case 'trad': return (this.incStat(x) + this.parent.cpCurrent > this.parent.cpMax) ? false: true;
+                    default: return (this.w + this.u + this.b + this.r + this.g + 1 > 3*this.trad) ? false: true;
+                }
+            },
+            canDecrease(x,y) {return (x > 1) ? true: false;}
+        }
+        this.abi.parent = this;
+
         this.cpMax=cpMax;
         this.cpCurrent=cpCurrent;
-    }
-
-    statCalc(x) {
-        return (x**2 + x - 2)*2.5;
-    }
-
-    incStat(x) {
-        return (x**2 + x-2)*2.5 - ((x-1)**2 + x-3)*2.5;
-    }
-
-    decStat(x) {
-        return (x**2 + x-2)*2.5 - ((x+1)**2 + x-1)*2.5;
-    }
-
-    canIncrease(x) {
-        return (this.incStat(x)+ this.cpCurrent > character.cpMax) ? false : true;
     }
 }
 
@@ -130,4 +147,6 @@ class Character {           //this is a character class.
 
 
 
-var character = new Character('Joe', 'Tavor', 1, 1, 1, 1, 1, 1, 1, 1, 1, 675, 0);
+var character = new Character('Joe', 'Tavor', 1, 1, 1, 1, 1, 1, 1, 1, 1, 675, 0, 1,0,0,0,0,0);
+
+console.log(character.abi.parent.cpCurrent);

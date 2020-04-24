@@ -41,17 +41,57 @@
             <th>Decrement?</th>
         </thead>
         <tbody>
-        <tr><th>BOD:</th><td id="bod">1</td><td><button id="bodplus" onclick="plusAbility('bod', this)">+</button></td><td><button id="bodminus" onclick="minusAbility('bod',this)">-</button></td></tr>
-        <tr><th>AGI:</th><td id="agi">1</td><td><button id="agiplus" onclick="plusAbility('agi', this)">+</button></td><td><button id="agiminus" onclick="minusAbility('agi',this)">-</button></td></tr>
-        <tr><th>REA:</th><td id="rea">1</td><td><button id="reaplus" onclick="plusAbility('rea', this)">+</button></td><td><button id="reaminus" onclick="minusAbility('rea',this)">-</button></td></tr>
-        <tr><th>STR:</th><td id="str">1</td><td><button id="strplus" onclick="plusAbility('str', this)">+</button></td><td><button id="strminus" onclick="minusAbility('str',this)">-</button></td></tr>
-        <tr><th>WIL:</th><td id="wil">1</td><td><button id="wilplus" onclick="plusAbility('wil', this)">+</button></td><td><button id="wilminus" onclick="minusAbility('wil',this)">-</button></td></tr>
-        <tr><th>INT:</th><td id="int">1</td><td><button id="intplus" onclick="plusAbility('int', this)">+</button></td><td><button id="intminus" onclick="minusAbility('int',this)">-</button></td></tr>
-        <tr><th>LOG:</th><td id="log">1</td><td><button id="logplus" onclick="plusAbility('log', this)">+</button></td><td><button id="logminus" onclick="minusAbility('log',this)">-</button></td></tr>
-        <tr><th>CHA:</th><td id="cha">1</td><td><button id="chaplus" onclick="plusAbility('cha', this)">+</button></td><td><button id="chaminus" onclick="minusAbility('cha',this)">-</button></td></tr>
-        <tr><th>LUK:</th><td id="luk">1</td><td><button id="lukplus" onclick="plusAbility('luk', this)">+</button></td><td><button id="lukminus" onclick="minusAbility('luk',this)">-</button></td></tr>
+        <tr><th>BOD:</th><td id="abi-bod">1</td><td><button id="bodplus" onclick="increaseItem('abi', 'bod', this)">+</button></td><td><button id="bodminus" onclick="decreaseItem('abi','bod',this)">-</button></td></tr>
+        <tr><th>AGI:</th><td id="abi-agi">1</td><td><button id="agiplus" onclick="increaseItem('abi', 'agi', this)">+</button></td><td><button id="agiminus" onclick="decreaseItem('abi','agi',this)">-</button></td></tr>
+        <tr><th>REA:</th><td id="abi-rea">1</td><td><button id="reaplus" onclick="increaseItem('abi', 'rea', this)">+</button></td><td><button id="reaminus" onclick="decreaseItem('abi','rea',this)">-</button></td></tr>
+        <tr><th>STR:</th><td id="abi-str">1</td><td><button id="strplus" onclick="increaseItem('abi', 'str', this)">+</button></td><td><button id="strminus" onclick="decreaseItem('abi','str',this)">-</button></td></tr>
+        <tr><th>WIL:</th><td id="abi-wil">1</td><td><button id="wilplus" onclick="increaseItem('abi', 'wil', this)">+</button></td><td><button id="wilminus" onclick="decreaseItem('abi','wil',this)">-</button></td></tr>
+        <tr><th>INT:</th><td id="abi-int">1</td><td><button id="intplus" onclick="increaseItem('abi', 'int', this)">+</button></td><td><button id="intminus" onclick="decreaseItem('abi','int',this)">-</button></td></tr>
+        <tr><th>LOG:</th><td id="abi-log">1</td><td><button id="logplus" onclick="increaseItem('abi', 'log', this)">+</button></td><td><button id="logminus" onclick="decreaseItem('abi','log',this)">-</button></td></tr>
+        <tr><th>CHA:</th><td id="abi-cha">1</td><td><button id="chaplus" onclick="increaseItem('abi', 'cha', this)">+</button></td><td><button id="chaminus" onclick="decreaseItem('abi','cha',this)">-</button></td></tr>
+        <tr><th>LUK:</th><td id="abi-luk">1</td><td><button id="lukplus" onclick="increaseItem('abi', 'luk', this)">+</button></td><td><button id="lukminus" onclick="decreaseItem('abi','luk',this)">-</button></td></tr>
         </tbody>
     </table>
+        <table id="tradTable" class="table table-bordered table-hover">
+            <thead>
+                <th>Trad:</th>
+                <th id="trad-trad">1</th>
+                <th><button id="tradplus" onclick="increaseItem('trad','trad', this)">+</button></th>
+                <th><button id="tradminus" onclick="decreaseItem('trad','trad', this)">-</button></th>
+            </thead>
+            <tbody id="tradTableBody">
+            <tr>
+                <td>White:</td>
+                <td style="background-color:white;color:black" class="text-center" id="trad-w">0</td>
+                <td><button id="tradwplus" onclick="increaseItem('trad','w', this)">+</button></td>
+                <td><button id="tradwminus" onclick="decreaseItem('trad','w', this)">-</button></td>
+            </tr>
+            <tr>
+                <td>Blue:</td>
+                <td style="background-color:blue;color:white" class="text-center" id="trad-u">0</td>
+                <td><button id="traduplus" onclick="increaseItem('trad','u', this)">+</button></td>
+                <td><button id="traduminus" onclick="decreaseItem('trad','u', this)">-</button></td>
+            </tr>
+            <tr>
+                <td>Black:</td>
+                <td style="background-color:black;color:white" class="text-center" id="trad-b">0</td>
+                <td><button id="tradbplus" onclick="increaseItem('trad','b', this)">+</button></td>
+                <td><button id="tradbminus" onclick="decreaseItem('trad','b', this)">-</button></td>
+            </tr>
+            <tr>
+                <td>Red:</td>
+                <td style="background-color:red;color:white" class="text-center" id="trad-r">0</td>
+                <td><button id="tradrplus" onclick="increaseItem('trad','r', this)">+</button></td>
+                <td><button id="tradrminus" onclick="decreaseItem('trad','r', this)">-</button></td>
+            </tr>
+            <tr>
+                <td>Green:</td>
+                <td style="background-color:green;color:white" class="text-center" id="trad-g">0</td>
+                <td><button id="tradgplus" onclick="increaseItem('trad','g', this)">+</button></td>
+                <td><button id="tradgminus" onclick="decreaseItem('trad','g', this)">-</button></td>
+            </tr>
+            </tbody>
+        </table>
     </div>
     <h3 id="characterpoints">Character points:</h3>
     <a data-toggle="modal" href="#myModal" class="btn btn-primary" onclick="init({{ sr }})">Add Ability</a>
