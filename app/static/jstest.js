@@ -85,7 +85,24 @@ function selectedAbility(key)
         for (var item in abilityTable.abilities[key])
         {
             let cell = row.insertCell();
-            (item === "abilityNames") ? cell.outerHTML = `<th>${key}</th>` : cell.innerHTML = `<td>${abilityTable.abilities[key][item]}</td>`;
+            switch(item){
+                case "abilityNames":
+                    cell.outerHTML = `<th>${key}</th>`;
+                    break;
+                case "Affinity":
+                    var aff = new affinityCost(abilityTable.abilities[key][item]);
+                    console.log(aff.arr);
+                    for (var i=0;i<aff.arr.length;i++)
+                    {
+                        aff.addBadgeFormatting(aff.arr[i]);
+                        if ((i+1<aff.arr.length)) aff.formatted = aff.formatted.concat(', ');
+                    }
+                    cell.innerHTML = aff.formatted;
+                    break;
+                default:
+                    cell.innerHTML = `<td>${abilityTable.abilities[key][item]}</td>`;
+                    break;
+            }
         }
         abilityTable.selectedAbilities.push(key);
         $("#abilityTableBody").empty();
@@ -143,9 +160,56 @@ class Character {           //this is a character class.
     }
 }
 
+class affinityCost {
+    constructor (str) {
+        this.arr=str.match(/\d?\d?\(([^)]+)\)|\d?\d?[a-zA-Z]/g);
+        this.formatted = "";
+    }
+
+    addBadgeFormatting(str){
+        var finalstr = "";
+        var tmpstr = str.replace('(','').replace(')','');
+        var leadingNumber = /^\d?\d?/.exec(str)[0];
+        tmpstr = !leadingNumber ? tmpstr: tmpstr.substring(leadingNumber.length);
+        var colorless = !/[a-zA-Z]/.exec(str) ? true: false;
+
+        tmpstr = tmpstr.split('|');
+        for(var i=0;i<tmpstr.length;i++)
+        {
+            var needsOr = i+1<tmpstr.length ? true: false;
+            switch(tmpstr[i])
+            {
+                case 'W':
+                    finalstr = finalstr.concat(`<span class='badge badge-light' style='background-color:moccasin;color:black;'>${leadingNumber}${tmpstr[i]}</span>`);
+                    if(needsOr) finalstr = finalstr.concat(' or ');
+                    break;
+                case 'U':
+                    finalstr = finalstr.concat(`<span class='badge badge-light' style='background-color:blue;color:white;'>${leadingNumber}${tmpstr[i]}</span>`);
+                    if(needsOr) finalstr = finalstr.concat(' or ');
+                    break;
+                case 'B':
+                    finalstr = finalstr.concat(`<span class='badge badge-light' style='background-color:black;color:white;'>${leadingNumber}${tmpstr[i]}</span>`);
+                    if(needsOr) finalstr = finalstr.concat(' or ');
+                    break;
+                case 'R':
+                    finalstr = finalstr.concat(`<span class='badge badge-light' style='background-color:red;color:white;'>${leadingNumber}${tmpstr[i]}</span>`);
+                    if(needsOr) finalstr = finalstr.concat(' or ');
+                    break;
+                case 'G':
+                    finalstr = finalstr.concat(`<span class='badge badge-light' style='background-color:green;color:white;'>${leadingNumber}${tmpstr[i]}</span>`);
+                    if(needsOr) finalstr = finalstr.concat(' or ');
+                    break;
+                default:
+                    colorless ? finalstr = finalstr.concat(`<span class='badge badge-light'>${tmpstr} Total</span>` ) : console.log('this should not happen');
+                    break;
+            }
+        }
+        this.formatted = this.formatted.concat(finalstr);
+    }
+}
 
 
 
-
+//            r.concat(l.replace("(", "<span class='badge badge-light'>").replace(")", "</span>").replace("|", "</span> or <span class='badge badge-light'>"));
 
 var character = new Character('Joe', 'Tavor', 1, 1, 1, 1, 1, 1, 1, 1, 1, 675, 0, 1,0,0,0,0,0);
