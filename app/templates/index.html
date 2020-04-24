@@ -2,6 +2,12 @@
 {% block scripts %}
 
     {{super()}}
+    <script src="{{url_for('static', filename='jquery-3.5.0.min.js')}}"></script>
+
+    <script src="{{url_for('static', filename='jquery.dataTables.min.js')}}"></script>
+
+    <script src="{{url_for('static', filename='dataTables.bootstrap.min.js')}}"></script>
+
     <script src="{{url_for('static', filename='jstest.js')}}"></script>
 
     <script>
@@ -113,16 +119,22 @@
     </table>
 
 <div class="modal fade" id="myModal">
-<div class="modal-dialog modal-xxl modal-dialog-centered modal-dialog-scrollable" style="width: 1600px;">
-  <div class="modal-content">
+<div class="modal-dialog modal-lg modal-dialog-centered" style="height: 850px;width:1400px;">
+  <div class="modal-content" style="height: 90;">
     <div class="modal-header">
       <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-      <h4 class="modal-title">Modal title</h4>
+      <h4 class="modal-title">Select an Ability:</h4>
     </div>
-    <div class="modal-body">
-      <table class="table table-hover table-bordered">
-          <thead>
-          </thead>
+    <div class="modal-body" style="height: 80%;">
+      <table id = "datatablemaybe" class="table table-hover table-striped table-bordered">
+        <thead>
+            <th>Ability Name:</th>
+            <th>Category:</th>
+            <th>Ability Description:</th>
+            <th>Rules Text:</th>
+            <th>CP Cost:</th>
+            <th>Affinity:</th>
+        </thead>
           <tbody class="table" id="abilityTableBody">
           </tbody>
       </table>
