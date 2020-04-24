@@ -4,7 +4,7 @@ function init(text)     //update HTML to match saved values
 {
         abilityTable.abilities = text;
         console.log('Initializing...');
-        emptyTableBody();
+        $("#abilityTableBody").empty();
         document.getElementById("characterpoints").innerHTML=character.cpCurrent;
         Object.keys(text).forEach(function(key) {
             if (abilityTable.selectedAbilities.includes(key))
@@ -16,7 +16,7 @@ function init(text)     //update HTML to match saved values
                 abilityTable.addRow(key,text[key]);
             }
         })
-    $("#datatablemaybe").DataTable();
+    $("#modalAbilityTable").DataTable();
 }
 
 function increaseItem(type, skill, btn)
@@ -88,7 +88,8 @@ function selectedAbility(key)
             (item === "abilityNames") ? cell.outerHTML = `<th>${key}</th>` : cell.innerHTML = `<td>${abilityTable.abilities[key][item]}</td>`;
         }
         abilityTable.selectedAbilities.push(key);
-        emptyTableBody();
+        $("#abilityTableBody").empty();
+        $("#closeModal").trigger("click");
         character.cpCurrent += parseInt(abilityTable.abilities[key]["CP cost"]);
         document.getElementById("characterpoints").innerHTML = character.cpCurrent;
     }
@@ -148,5 +149,3 @@ class Character {           //this is a character class.
 
 
 var character = new Character('Joe', 'Tavor', 1, 1, 1, 1, 1, 1, 1, 1, 1, 675, 0, 1,0,0,0,0,0);
-
-console.log(character.abi.parent.cpCurrent);

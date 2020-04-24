@@ -10,25 +10,6 @@
 
     <script src="{{url_for('static', filename='jstest.js')}}"></script>
 
-    <script>
-
-        $(function(){
-            emptyTableBody = function()
-            {
-                $("#abilityTableBody").empty();
-            }
-            });
-            $('#myModal').on('show.bs.modal', function () {
-                $(this).find('.modal-body').css({
-                width:'auto', //probably not needed
-                height:'auto', //probably not needed
-                'max-height':'100%'
-            });
-        });
-
-
-
-    </script>
 {% endblock %}
 
 {% block styles %}
@@ -68,7 +49,7 @@
             <tbody id="tradTableBody">
             <tr>
                 <td>White:</td>
-                <td style="background-color:white;color:black" class="text-center" id="trad-w">0</td>
+                <td style="background-color:ghostwhite;color:black" class="text-center" id="trad-w">0</td>
                 <td><button id="tradwplus" onclick="increaseItem('trad','w', this)">+</button></td>
                 <td><button id="tradwminus" onclick="decreaseItem('trad','w', this)">-</button></td>
             </tr>
@@ -126,7 +107,7 @@
       <h4 class="modal-title">Select an Ability:</h4>
     </div>
     <div class="modal-body" style="height: 80%;">
-      <table id = "datatablemaybe" class="table table-hover table-striped table-bordered">
+      <table id = "modalAbilityTable" class="table table-hover table-striped table-bordered">
         <thead>
             <th>Ability Name:</th>
             <th>Category:</th>
@@ -140,7 +121,7 @@
       </table>
     </div>
     <div class="modal-footer">
-      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      <button id="closeModal" type="button" class="btn btn-default" data-dismiss="modal">Close</button>
     </div>
   </div><!-- /.modal-content -->
 </div><!-- /.modal-dialog -->
