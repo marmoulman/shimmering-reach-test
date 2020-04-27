@@ -1,12 +1,12 @@
 "use strict";           // enforces better coding practices in js
 
-function init(text)     //update HTML to match saved values
+function init(text)                                                                     //update HTML to match saved values
 {
         abilityTable.abilities = text;
         console.log('Initializing...');
         $("#abilityTableBody").empty();
         document.getElementById("characterpoints").innerHTML=character.cpCurrent;
-        Object.keys(text).forEach(function(key) {
+        Object.keys(text).forEach(function(key) {                                       //For each ability on the list, generate it a row on the 'add ability' table (unless you already have it)
             if (abilityTable.selectedAbilities.includes(key))
             {
                 console.log(key);
@@ -17,9 +17,9 @@ function init(text)     //update HTML to match saved values
             }
         })
     $("#modalAbilityTable").DataTable();
-}
+}();
 
-function increaseItem(type, skill, btn)
+function increaseItem(type, skill, btn)                                                 //This and 'decrease item' function check to see if the stat can increase (works with both ability and tradition, easy change to work with skills). The increases them and pays appropriate CP costs
 {
     if (character[type].canIncrease(character[type][skill], [skill]))
     {
@@ -58,64 +58,62 @@ var abilityTable =
 {
     abilities : {},
     selectedAbilities : [],
-    //table : document.querySelector("table"),
-    addRow(key, data)
+    addRow(key, data)                                               //function to add a row to the table
     {
        let table = document.getElementById("abilityTableBody");
        let row = table.insertRow();
-        for (var item in data)
+        for (var item in data)                                      //for every subitem associated with the KEY (name, affinity cost, rules text, etc.)
         {
-            let cell = row.insertCell();
-            (item === "AbilityNames") ? cell.outerHTML = `<th><div class="abilityLine" onclick="selectedAbility('${key}');">${key}</div></th>` : cell.innerHTML = `<td><div class="abilityLine" onclick="selectedAbility('${key}');">${data[item]}</div></td>`;
-
+            let cell = row.insertCell();                            // add a cell and modify the text in it based on the below code.
+            (item === "AbilityNames") ?
+                cell.outerHTML = `<th><div class="abilityLine" onclick="selectedAbility('${key}');">${key}</div></th>` :                    //This one bolds
+                cell.innerHTML = `<td><div class="abilityLine" onclick="selectedAbility('${key}');">${data[item]}</div></td>`;
         }
     }
 }
 
-function selectedAbility(key)
+function selectedAbility(key)                                                                       //this is the function that handles an ability selection from the modal window.
 {
-    var aff = new affinityCost(abilityTable.abilities[key]["Affinity"]);
+    var aff = new affinityCost(abilityTable.abilities[key]["Affinity"]);                            //create new affinity object for this ability
+    var affinityCostCheck = aff.checkIfAvailable(character.trad);                                   //can you afford it?
     console.log(abilityTable.abilities[key]["Affinity"]);
-    console.log('can you afford ' + key + '?:    ' + aff.checkIfAvailable(character.trad.trad, character.trad.w, character.trad.u, character.trad.b, character.trad.r, character.trad.g));
-
-    if (character.cpCurrent + parseInt(abilityTable.abilities[key]["CP cost"]) > character.cpMax)
+    console.log('can you afford ' + key + '?:    ' + affinityCostCheck);
+    if (character.cpCurrent + parseInt(abilityTable.abilities[key]["CP cost"]) > character.cpMax)   //a couple of conditions, flashing warnings if you don't have the right tradition or character points
     {
         alert("You don't have enough Character Points for that ability!");
     }
-    else if (!(aff.checkIfAvailable(character.trad.trad, character.trad.w, character.trad.u, character.trad.b, character.trad.r, character.trad.g)))
+    else if (!affinityCostCheck)
     {
         alert("You don't have the right tradition for this ability!");
     }
-    else
+    else                                                                                        //if you reach here, you have enough CP and trad to get the ability
     {
         let table = document.getElementById('abilityTableSelectedBody');
         let row = table.insertRow();
         for (var item in abilityTable.abilities[key])
         {
             let cell = row.insertCell();
-            switch(item){
+            switch(item){                                                                       //check what part of the ability is being copied
                 case "abilityNames":
-                    cell.outerHTML = `<th>${key}</th>`;
+                    cell.outerHTML = `<th>${key}</th>`;                                         //if its the name, bold it
                     break;
-                case "Affinity":
-                    console.log(aff.arr);
-                    console.log(aff.checkIfAvailable(character.trad.trad, character.trad.w, character.trad.u, character.trad.b, character.trad.r, character.trad.g));
+                case "Affinity":                                                                // if its the affinity, add badge formatting (see below in the affinity class)
                     for (var i=0;i<aff.arr.length;i++)
                     {
                         aff.addBadgeFormatting(aff.arr[i]);
-                        if ((i+1<aff.arr.length)) aff.formatted = aff.formatted.concat(', ');
+                        if ((i+1<aff.arr.length)) aff.formatted = aff.formatted.concat(', ');       //add a comma if there is more to come.
                     }
                     cell.innerHTML = aff.formatted;
                     break;
-                default:
+                default:                                                                        //otherwise write it normally
                     cell.innerHTML = `<td>${abilityTable.abilities[key][item]}</td>`;
                     break;
             }
         }
-        abilityTable.selectedAbilities.push(key);
+        abilityTable.selectedAbilities.push(key);                                                   //add item to the 'selected abilities' list
         $("#abilityTableBody").empty();
-        $("#closeModal").trigger("click");
-        character.cpCurrent += parseInt(abilityTable.abilities[key]["CP cost"]);
+        $("#closeModal").trigger("click");                                                          //bootstrap was throwing a fit when I tried to close this the normal way, I think the .modal class isn't available through flask. This works just fine, but it feels a bit weird
+        character.cpCurrent += parseInt(abilityTable.abilities[key]["CP cost"]);                    //update CPcost to reflect ability cost
         document.getElementById("characterpoints").innerHTML = character.cpCurrent;
     }
 }
@@ -127,7 +125,7 @@ class Character {           //this is a character class.
         this.playerName = playerName;
         this.characterName = characterName;
 
-        this.abi = {
+        this.abi = {                                            //Store all ability scores and functions that mess with the ability scores here.
             bod: bod,
             agi: agi,
             rea: rea,
@@ -137,14 +135,14 @@ class Character {           //this is a character class.
             log: log,
             cha: cha,
             luk: luk,
-            incStat(x) {return (x**2 + x-2)*2.5 - ((x-1)**2 + (x-1)-2)*2.5;},
+            incStat(x) {return (x**2 + x-2)*2.5 - ((x-1)**2 + (x-1)-2)*2.5;},           //replace these function math with inputted strings from a JSON file if applicable
             decStat(x) {return (x**2 + x-2)*2.5 - ((x+1)**2 + (x+1)-2)*2.5;},
             canIncrease(x,y) {return (this.incStat(x+1) + this.parent.cpCurrent > this.parent.cpMax) ? false: true;},
             canDecrease(x,y) {return (x > 1) ? true: false;}
         };
-        this.abi.parent = this;
+        this.abi.parent = this;                                 //Add a reference to the parent character element, so that the ability method has access to 'CPMAX'
 
-        this.trad = {
+        this.trad = {                                           //Store all traditions and tradition accessories here. Might be worth moving the functions for 'affinity' over here?
             trad: trad,
             w: w,
             u: u,
@@ -161,7 +159,7 @@ class Character {           //this is a character class.
             },
             canDecrease(x,y) {return (x > 1) ? true: false;}
         }
-        this.trad.parent = this;
+        this.trad.parent = this;                                // Add a reference to the parent function so this has access to 'CPMAX'
 
         this.cpMax=cpMax;
         this.cpCurrent=cpCurrent;
@@ -171,7 +169,7 @@ class Character {           //this is a character class.
 class affinityCost {
     constructor (str) {
         this.raw=str                                                    //not used currently.
-        this.arr= str.match(/\d?\d?\(([^)]+)\)|\d?\d?[a-zA-Z]/g);       //yikes. this is the regex to break a full string into the bits we want
+        this.arr= str.match(/\d?\d?\(([^)]+)\)|\d?\d?[a-zA-Z]|\d\d?/g);       //yikes. this is the regex to break a full string into the bits we want
         this.formatted = "";                                            //use this to store the HTML for displaying the fun mana bars
     }
 
@@ -180,86 +178,95 @@ class affinityCost {
         var tmpstr = str.replace('(','').replace(')','');
         var leadingNumber = /^\d?\d?/.exec(str)[0];                     //if there is a number, pull it out so you can put it w the color later
         tmpstr = !leadingNumber ? tmpstr: tmpstr.substring(leadingNumber.length);
-        var colorless = !/[a-zA-Z]/.exec(str) ? true: false;            //if there's no color specified, set a flag for later
+        var colorless = !/[a-zA-Z]/.exec(str) ? " Total": "";            //if there's no color specified, set a flag for later
 
-        tmpstr = tmpstr.split('|');
+        tmpstr = tmpstr.split('|');                                     //split the string if it is an 'or'
         for(var i=0;i<tmpstr.length;i++)
         {
-            var needsOr = i+1<tmpstr.length ? true: false;
-            switch(tmpstr[i])                                                           //Depending on what the letter is, change the color. There's probably a cleaner way of doing this.
-            {
-                case 'W':
-                    finalstr = finalstr.concat(`<span class='badge badge-light' style='background-color:moccasin;color:black;'>${leadingNumber}${tmpstr[i]}</span>`);
-                    if(needsOr) finalstr = finalstr.concat(' or ');
-                    break;
-                case 'U':
-                    finalstr = finalstr.concat(`<span class='badge badge-light' style='background-color:blue;color:white;'>${leadingNumber}${tmpstr[i]}</span>`);
-                    if(needsOr) finalstr = finalstr.concat(' or ');
-                    break;
-                case 'B':
-                    finalstr = finalstr.concat(`<span class='badge badge-light' style='background-color:black;color:white;'>${leadingNumber}${tmpstr[i]}</span>`);
-                    if(needsOr) finalstr = finalstr.concat(' or ');
-                    break;
-                case 'R':
-                    finalstr = finalstr.concat(`<span class='badge badge-light' style='background-color:red;color:white;'>${leadingNumber}${tmpstr[i]}</span>`);
-                    if(needsOr) finalstr = finalstr.concat(' or ');
-                    break;
-                case 'G':
-                    finalstr = finalstr.concat(`<span class='badge badge-light' style='background-color:green;color:white;'>${leadingNumber}${tmpstr[i]}</span>`);
-                    if(needsOr) finalstr = finalstr.concat(' or ');
-                    break;
-                default:
-                    colorless ? finalstr = finalstr.concat(`<span class='badge badge-light'>${tmpstr} Total</span>` ) : console.log('this should not happen');
-                    break;
-            }
+            var needsOr = i+1<tmpstr.length ? " or ": "";
+            finalstr = finalstr.concat(selectColor(tmpstr[i], needsOr, leadingNumber, colorless));      //generate HTML text based on the inputted color (or lack thereof) of the tradition. Also checks if an 'or ' is needed for U|R or stuff like that
         }
         this.formatted = this.formatted.concat(finalstr);
+
+
+        function selectColor(color, or="", num="", colorless="")            //This is a switch statement that changes the HTML formatting to reflect the color of the tradition.
+        {
+            var formatText = "";
+            switch(color)
+            {
+                case 'W':
+                    formatText = "style='background-color:moccasin;color:black;'";
+                    break;
+                case 'U':
+                    formatText = "style='background-color:blue;color:white;'";
+                    break;
+                case 'B':
+                    formatText = "style='background-color:black;color:white;'";
+                    break;
+                case 'R':
+                    formatText = "style='background-color:red;color:white;'";
+                    break;
+                case 'G':
+                    formatText = "style='background-color:green;color:white;'";
+                    break;
+                default:
+
+                    break;
+            }
+            return `<span class='badge badge-light' ${formatText} >${num}${color}</span> ${or}${colorless}`;
+        }
     }
 
-    checkIfAvailable(trad, tradw,tradu,tradb,tradr,tradg)
+    checkIfAvailable(trad)          //function to check if this ability is available given the characters tradition.
     {
-
         var tmp = {                 //store all the characters trad here for scratch calculations
-        trad: trad,
-        w: tradw,
-        u: tradu,
-        b: tradb,
-        r: tradr,
-        g: tradg
+        trad: trad.trad,
+        w: trad.w,
+        u: trad.u,
+        b: trad.b,
+        r: trad.r,
+        g: trad.g
         };
 
+        return test(this.arr, 0, this);           // start the recursive function
 
-        return test(this.arr, 0);           // start the recursive function
-
-        function test(strlst,z)
+        function test(strlst,z, aff)            //recursive function that tests iterations of a given list of strings until it finds one that can be select with a given tradition set.
         {
+            var printableArray = strlst.join(', ');
+            console.log('Looking at: ' + printableArray.replace(/\(|\)/g,'') + ' on loop number: ' + z);
             if (z > 10)                     // I infinite looped one too many times while making this, and I'm leaving it as a reminder to myself to put it in earlier.
             {
                 console.log("ABORT ABORT SWEET BABY JESUS ABORT");
                 return false;
             }
 
-            if (testAll(strlst)) return true;       // if the substring tests out, return true
+            if (testAll(strlst)) {
+                console.log(`successful finish on string: ${strlst}!`);
+                return true;       // if the substring tests out, return true
+                }
 
             for (var i in strlst)                   // if it doesnt, go through the array string by string
             {
                 var str = strlst[i];                //this is the string, i is the iterator
                 if(str.includes('|'))               // if there is an | signifying an OR in the string
                 {
+                    var leadingNumber = /^\d?\d?/.exec(str)[0];             //pull off the leading number, since this needs to get put with both numbers in the OR not just the first one.
+                    str = !leadingNumber ? str: str.substring(leadingNumber.length);
                     for (var j in str.split('|'))                       //for each element in the OR list
                     {
                         var tmplst = strlst;
-                        tmplst.splice(i,1,str.split('|')[j]);
-                        if (test(tmplst, z+1))     //test the array with ONE of the or options selected.
+                        tmplst.splice(i,1,leadingNumber + str.split('|')[j]);
+                        if (test(tmplst, z+1, aff))     //test the array with ONE of the or options selected.
                         {
+                            console.log(`successful finish on string: ${tmplst}`);
                             return true;                                // hurray! There is an iteration that works!
                         }
                     }
 
                 }
             }
+            console.log('finished in theory');
             return false;
-
 
 
 
@@ -275,11 +282,11 @@ class affinityCost {
                         if(!(testColorless(str))) return false;       // if the colorless total is less than or equal to the characters tradition, skip to the next string. Otherwise, return false
                     }                                       // This should take care of all colorless cases
                     var leadingNumber = /^\d?\d?/.exec(str)[0];
-                    var tmpstr=str.replace('(','').replace(')','');
+                    var tmpstr=str.replace(/\(/g,'').replace(/\)/g,'');
                     tmpstr = !leadingNumber ? tmpstr: tmpstr.substring(leadingNumber.length);       //separate the number and the letter. remove parentheses.
-                    if (tmp.hasOwnProperty(str))                                                    //if the letter is on the color wheel
+                    if (tmp.hasOwnProperty(tmpstr))                                                    //if the letter is on the color wheel
                     {
-                        if(!(testColored(str, parseInt(leadingNumber)||1))) return false;            // if the cost is less than or equal to what the character has available, skip to the next string. Otherwise, return false
+                        if(!(testColored(tmpstr, parseInt(leadingNumber)||1))) return false;            // if the cost is less than or equal to what the character has available, skip to the next string. Otherwise, return false
                     }                                       // This should take care of all colored cases
                 }
                 return true;                                // if you make it all the way out here, its because you meet all the costs for the ability. hurray!
@@ -306,12 +313,12 @@ class affinityCost {
 
         function setScratchTrad()                   // reset the tradition totals so you can keep testing without modifying real numbers
         {
-            tmp.trad = trad;
-            tmp.w = tradw;
-            tmp.u = tradu;
-            tmp.b = tradb;
-            tmp.r = tradb;
-            tmp.g = tradg;
+            tmp.trad = trad.trad;
+            tmp.w = trad.w;
+            tmp.u = trad.u;
+            tmp.b = trad.b;
+            tmp.r = trad.r;
+            tmp.g = trad.g;
         }
     }
 
@@ -321,13 +328,13 @@ class affinityCost {
 
 //            r.concat(l.replace("(", "<span class='badge badge-light'>").replace(")", "</span>").replace("|", "</span> or <span class='badge badge-light'>"));
 
-var character = new Character('Joe', 'Tavor', 1, 1, 1, 1, 1, 1, 1, 1, 1, 675, 0, 1,1,1,1,1,1);
+var character = new Character('Joe', 'Tavor', 1, 1, 1, 1, 1, 1, 1, 1, 1, 675, 0, 1,0,0,0,0,0);          //initialize a test character to work with
 
 
 
 
 
-/*
+/*          This was the thinking for affinitycost check if available
     function test(arr)
     {
         if each element tests true
